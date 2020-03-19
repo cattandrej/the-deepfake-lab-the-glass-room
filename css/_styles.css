@@ -1,0 +1,70 @@
+body {
+	font-style: normal !important;
+	font-weight: 300 !important;
+	font-family: muli !important;
+	font-size: 18px !important;
+	line-height: 1.5em !important;
+	color: #333333 !important;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: josefin-sans !important;
+	font-weight: 100 !important;
+	margin: 10px 0px;
+}
+h1 {
+	font-size: 4em !important;
+	font-weight: 400 !important;
+}
+h2 {
+	font-size: 2.5em !important;
+	font-weight: 400 !important;
+}
+h3 {
+	font-size: 2em !important;
+}
+h4 {
+	font-size: 1.5em !important;
+	font-weight: 400 !important;
+}
+h5 {
+	font-size: 1.5em !important;
+}
+h6 {
+	font-size: 1em !important;
+	font-weight: 400 !important;
+}
+#header{
+	padding-bottom: 15px;
+}
+hr {
+	border-color: #333333;
+	border-style: solid;
+	height: 1px;
+}
+.GlassRoomFrame{
+	font-size: 1.3em !important;
+	font-weight: 400   !important;
+	width: 100% !important;
+	border: 10px solid transparent;
+	background-color: #FFFFFF;
+	padding: 5px !important;
+	text-align: center;
+	-webkit-border-image: url(../images/frame.svg) 40% round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/frame.svg) 40% round; /* Opera 11-12.1 */
+    border-image: url(../images/frame.svg) 40% round;
+	margin-bottom: 30px;
+}
+.GlassRoomFrame:hover{
+	color: #000000;
+	border: 3px double;
+	padding: 12px !important;
+	border-top-color: #339A47;
+	border-right-color: #2E3191;
+	border-bottom-color: #999999;
+	border-left-color: #EC1C2C;
+}
+b, strong{font-weight: 600 !important;}
+
+@media (max-width:1024px){
+	body {font-size: 13px !important;}
+}
