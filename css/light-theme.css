@@ -25,3 +25,24 @@ footer {
 .ico {
     filter: brightness(0.0);
 }
+
+.left-navbar-element p {
+    color: black;
+}
+
+.left-navbar-element-selected p {
+    color: black;
+}
+
+.left-navbar-element p:hover {
+    color: black;
+}
+
+.left-navbar-element-selected {
+    padding-left: 15px;
+    border-left: 6px solid #f0801a;
+}
+
+.left-navbar-element-selected p {
+    color: #f0801a;
+}
