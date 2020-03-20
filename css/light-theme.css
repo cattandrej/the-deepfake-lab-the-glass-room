@@ -21,3 +21,7 @@ a:hover {
 footer {
     background-color: #f6f6f6;
 }
+
+.ico {
+    filter: brightness(0.0);
+}
