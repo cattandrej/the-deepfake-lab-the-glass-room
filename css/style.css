@@ -1,5 +1,7 @@
 :root {
-    --accent-color: #EE313C;
+    --accent-color: #ee313c;
+    --light-color: #656565;
+    --lighter-color: #919aa1;
   }
   
 html, body, div, h1, h2, h3, p, a {
@@ -226,6 +228,11 @@ footer {
     -webkit-text-stroke-width: 6px;
 }
 
+h2 {
+	-webkit-text-stroke-color: #EE313C;
+    -webkit-text-stroke-width: 2px;
+}
+
 /*.subtitle, .subtitle h3 {
     font-size: 2,5rem;
 }*/
@@ -285,11 +292,17 @@ footer {
 .button-selected {
     border-bottom: 4px solid var(--accent-color);
     font-weight: 700;
-    background-color: rgba(240, 128, 26, .25);
+    background-color: rgb(238, 49, 60, 0.15);
 }
 
 .button:hover {
-    background-color: rgba(255, 255, 255, .125);
+    background-color: rgba(128,128,128,0.1);
+}
+
+.button-selected:hover {
+    border-bottom: 4px solid var(--accent-color);
+    font-weight: 700;
+    background-color:  rgb(238, 49, 60, 0.2);
 }
 
 .icon-group {
@@ -328,21 +341,29 @@ footer {
     color: var(--accent-color);
 }
 
+.lighter-color p {
+    color: var(--lighter-color);
+}
+
+p {
+    color: var(--light-color);
+}
+
 .white {
     color: white;
 }
 
 a {
     cursor: pointer;   
-    color: var(--accent-color);
+    color: var(--lighter-color);
 }
 
 a:visited {    
-    color: var(--accent-color);
+    color: var(--lighter-color);
 }
 
 a:hover {
-    color: white;
+    color: var(--accent-color);
 }
 
 .container-protocol {
