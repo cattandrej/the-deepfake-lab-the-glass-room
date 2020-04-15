@@ -15,13 +15,9 @@
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/screen-sm.css">
-    <link rel="stylesheet" type="text/css" href="css/screen-md.css">
-    <link rel="stylesheet" type="text/css" href="css/screen.lg.css">
     <link rel="stylesheet" type="text/css" href="css/img-urls.css">
     <link rel="stylesheet" type="text/css" href="css/_styles.css">
-    <link rel="stylesheet" type="text/css" href="css/Glass_style.css">
-    <link rel="stylesheet" type="text/css" href="css/light-theme.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/Glass_style.css">-->
 
   <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/muli:n3:default;josefin-sans:n3,n4,n1,n6:default.js" type="text/javascript"></script>
 
@@ -38,12 +34,6 @@
 </head>
 
 <body class="disable-touch">
-
-    <div class="top-navbar">
-        <a onclick="goToVieweport(0);"><strong>Home</strong></a>
-        <a href="./Protocol/protocol.html">Protocol</a>
-        <a href="./About/about.html">About</a>
-    </div>
 
     <div class="left-navbar" id="left-navbar">
     </div>
@@ -102,7 +92,7 @@
                     <h3>Let’s have a look at a popular example from the internet.
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         In this video Elon Musk’s face has been translated to a baby.
                         This type of face swap is the most common use of deepfake
@@ -161,10 +151,10 @@
                                         this video.
                                     </p>
 
-                                    <p class="source-text orange"><br><strong>Deepfake target video:</strong> <a
+                                    <p class="source-text accent-color"><br><strong>Deepfake target video:</strong> <a
                                             href="https://youtu.be/phwgt64oGMs" target="_blank">YouTube - Cutest Baby
                                             Montage Ever</a> </p>
-                                    <p class="source-text orange"><br><strong>Deepfake video source:</strong> <a
+                                    <p class="source-text accent-color"><br><strong>Deepfake video source:</strong> <a
                                             href="https://youtu.be/WHwQeetjLwk" target="_blank">YouTube - Baby Elon</a>
                                     </p>
                                 </div>
@@ -211,7 +201,7 @@
                         We will show you what you need.
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         Deepfake videos can be made with consumer computers but you need
                         quite a powerful graphical card. This video shows our first trial.
@@ -326,7 +316,7 @@
                                     facial profile. If the neural network is not trained for these situations,
                                     it cannot produce the right overlay. Pay attention to how Shia's mouth
                                     appears from underneath the mask, resulting in two mouths.</p>
-                                <p class="source-text orange"><br><strong>Target video source:</strong> <a
+                                <p class="source-text accent-color"><br><strong>Target video source:</strong> <a
                                         href="https://www.youtube.com/watch?v=ZXsQAXx_ao0" target="_blank">YouTube -
                                         Just Do It!</a> </p>
                             </div>
@@ -356,7 +346,7 @@
                     <h3>So, what steps do you have to take in order to make a deepfake?
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         You need two videos, a source video, and a target video. The program will train itself according
                         to both and create a mask that can be placed onto the target video with video editing software.
@@ -367,7 +357,7 @@
 
                     <img src="./res/svg/graph-ivanna-anne.svg">
                     <br></br>
-                    <p class="source-text orange"><br><strong>Original target video:</strong> <a
+                    <p class="source-text accent-color"><br><strong>Original target video:</strong> <a
                             href="https://youtu.be/b2f2Kqt_KcE" target="_blank">The Devil Wears Prada (2/5) Movie CLIP -
                             Andy's Interview (2006) HD</a> </p>
                 </div>
@@ -448,7 +438,7 @@
                     <div class="interactive-detail-col">
                         <div class="tab" id="original">
                             <div class="interactive-detail-col left-space-2_5 top-space-2_5">
-                                <div class="interactive-detail-text">
+                                <div class="interactive-detail-text detail-text-p">
                                     <p>Select a target video you want to insert a face into. Choosing a video that is
                                         steady and consistent will give you a better result. </p>
                                 </div>
@@ -457,7 +447,7 @@
 
                         <div class="tab" id="dataset" style="display: none;">
                             <div class="interactive-detail-col left-space-2_5 top-space-2_5">
-                                <div class="interactive-detail-text">
+                                <div class="interactive-detail-text detail-text-p">
                                     <p>Record a dataset for the face you want to place, matching the lighting and
                                         expressions as much as possible.
                                     </p>
@@ -467,7 +457,7 @@
 
                         <div class="tab" id="mask" style="display: none;">
                             <div class="interactive-detail-col left-space-2_5 top-space-2_5">
-                                <div class="interactive-detail-text">
+                                <div class="interactive-detail-text detail-text-p">
                                     <p>Cover the faces from other people in the target video, else, the algorithm will
                                         use them to train itself.
                                     </p>
@@ -477,7 +467,7 @@
 
                         <div class="tab" id="alignment" style="display: none;">
                             <div class="interactive-detail-col left-space-2_5 top-space-2_5">
-                                <div class="interactive-detail-text">
+                                <div class="interactive-detail-text detail-text-p">
                                     <p>The algorithm will crop the faces for the training process and save the position
                                         to later position the output mask correctly.
                                     </p>
@@ -487,7 +477,7 @@
 
                         <div class="tab" id="deepfake" style="display: none;">
                             <div class="interactive-detail-col left-space-2_5 top-space-2_5">
-                                <div class="interactive-detail-text">
+                                <div class="interactive-detail-text detail-text-p">
                                     <p>The algorithm generates a mask of the face of the source that you need to align
                                         onto the target video. </p>
                                 </div>
@@ -496,7 +486,7 @@
 
                         <div class="tab" id="post" style="display: none;">
                             <div class="interactive-detail-col left-space-2_5 top-space-2_5">
-                                <div class="interactive-detail-text">
+                                <div class="interactive-detail-text detail-text-p">
                                     <p>Video editing software will allow you to blend in the mask better and refine the
                                         final result. </p>
                                 </div>
@@ -531,7 +521,7 @@
                         Will it be better?
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         In this experiment, two programs were given a different
                         number of images. More source material clearly improves the
@@ -567,7 +557,7 @@
                                         with more images can produce a more refined
                                         expression matching the target.
                                     </p>
-                                    <p class="source-text orange"><br><strong>Original target video:</strong> <a
+                                    <p class="source-text accent-color"><br><strong>Original target video:</strong> <a
                                             href="https://youtu.be/MAA1e4_HWdA" target="_blank">Rooftop Showdown | The
                                             Reichenbach Fall | Sherlock</a> </p>
                                 </div>
@@ -618,7 +608,7 @@
                         media content and create a good deepfake?
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         We took all the Facebook images from one of our team members
                         and created a deepfake. She smiled in almost all of the source
@@ -748,7 +738,7 @@
                                     Although better technologies might be able to
                                     fabricate expressions, without diverse source
                                     material, it will never convince an acquaintance.</p>
-                                <p class="source-text orange"><br><strong>Original target video:</strong> <a
+                                <p class="source-text accent-color"><br><strong>Original target video:</strong> <a
                                         href="https://youtu.be/b8QGlwSt6vs" target="_blank">YouTube - Padmé meets
                                         Anakin</a> </p>
                             </div>
@@ -788,7 +778,7 @@
 
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         Even with a good source, it can be hard to create a deepfake. Indiana
                         Jones contains chaotic shots, compared to the cleaner videos we used
@@ -878,7 +868,7 @@
                                         case, the model only had to learn how to create a low-resolution
                                         image. In close up face shots, the low resolution is evident.
                                     </p>
-                                    <p class="source-text orange"><br><strong>Original target video:</strong> <a
+                                    <p class="source-text accent-color"><br><strong>Original target video:</strong> <a
                                             href="https://youtu.be/zYWLE9HIqUM" target="_blank">Rope Bridge Fight |
                                             Indiana Jones and the Temple of Doom</a> </p>
                                 </div>
@@ -929,7 +919,7 @@
                         target video even imitates his new face.
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         This deepfake video was made out of a talk show fragment where Bill Hader
                         impersonates Arnold Schwarzenegger. By using the right source material
@@ -1013,10 +1003,10 @@
                                         sharpness and the angle of the finger suggest that
                                         the creator has tried to hide the effect in post-production.
                                     </p>
-                                    <p class="source-text orange"><br><strong>Original target video:</strong> <a
+                                    <p class="source-text accent-color"><br><strong>Original target video:</strong> <a
                                             href="https://teamcoco.com/video/bill-hader-presents-schwarzenegger-baby"
                                             target="_blank">Bill Hader Presents: Schwarzenegger Baby</a> </p>
-                                    <p class="source-text orange"><br><strong>Source deepfaked video:</strong> <a
+                                    <p class="source-text accent-color"><br><strong>Source deepfaked video:</strong> <a
                                             href="https://youtu.be/bPhUhypV27w" target="_blank">Bill Hader impersonates
                                             Arnold Schwarzenegger</a> </p>
                                 </div>
@@ -1051,7 +1041,7 @@
                         source content. Will the results improve?
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         For this experiment, both models were trained for a different amount of
                         time. One model was trained for 4 hours whilst the other ran for 48 hours.
@@ -1134,7 +1124,7 @@
                                         Every iteration, the model does this cycle once for all
                                         source images. Depending on the power of the computer the
                                         iterations can be executed in less time.</p>
-                                    <p class="source-text orange"><br><strong>Original target video:</strong> <a
+                                    <p class="source-text accent-color"><br><strong>Original target video:</strong> <a
                                             href="https://www.youtube.com/watch?v=xQKy9eUl_X0&t=112s"
                                             target="_blank">Constance Wu Explains What "Couture" Means</a> </p>
                                 </div>
@@ -1185,7 +1175,7 @@
                         critical conditions?
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         For this experiment, we created both the source and the target video
                         ourselves. The approach of the algorithm is clearly visible. H128
@@ -1286,7 +1276,7 @@
 
                     </h3>
                 </div>
-                <div class="orange top-space-2_5 left-space-5 right-space-5">
+                <div class="accent-color top-space-2_5 left-space-5 right-space-5">
                     <p>
                         Nowadays, deepfakes
                         can reach a really high quality that is very difficult to recognize.
@@ -1317,7 +1307,7 @@
                                         the algorithm will still act similarly. The recreated parts of
                                         the face will be slightly blurred and less detailed.
                                     </p>
-                                    <p class="source-text orange"><br><strong>Deepfake source video:</strong> <a
+                                    <p class="source-text accent-color"><br><strong>Deepfake source video:</strong> <a
                                             href="https://www.youtube.com/watch?v=l2YkPik990o&feature=youtu.be"
                                             target="_blank">Fake Freeman mouth manipulation.</a> </p>
                                 </div>

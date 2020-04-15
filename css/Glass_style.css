@@ -52,51 +52,9 @@ hr {
 }
 
 
-//orange
-.left-navbar-element-selected {
-    padding-left: 15px;
-    border-left: 6px solid #EE313C;
-}
 
-.left-navbar-element-selected p {
-    color: #EE313C;
-}
 
-.title, title.h1 {
-    text-transform: uppercase;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #EE313C;
-    -webkit-text-stroke-width: 6px;
-}
 
-.image {
-    width: 13.5vw;
-    height: 20vh;
-    background-color: #EE313C;
-}
-
-.border-bottom {
-    border-bottom: 1px solid #EE313C;
-}
-
-.button-selected {
-    border-bottom: 4px solid #EE313C !important;;
-    font-weight: 700;
-    background-color: rgba(240, 128, 26, .25);
-}
-
-.orange, .orange p {
-    color: #EE313C;
-}
-
-a {
-    cursor: pointer;
-    color: #EE313C;
-}
-
-a:visited {
-    color: #EE313C;
-}
 
 
 

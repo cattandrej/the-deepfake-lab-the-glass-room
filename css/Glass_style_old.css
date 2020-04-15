@@ -1,0 +1,129 @@
+body {
+	font-style: normal !important;
+	font-weight: 300 !important;
+	font-family: muli !important;
+	font-size: 18px !important;
+	line-height: 1.5em !important;
+	color: #333333 !important;
+}
+h1, h2, h3, h4, h5, h6, p{
+	font-family: Jost !important;
+	font-weight: 100 !important;
+	margin: 10px 0px;
+}
+h1 {
+	font-size: 15rem !important;
+	font-weight: 500 !important;
+}
+h2 {
+	font-size: 4rem !important;
+	font-weight: 500 !important;
+	-webkit-text-stroke-color: #EE313C;
+    -webkit-text-stroke-width: 2px;
+}
+h3 {
+	font-size: 2rem !important;
+	font-weight: 500 !important;
+}
+h4 {
+	font-size: 1.5rem !important;
+	font-weight: 400 !important;
+}
+h5 {
+	font-size: 1.5rem !important;
+}
+h6 {
+	font-size: 1rem !important;
+	font-weight: 400 !important;
+}
+
+p {
+	font-weight: 400 !important;
+	font-size: 1rem;
+}
+
+#header{
+	padding-bottom: 15px;
+}
+hr {
+	border-color: #333333;
+	border-style: solid;
+	height: 1px;
+}
+
+
+//orange
+.left-navbar-element-selected {
+    padding-left: 15px;
+    border-left: 6px solid #EE313C;
+}
+
+.left-navbar-element-selected p {
+    color: #EE313C;
+}
+
+.title, title.h1 {
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #EE313C;
+    -webkit-text-stroke-width: 6px;
+}
+
+.image {
+    width: 13.5vw;
+    height: 20vh;
+    background-color: #EE313C;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #EE313C;
+}
+
+.button-selected {
+    border-bottom: 4px solid #EE313C !important;;
+    font-weight: 700;
+    background-color: rgba(240, 128, 26, .25);
+}
+
+.orange, .orange p {
+    color: #EE313C;
+}
+
+a {
+    cursor: pointer;
+    color: #EE313C;
+}
+
+a:visited {
+    color: #EE313C;
+}
+
+
+
+.GlassRoomFrame{
+	font-size: 1.3em !important;
+	font-weight: 400   !important;
+	width: 100% !important;
+	border: 10px solid transparent;
+	background-color: #FFFFFF;
+	padding: 5px !important;
+	text-align: center;
+	-webkit-border-image: url(../images/frame.svg) 40% round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/frame.svg) 40% round; /* Opera 11-12.1 */
+    border-image: url(../images/frame.svg) 40% round;
+	margin-bottom: 30px;
+}
+.GlassRoomFrame:hover{
+	color: #000000;
+	border: 3px double;
+	padding: 12px !important;
+	border-top-color: #339A47;
+	border-right-color: #2E3191;
+	border-bottom-color: #999999;
+	border-left-color: #EC1C2C;
+}
+b, strong{font-weight: 600 !important;}
+
+@media (max-width:1024px){
+	body {font-size: 13px !important;}
+}
