@@ -19,7 +19,7 @@ h2 {
 	font-size: 4rem !important;
 	font-weight: 500 !important;
 	-webkit-text-stroke-color: #EE313C;
-    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-width: 2px;
 }
 h3 {
 	font-size: 2rem !important;
@@ -80,7 +80,7 @@ hr {
 }
 
 .button-selected {
-    border-bottom: 4px solid #EE313C !important;; 
+    border-bottom: 4px solid #EE313C !important;;
     font-weight: 700;
     background-color: rgba(240, 128, 26, .25);
 }
