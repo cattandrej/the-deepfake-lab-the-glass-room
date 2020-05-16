@@ -74,6 +74,23 @@ goToVieweport(getCurrentViewportPos());
 currentViewportPos = getCurrentViewportPos();
 scroll_To("#" + viewportList[getCurrentViewportPos()]);
 
+$(".home-button").on('click', function(event) {
+    goToVieweport(0);
+    $(".home-button-text").css("max-width", "500px");
+    $(".home-button-text").css("padding-left", "24px");
+    $(".home-button-text").css("padding-right", "48px");
+    setTimeout(function(){
+        $(".home-button-text").css("max-width", "0px");
+        $(".home-button-text").css("padding-left", "0px");
+        $(".home-button-text").css("padding-right", "0px");
+        setTimeout(function(){
+            $(".home-button").css("min-width", "0px");
+            $(".home-button").css("height", "0px");
+            $(".home-button").css("bottom", "24px");
+            $(".home-button").css("right", "24px");
+        }, 1000);
+    }, 1000);
+});
 
 
 //
@@ -172,6 +189,18 @@ function scroll_To(id) {
             vid.muted = false;
             vid.play();
         }
+
+        if (currentViewportPos != 0) {
+                    $(".home-button").css("min-width", "48px");
+                    $(".home-button").css("height", "48px");
+                    $(".home-button").css("bottom", "0px");
+                    $(".home-button").css("right", "0px");
+         } else {
+            $(".home-button").css("min-width", "0px");
+            $(".home-button").css("height", "0px");
+            $(".home-button").css("bottom", "24px");
+            $(".home-button").css("right", "24px");
+         }
 }
 
 page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function () {

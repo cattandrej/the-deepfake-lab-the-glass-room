@@ -299,17 +299,34 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 48px;
+    min-width: 48px;
     height: 48px;
     margin: 24px;
-    border-radius: 100%;
+    border-radius: 24px;
     background-color: var(--accent-color);
     background-image: url("../res/ico/home_button.svg");
-    background-size: 60%;
+    background-size: 48px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: 100%;
+    background-position-y: 50%;
     cursor: pointer;
     z-index: 1000;
+    transition: all 0.25s ease-out 0s;
+}
+
+.home-button-text {
+    padding-left: 0px;
+    overflow: hidden;
+    line-height: 48px;
+    padding-right: 0px;
+    color: white;
+    max-width: 0px;
+    transition: all 1s ease 0s;
+    overflow: hidden;
+}
+
+.home-button-text-container {
+ 
 }
 
 #viewport1 {
