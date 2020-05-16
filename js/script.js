@@ -69,6 +69,7 @@ viewport.registerListener(function (val) {
     console.log("New target: " + val);
 });
 
+$(".left-navbar").css("left", "-50px")  
 goToVieweport(getCurrentViewportPos());
 currentViewportPos = getCurrentViewportPos();
 scroll_To("#" + viewportList[getCurrentViewportPos()]);
