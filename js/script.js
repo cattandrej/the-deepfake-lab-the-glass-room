@@ -544,7 +544,6 @@ var inactivityTime = function () {
     // DOM Events
     document.onmousemove = resetTimer;
     document.onkeypress = resetTimer;
-    document.onload = resetTimer;
     document.onmousemove = resetTimer;
     document.onmousedown = resetTimer; // touchscreen presses
     document.ontouchstart = resetTimer;
@@ -554,8 +553,11 @@ var inactivityTime = function () {
 
     function logout() {
         //location.href = 'logout.html'
-        if (currentViewportPos != 0)
+        if (currentViewportPos != 0) {
             $(".home-button").click();
+            resetTimer;
+        }
+            
        // alert("You are now logged out.")
 
     }

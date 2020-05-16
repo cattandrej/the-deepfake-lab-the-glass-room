@@ -333,7 +333,7 @@ footer {
  padding-left: 0px;
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     .detail-col {
         width: 100%;
     }
@@ -357,7 +357,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 960px) and (orientation:landscape) {
+@media only screen and (max-width: 1200px) and (orientation:landscape) {
     html, body {
         font-size: 12px;
     }    
@@ -366,7 +366,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) and (orientation:portrait) {
+@media only screen and (max-width: 768px) and (orientation:portrait) {
 
 .left-navbar { display: none;}
 
