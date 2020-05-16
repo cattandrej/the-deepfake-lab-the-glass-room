@@ -76,6 +76,11 @@ scroll_To("#" + viewportList[getCurrentViewportPos()]);
 
 $(".home-button").on('click', function(event) {
     goToVieweport(0);
+
+    setTimeout(function(){
+        $(".left-navbar").css("left", "-50px");
+    }, 500);
+
     $(".home-button-text").css("max-width", "500px");
     $(".home-button-text").css("padding-left", "24px");
     $(".home-button-text").css("padding-right", "48px");
@@ -243,10 +248,10 @@ window.addEventListener("wheel", event => {
 
         if((currentViewportPos == viewportList.length - 1) || (currentViewportPos < 2)) {
             console.log("END OF THE LINE. "  + currentViewportPos);
-            $(".left-navbar").css("left", "-50px")  
+            $(".left-navbar").css("left", "-50px");
         } else {
             console.log("continue to scroll... " + currentViewportPos);
-            $(".left-navbar").css("left", "0px")  
+            $(".left-navbar").css("left", "0px");
         }
     
     }, 250);
