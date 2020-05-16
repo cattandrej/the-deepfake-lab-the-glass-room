@@ -210,6 +210,15 @@ window.addEventListener("wheel", event => {
         console.log(event.deltaY + ' Scrolling has stopped.');
         scrollValue = 0;
         scrollValuePrec = 0;
+
+        if((currentViewportPos == viewportList.length - 1) || (currentViewportPos < 2)) {
+            console.log("END OF THE LINE. "  + currentViewportPos);
+            $(".left-navbar").css("left", "-50px")  
+        } else {
+            console.log("continue to scroll... " + currentViewportPos);
+            $(".left-navbar").css("left", "0px")  
+        }
+    
     }, 250);
 }, false);
 

@@ -238,6 +238,7 @@ p {
 }
 
 .left-navbar {
+    transition: left 300ms ease;
     position: fixed;
     width: 50px;
     height: 100%;
@@ -301,9 +302,18 @@ footer {
     width: 48px;
     height: 48px;
     margin: 24px;
-    border-radius: 24px;
+    border-radius: 100%;
     background-color: var(--accent-color);
     background-image: url("../res/ico/home_button.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#viewport1 {
+ padding-left: 0px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -324,6 +334,9 @@ footer {
     }
     .mobile-no-top-space {
         padding-top: 0px;
+    }
+    .image {
+        max-height: 96px;
     }
 }
 
