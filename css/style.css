@@ -139,7 +139,7 @@ p {
 .vid {
     width: 55%;
     padding: 2%;
-    margin-top: 2.5%;
+    margin-top: 8vh;
     display: flex;
 }
 
@@ -345,6 +345,7 @@ footer {
     cursor: pointer;
     z-index: 1000;
     transition: all 0.25s ease-out 0s;
+    overflow: hidden;
 }
 
 .home-button-text {
@@ -357,8 +358,6 @@ footer {
     transition: all 1s ease 0s;
     overflow: hidden;
 }
-
-.home-button-text-container {}
 
 #viewport1 {
     padding-left: 0px;
