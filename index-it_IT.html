@@ -1443,3 +1443,1448 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html class="disable-touch" lang="it_IT">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Deepfake Lab</title>
+    <meta name="The Deepfake Lab" content="index,follow" />
+    <title>Empowering people to discover deepfakes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Oswald:300,700|Playfair+Display:700|Raleway:300,400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/img-urls.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- link to Favicon -->
+    <link href="res/favicon.ico" rel="icon" type="res/favicon.ico" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="res/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <title>Deepfake Lab</title>
+    <meta name="keywords" content="deepfake, lab, video">
+
+</head>
+
+<body class="disable-touch">
+
+    <div class="home-button" onclick="goToVieweport(0);">
+        <div class="home-button-text">
+            <p>Restarting the experience</p>
+        </div>
+    </div>
+
+    <div class="left-navbar" id="left-navbar">
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="viewport">
+        <div class="main">
+            <div class="title">
+                <h1>Deepfake<br>Lab</h1>
+            </div>
+            <div class="subtitle">
+                <h3>Cosa si cela dietro alla magia dei deepfake.</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <!-- WELCOME VIDEO -->
+    <div class="viewport">
+        <div class="welcome-container">
+            <div class="video-container rescale">
+                <video class="video-adapt" autoplay loop muted controls class="scale-2">
+                    <source src="res/vid/00-Introductory Video 6 of us.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container-fluid">
+                <div class="col-sm-6 col-sm-offset-2">
+                    <p><br>Scopri come funzionano i deepfake e quali sono i loro punti critici che puoi utilizzare per
+                        identificarli. Siamo un gruppo di designer della comunicazione e abbiamo realizzato questo
+                        progetto per esporre la nostra ricerca riguardante la produzione dei deepfake, e per comprendere
+                        le caratteristiche che ne permettono l’identificazione.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <!-- ELON -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/01_Elon_Musk.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>01. Tesla Baby</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Diamo un'occhiata a un popolare esempio tratto da Internet.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            In questo video, il volto di Elon Musk è stato sovrapposto a quello di un bambino, questo è
+                            l'utilizzo più comune della tecnica deepfake. Guarda attentamente: i contorni del viso non
+                            sono nitidi e il colore della pelle è diverso.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Dettagli tecnici</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Imperfezioni visive</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/skin_tone.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Errata corrispondenza del colore della pelle:</strong>
+                                                        <br>C'è una differenza nel tono della pelle tra la maschera e il
+                                                        volto di destinazione. Il volto sembra essere composto da colori
+                                                        differenti e mostra bordi o macchie.
+                                                        </br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Un deepfake è generato da un programma per computer che può
+                                                    apprendere autonomamente come ricreare un volto. Il programma,
+                                                    autoregolando i propri parametri, diventa più efficace nel ricreare
+                                                    i tratti di un volto specifico; questa è una tipologia di deep
+                                                    learning. Il volto generato viene sovrapposto su di un video
+                                                    esistente – alla stregua di una maschera digitale. Puoi vedere le
+                                                    tracce di tale maschera in questo video.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-02_Baby  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Video di destinazione</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-02_Elon  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Deepfaked Video</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="source-text lighter-color"><br>Video di destinazione: <a
+                                href="https://youtu.be/phwgt64oGMs" target="_blank">YouTube - Cutest
+                                Baby
+                                Montage Ever</a> </p>
+                        <p class="source-text lighter-color"><br>Deepfake Video sorgente: <a
+                                href="https://youtu.be/WHwQeetjLwk" target="_blank">YouTube - Baby
+                                Elon</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 4 -->
+    <!-- PIPI-SHIA -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>02. Fai da te</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Puoi provare anche a casa. Ti mostreremo come.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            I video deepfake possono essere realizzati con un normale computer, ma hai bisogno di una
+                            scheda grafica piuttosto potente. Questo video rappresenta il nostro primo tentativo, esso
+                            mostra perché sia importante utilizzare video sorgente adeguati.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/02_Pipi_Shia.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-pipi-shia-02  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Shia LaBeouf</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-pipi-shia-01  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Pilar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="source-text lighter-color"><br>Video di destinazione: <a
+                                href="https://www.youtube.com/watch?v=ZXsQAXx_ao0" target="_blank">YouTube -
+                                Just Do It!</a> </p>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Dettagli tecnici</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Imperfezioni visive</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/skin_tone.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Errata corrispondenza del colore della pelle:</strong>
+                                                        <br>C'è una differenza nel tono della pelle tra la maschera e il
+                                                        volto di destinazione. Il volto sembra essere composto da colori
+                                                        differenti e mostra bordi o macchie.</br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/expression.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Espressioni non corrispondenti:</strong>
+                                                        <br>Le espressioni sul volto del video deepfake non
+                                                        corrispondono al volto del video di destinazione. Le
+                                                        caratteristiche facciali non sono naturali e sono sfocate,
+                                                        ripetute o assenti.</br>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/edges.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Bordi visibili:</strong>
+                                                        <br>I bordi della maschera sono visibili, come un bordo nitido o
+                                                        sfocato che circonda il viso.</br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Le immagini usate per allenare l'algoritmo non contenevano né le
+                                                    espressioni facciali corrispondenti a quelle del volto di Shia nel
+                                                    video originale, né filmati del suo volto di profilo. Se la rete
+                                                    neurale non viene allenata per queste situazioni, non è in grado di
+                                                    produrre una maschera digitale accurata. Da notare in alcuni momenti
+                                                    come la bocca di Shia appaia al di sotto della maschera, dando
+                                                    origine a due bocche.</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <img class="graph" src="./res/svg/graph-pipi-shia.svg">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 5 -->
+    <!-- IVANA-ANNE -->
+
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>03. Processo</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Quindi, come si crea un deepfake?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Hai bisogno di due video: uno sorgente e uno di destinazione. Il programma si allenerà
+                            utilizzandoli entrambi e creerà una maschera dal video sorgente che potrà essere sovrapposta
+                            al video di destinazione utilizzando un software di editing.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="content-col video-col top-dx">
+                        <div class="video-container">
+                            <div class="video-player">
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-original" autoplay loop muted controls
+                                        class="scale-2">
+                                        <source src="res/vid/00-original.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-dataset" style="display: none;" autoplay loop
+                                        muted controls class="scale-2">
+                                        <source src="res/vid/0_dataset.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-mask" style="display: none;" autoplay loop muted
+                                        controls class="scale-2">
+                                        <source src="res/vid/01-mask.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-alignment" style="display: none;" autoplay loop
+                                        muted controls class="scale-2">
+                                        <source src="res/vid/02-alignment.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-deepfake" style="display: none;" autoplay loop
+                                        muted controls class="scale-2">
+                                        <source src="res/vid/03-deepfake.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-post" style="display: none;" autoplay loop muted
+                                        controls class="scale-2">
+                                        <source src="res/vid/04-post.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container">
+
+                <div class="pics">
+                    <img class="graph left-space-5" src="./res/svg/graph-ivanna-anne.svg">
+                </div>
+                <div class="specs">
+                    <div class="content-col video-col bottom-dx">
+                        <div class="details">
+                            <div class="detail-row border-bottom">
+
+                                <div class="button process button-selected" id="original">
+                                    <p>Originale</p>
+                                </div>
+                                <div class="button process" id="dataset">
+                                    <p>Dataset</p>
+                                </div>
+                                <div class="button process" id="mask">
+                                    <p>Maschera</p>
+                                </div>
+                                <div class="button process" id="alignment">
+                                    <p>Allineamento</p>
+                                </div>
+                                <div class="button process" id="deepfake">
+                                    <p>Deepfake</p>
+                                </div>
+                                <div class="button process" id="post">
+                                    <p>Post</p>
+                                </div>
+                            </div>
+                            <div class="interactive-detail-col">
+                                <div class="tab" id="original">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Selezionare un video di destinazione su cui si desidera sovrapporre un
+                                                volto. La scelta di un video fluido con uno sfondo uniforme vi darà un
+                                                risultato migliore. </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="dataset" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Creare un dataset per il volto che si desidera posizionare (la sorgente),
+                                                cercando di fare corrispondere il più possibile l'illuminazione e le
+                                                espressioni rispetto al video di destinazione.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="mask" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Coprire i volti di altre persone nel video di destinazione, altrimenti
+                                                saranno considerati dall'algoritmo e confonderanno il processo di
+                                                allenamento della macchina.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="alignment" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>L'algoritmo ritaglierà i volti in modo da poterli utilizzare per
+                                                l'allenamento e salverà la loro posizione per sovrapporre con precisione
+                                                la maschera in un secondo momento.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="deepfake" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>L'algoritmo genera una maschera del volto dal video sorgente, che è
+                                                quindi necessario sovrapporre al video di destinazione. </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="post" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Il software di video editing permette di far coincidere meglio la
+                                                maschera e perfezionare il risultato finale. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 6 -->
+    <!--  ARTHUR-SHERLOCK -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/04_Sherlock Arthur.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>04. Dati di allenamento
+                        </h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Cosa succede se forniamo al programma più contenuti? Migliorerà?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            In questo esperimento, a due programmi è stato assegnato un diverso numero di immagini.
+                            Maggiore è il materiale sorgente, migliore è il risultato. Il modello avendo maggiori
+                            informazioni sul viso ha potuto così sviluppare una maschera più fedele.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Dettagli tecnici</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Le immagini usate per allenare l'algoritmo non contenevano né le
+                                                    espressioni facciali corrispondenti a quelle del volto di Shia nel
+                                                    video originale, né filmati del suo volto di profilo. Se la rete
+                                                    neurale non viene allenata per queste situazioni, non è in grado di
+                                                    produrre una maschera digitale accurata. Da notare in alcuni momenti
+                                                    come la bocca di Shia appaia al di sotto della maschera, dando
+                                                    origine a due bocche.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <img class="graph" src="./res/svg/graph-pipi-shia.svg">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-05_Sherlock  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Benedict Cumberbatch</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-05_Arthur  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arthur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="source-text lighter-color"><br>Video di destinazione: <a
+                                href="https://youtu.be/MAA1e4_HWdA" target="_blank">Rooftop Showdown | The
+                                Reichenbach Fall | Sherlock</a> </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 7 -->
+    <!-- PIPI-NATALIE -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>05. Frode social
+                        </h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Quanto sei suscettibile? Possiamo rubare i tuoi contenuti sui social media e creare un buon
+                            deepfake?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Abbiamo raccolto tutte le immagini dal profilo Facebook di uno dei membri del nostro gruppo
+                            e ne abbiamo creato un deepfake. In quasi tutte le immagini sorgente la protagonista stava
+                            sorridendo, di conseguenza l'algoritmo ha generato unicamente volti sorridenti.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/05_Pipi_Padme.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-06_Natalie image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Natalie Portman</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-pipi-fb  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Pilar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="source-text lighter-color"><br>Video di destinazione:</strong> <a
+                                href="https://youtu.be/b8QGlwSt6vs" target="_blank">YouTube - Padmé meets
+                                Anakin</a> </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Dettagli tecnici</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Imperfezioni visive</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/blur.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Volto sfocato: </strong>
+                                                        <br>La maschera è sfocata. C'è una differenza nella nitidezza o
+                                                        nella risoluzione tra la maschera e il resto del video.</br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/expression.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Espressioni non corrispondenti:</strong>
+                                                        <br>Le espressioni sul volto del video deepfake non
+                                                        corrispondono al volto del video di destinazione. Le
+                                                        caratteristiche facciali non sono naturali e sono sfocate,
+                                                        ripetute o assenti.</br>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/profile.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Contorni del profilo:</strong>
+                                                        <br>L’inquadratura di profilo del viso sembra errata. La
+                                                        maschera del deepfake è incompleta, meno dettagliata o allineata
+                                                        in modo errato.
+                                                        </br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Le espressioni facciali contenute in un video sono maggiori rispetto
+                                                    alle immagini ottenute da Facebook. Le foto sono scelte dall’utente
+                                                    ai fini della pubblicazione sui social media,
+                                                    e quindi manca il tipo di immagini necessarie per creare una varietà
+                                                    di espressioni facciali. Anche se le migliori tecnologie potrebbero
+                                                    essere in grado di generare espressioni del viso, senza materiale
+                                                    sorgente diversificato risulta impossibile creare qualcosa di
+                                                    convincente.</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <img class="graph" src="./res/svg/graph-pipi-shia.svg">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 8 -->
+    <!--  INDIANA-ANDREJ -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/06_Indiana.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>06. Scelta della destinazione
+                        </h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Abbiamo visto come la sorgente sia importante nell’allenamento dell'algoritmo. E per il
+                            video di destinazione?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Anche con una buona sorgente, può essere difficile creare un deepfake. Indiana Jones
+                            contiene scene caotiche. Rispetto ai video più puliti che abbiamo usato prima, ora
+                            l'algoritmo ha difficoltà a tenere il passo.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Dettagli tecnici</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Imperfezioni visive</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/blur.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Volto sfocato: </strong>
+                                                        <br>La maschera è sfocata. C'è una differenza nella nitidezza o
+                                                        nella risoluzione tra la maschera e il resto del video.</br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/flicker.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Effetto sfarfallio:</strong>
+                                                        <br>C'è uno sfarfallio tra il volto originale e quello del
+                                                        deepfake. L'algoritmo non è in grado di riconoscere il viso e
+                                                        interrompe la creazione della maschera per un istante.
+                                                        </br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/perspective.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Prospettiva errata:</strong>
+                                                        <br>Il deepfake ha una prospettiva diversa dal resto del video,
+                                                        oppure la sorgente e il video di destinazione differiscono per
+                                                        lunghezza focale.
+                                                        </br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Il deepfake è stato esportato con una risoluzione di 64 px. La
+                                                    risoluzione più bassa implica un minor tempo di allenamento
+                                                    dell'algoritmo, perché il modello doveva solo imparare a creare
+                                                    un'immagine a bassa risoluzione. Nelle riprese facciali ravvicinate,
+                                                    la bassa risoluzione è evidente.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <img class="graph" src="./res/svg/graph-andrej-indiana.svg">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-07_Indiana  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Harrison Ford</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-07_Andrej  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Andrej</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="source-text lighter-color"><br>Video di destinazione:</strong> <a
+                                href="https://youtu.be/zYWLE9HIqUM" target="_blank">Rope Bridge Fight |
+                                Indiana Jones and the Temple of Doom</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 9 -->
+    <!-- BILL-ARNOLD-->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>07. Non chiudere gli occhi
+                        </h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>A volte i due si fondono. In questo video l’attore sta già imitando il protagonista del
+                            deepfake.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Questo video deepfake è stato tratto da un talk show in cui Bill Hader impersona Arnold
+                            Schwarzenegger. Utilizzando materiale sorgente adatto per Arnold Schwarzenegger, i risultati
+                            sono stati convincenti.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/07_Bill_Hader.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-08_Bill_hader image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Bill Hader</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-08_Arnold  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arnold Schwarzenegger</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="source-text lighter-color"><br>Video di destinazione: <a
+                                href="https://teamcoco.com/video/bill-hader-presents-schwarzenegger-baby"
+                                target="_blank">Bill Hader Presents: Schwarzenegger Baby</a> </p>
+                        <p class="source-text lighter-color"><br>Video sorgente: <a href="https://youtu.be/bPhUhypV27w"
+                                target="_blank">Bill Hader impersonates
+                                Arnold Schwarzenegger</a> </p>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Dettagli tecnici</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Imperfezioni visive</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/occlusion.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Occlusione del viso:</strong>
+                                                        <br>Quando gli oggetti passano davanti al viso, la maschera
+                                                        distorce o copre l'oggetto.</br>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> La sovrapposizione dei visi, il tono della pelle e la risoluzione
+                                                    sono di buona qualità. La ripresa da lontano rende difficile vedere
+                                                    qualsiasi sfocatura. La post-produzione è stata sapientemente
+                                                    realizzata. L'unico indizio si ha quando Bill Hader passa il dito
+                                                    davanti al suo volto e questo scompare dietro alla maschera. La
+                                                    differenza di nitidezza e la sagoma del dito suggeriscono che il
+                                                    creatore abbia cercato di nascondere l'effetto in post-produzione.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 10 -->
+    <!--  CONSTANCE-YUELING -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/08_Yueling Constance Wu.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>08. Il tempo conta</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Cosa succede se lasciamo che l'algoritmo si alleni maggiormente sul contenuto della
+                            sorgente. I risultati miglioreranno?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Per questo esperimento, un modello è stato allenato per quattro ore e l'altro per 48. I
+                            risultati del modello di 48 ore hanno mostrato un maggiore dettaglio facciale e un viso più
+                            raffinato.
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Dettagli tecnici</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p>Il tempo di allenamento è correlato al numero di volte in cui
+                                                    l'algoritmo elabora le immagini. Il processo prevede la creazione di
+                                                    un volto (detto anche maschera digitale), poi confrontato con
+                                                    l'immagine sorgente, ed infine effettua delle regolazioni per
+                                                    migliorare il risultato. Il modello effettua queste operazioni per
+                                                    tutte le immagini sorgente e poi ricomincia. Il tempo necessario
+                                                    dipende dalla potenza del computer utilizzato.</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <img class="graph" src="./res/svg/graph_pretty-yueling.svg">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-09_Constance  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Constance Wu</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-09_Yueling  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Yueling</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="source-text lighter-color"><br>Video di destinazione: <a
+                                href="https://www.youtube.com/watch?v=xQKy9eUl_X0&t=112s" target="_blank">Constance Wu
+                                Explains What "Couture" Means</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 11 -->
+    <!-- ARTHUR-ANDREJ-->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>09. Algoritmi</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Un ultimo esperimento. In che modo diversi algoritmi rispondono a determinate condizioni?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Per questo esperimento, abbiamo creato noi stessi sia il video sorgente che il video di
+                            destinazione. Le peculiarità degli algoritmi emergono chiaramente. H128 crea una maschera
+                            quadrata mentre SAEHD corrisponde meglio al viso.
+
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/09_Andrej_Arthur_experiment.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-10_Arthur  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arthur</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-10_Andrej  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Andrej</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Dettagli tecnici</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> H128 è il modello più leggero dei due. Raggiunge risultati di
+                                                    qualità più velocemente. La maschera più precisa, SAEHD, gestisce
+                                                    meglio le occlusioni e l'illuminazione. H128 sembra essere migliore
+                                                    nella resa del viso: la maschera è più nitida, più stabile e si
+                                                    comporta meglio con i cambiamenti di movimento e prospettiva.
+                                                    Tuttavia, gli esperti dicono che con più tempo di allenamento, SAEHD
+                                                    supererà H128.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <img class="graph" src="./res/svg/graph-andrej- arthur.svg">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 12 -->
+    <!--  MORGAN -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/10_Morgan Freeman.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>10. Sii consapevole</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Vediamo cosa sta realmente accadendo con i video deepfake.
+
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            La consapevolezza è tutto: i deepfake possono essere di alta qualità e difficili da
+                            riconoscere. Anche se ci siamo concentrati sugli sostituzione di volti, i deepfake possono
+                            essere utilizzati anche per la rimanipolazione facciale – permettendo di simulare dialoghi
+                            mai avvenuti nella realtà.
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Dettagli tecnici</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> La rimanipolazione facciale richiede una maggior potenza di calcolo,
+                                                    ma è molto più difficile da riconoscere. Molte delle problematiche
+                                                    dei video sorgente non riguardano la rimanipolazione, ma l'algoritmo
+                                                    agisce in modo simile. Le parti ricreate del viso saranno
+                                                    leggermente sfocate e meno dettagliate.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p>Inoltre, presta attenzione all'audio e cerca difetti o problemi di
+                                                    sincronizzazione labiale. Utilizzando le informazioni che hai
+                                                    acquisito da questo sito web, chiediti se un video ha le
+                                                    caratteristiche per essere un possibile deepfake. In caso di dubbio,
+                                                    approfondisci sempre le origini del video.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <p class="source-text lighter-color"><br>Video sorgente: <a
+                                href="https://www.youtube.com/watch?v=l2YkPik990o&feature=youtu.be" target="_blank">Fake
+                                Freeman mouth manipulation.</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 11 -->
+    <!-- FOOTER -->
+    <div class="viewport footer-container space-between">
+        <div class="last-page">
+            <div class="container-fluid">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h3>Ecco un utile riepilogo delle competenze acquisite su questo sito web, in modo che tu possa
+                        controllare i video autonomamente.</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-2 col-sm-offset-5">
+            <!--href="https://docs.google.com/uc?export=download&id=1cbiWDGQehQ_eQyXwTk9Mg1KUdfDMOyIJ"-->
+            <a> <img src="./res/img/qr-code.png" style="width: 100%;"></a>
+        </div>
+        <footer class="container-fluid space-xs-3 space-sm-3">
+            <div class="row">
+                <div class="col-xs-4 col-sm-1 col-sm-offset-1" style="display: flex; justify-content: center;">
+                    <img class="logo" src="res/svg/logo-density-w.svg" alt="DensityDesign logo">
+                </div>
+                <div class="col-xs-8 col-sm-3 space-xs-1">
+                    <img class="logo" src="res/svg/logo-polimi-w.svg" alt="Politecnico di Milano logo">
+                </div>
+                <div class="col-xs-12 col-sm-2 space-xs-1">
+                    <p class="paragraph"><strong>Progetto di</strong><br><br>
+                        Andrej Cattaneo<br>
+                        Ivana Riva<br>
+                        Noura Sammoura<br>
+                        Maria del Pilar Suarez Anzorena<br>
+                        Arthur van der Werf<br>
+                        Yueling Wu<br></p>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <p class="paragraph"><strong>Facoltà</strong><br><br>
+                        Michele Mauri<br>
+                        Angeles Briones<br>
+                        Gabriele Colombo<br>
+                        Simone Vantini<br>
+                        Salvatore Zingale<br></p>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <p class="paragraph"><strong>Assistenti didattici</strong><br><br>
+                        Andrea Benedetti<br>
+                        Lea Mara Fabiano<br>
+                        Alessandra Facchin<br>
+                        Beatrice Gobbo<br>
+                        Tommaso Elli<br>
+                        Jacopo Di Iorio<br>
+                        Anna Riboldi<br></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
