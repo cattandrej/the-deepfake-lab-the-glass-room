@@ -52,7 +52,9 @@ $(viewportClass).each(function (i, obj) {
 localizationLabels = [
     ["en_UK", "English"],
     ["it_IT", "Italiano"],
-    ["sp_SP", "Español"]
+    ["sp_SP", "Español"],
+    ["fr_FR", "Français"],
+    ["de_DE", "Deutsche"]
 ]
 
 var languageBarNode = document.createElement("div");
