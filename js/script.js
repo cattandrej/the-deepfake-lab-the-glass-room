@@ -30,6 +30,7 @@ $(viewportClass).each(function (i, obj) {
         $(this).attr("id", id + "-" + btnId);
     });
 
+    // navbar generation
     if ((i > 1) && (i < 11 + 1)) {
         var mainNode = document.createElement("div");
         var pNode = document.createElement("p");
@@ -45,6 +46,41 @@ $(viewportClass).each(function (i, obj) {
         document.getElementById("left-navbar").appendChild(mainNode);
     }
 });
+
+// language bar generation
+
+localizationLabels = [
+    ["en_UK", "English"],
+    ["it_IT", "Italiano"],
+    ["sp_SP", "Español"],
+    ["fr_FR", "Français"],
+    ["de_DE", "Deutsche"]
+]
+
+var languageBarNode = document.createElement("div");
+languageBarNode.setAttribute("class", "language-bar");
+languageBarNode.setAttribute("id", "language-bar");
+document.getElementById("viewport0").appendChild(languageBarNode);
+
+for (currentLocalization = 0; currentLocalization < localizationLabels.length; currentLocalization++) {
+
+    var mainNode = document.createElement("div");
+    var aNode = document.createElement("a");
+    var textNode = document.createTextNode(localizationLabels[currentLocalization][1]);
+
+    aNode.appendChild(textNode);
+    aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
+    mainNode.append(aNode);
+    mainNode.setAttribute("class", "language-bar-element " +  localizationLabels[currentLocalization][0]);
+
+    document.getElementById("language-bar").appendChild(mainNode);
+}
+
+for (i = 0; i < localizationLabels.length; i++) {
+    if ($("html").attr("lang") === localizationLabels[i][0]) {
+        $(".language-bar-element." + localizationLabels[i][0]).attr('id', 'langauge-selected');
+    }
+}
 
 var currentViewportPos = 0;
 var currentViewport = viewportList[0];
@@ -82,13 +118,13 @@ $(".home-button").on('click', function(event) {
     $(".home-button-text").css("padding-right", "48px");
     setTimeout(function(){
         $(".home-button-text").css("max-width", "0px");
-        $(".home-button-text").css("padding-left", "0px");
+        $(".home-button-text").css("padding-left", "-24px");
         $(".home-button-text").css("padding-right", "0px");
         setTimeout(function(){
             $(".home-button").css("min-width", "0px");
             $(".home-button").css("height", "0px");
-            $(".home-button").css("bottom", "24px");
-            $(".home-button").css("right", "24px");
+            $(".home-button").css("bottom", "0px");
+            $(".home-button").css("right", "48px");
         }, 1250);
     }, 1250);
 });
@@ -550,8 +586,7 @@ var inactivityTime = function () {
     document.onkeypress = resetTimer;
     document.addEventListener('scroll', resetTimer, true); // improved; see comments 
 
-    function logout() {
-        //location.href = 'logout.html'
+    function runHome() {
         if (currentViewportPos != 0) {
             $(".home-button").click();
             resetTimer;
@@ -563,8 +598,7 @@ var inactivityTime = function () {
 
     function resetTimer() {
         clearTimeout(time);
-        time = setTimeout(logout, 600000)
-        // 1000 milliseconds = 1 second
+        time = setTimeout(runHome, 600000)
     }
 };
 

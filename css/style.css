@@ -44,7 +44,7 @@ html, body {
     font-family: "Jost", sans-serif;
     font-weight: normal;
     color: var(--dark-color);
-    font-size: 15px;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -99,7 +99,7 @@ p {
 }
 
 .detail-text p {
-    font-size: .85rem;
+    font-size: .80rem;
     color: var(--light-color);
 }
 
@@ -112,7 +112,21 @@ p {
     height: 100vh;
     max-width: 100%;
     overflow: hidden;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 100px 0px 150px;
+}
+
+#viewport0 {
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#viewport1 {
+    padding: 0px;  
+}
+
+#viewport12 {
+    padding: 0px;
 }
 
 .footer-container {
@@ -179,7 +193,7 @@ p {
 
 .video-adapt {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 66.6vh;
 }
 
 .space-between {
@@ -289,6 +303,10 @@ p {
     transition: all 0.4s ease-out 0s;
 }
 
+.left-navbar-element p {
+    font-size: .85rem;
+}
+
 .left-navbar-element-selected {
     padding-left: 15px;
     border-left: 6px solid var(--accent-color);
@@ -330,6 +348,10 @@ footer {
     padding-bottom: 25px;
 }
 
+.paragraph {
+    font-size: .85rem;
+}
+
 .home-button {
     position: fixed;
     bottom: 0;
@@ -337,6 +359,7 @@ footer {
     min-width: 48px;
     height: 48px;
     margin: 24px;
+    margin-right: 50px;
     border-radius: 24px;
     background-color: var(--accent-color);
     background-image: url("../res/ico/home_button.svg");
@@ -361,34 +384,48 @@ footer {
     overflow: hidden;
 }
 
-#viewport1 {
-    padding-left: 0px;
+.language-bar {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 36px;
+    padding-right: 150px;
 }
 
-@media only screen and (max-width: 1200px) {
-
-    html, body {}
-
-    .top-space-5 {
-        padding-top: 2.5vh;
-    }
-    .left-space-5 {
-        margin-left: 0px;
-    }
-
-    .image {
-        max-height: 96px;
-    }
+.language-bar-element {
+    min-width: 75px;
+    margin: 0px 5px;
 }
 
-body {
-    background-color: red;
+#langauge-selected {
+    font-weight: 600;
+}
+
+
+@media (max-width: 1919px) and (orientation:landscape) {
+    html, body {
+        font-size: 18px;
+    }
+
+    .viewport {
+        padding: 0px 0px 0px 50px;
+    }
 }
 
 /* Lenovo Yoga Tablet 2 */ 
 @media (max-width: 1280px) and (orientation:landscape) {
-    body {
+    html, body {
         background-color: white;
+        font-size: 15px;
+    }
+    
+    .viewport {
+        padding: 0px 0px 0px 50px;
+    }
+
+    .home-button {
+        margin: 24px;
     }
 
     .video-adapt {
@@ -402,14 +439,15 @@ body {
     .image {
         max-height: 100%;
     }
+
+    .language-bar {
+        padding: 36px;
+    }
 }
 
-/* Samsung Galaxy Tab S2 */ 
-@media (max-width: 1024px) and (orientation:landscape) {
-    html, body {
-        background-color: white;
-        font-size: 14px;
-    }
+@media only screen and (max-width: 1200px) {
+
+    html, body {}
 
     .left-space-5 {
         margin-left: 2.5vw;
@@ -417,6 +455,14 @@ body {
 
     .left-space-2_5 {
         padding-left: 1vw;
+    }
+}
+
+/* Samsung Galaxy Tab S2 */ 
+@media (max-width: 1024px) and (orientation:landscape) {
+    html, body {
+        background-color: white;
+        font-size: 14px;
     }
 }
 
