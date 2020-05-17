@@ -52,8 +52,7 @@ $(viewportClass).each(function (i, obj) {
 localizationLabels = [
     ["en_UK", "English"],
     ["it_IT", "Italiano"],
-    ["de_DE", "Deutsch"],
-    ["fr_FR", "Français"]
+    ["sp_SP", "Español"]
 ]
 
 var languageBarNode = document.createElement("div");
@@ -68,7 +67,7 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
     var textNode = document.createTextNode(localizationLabels[currentLocalization][1]);
 
     aNode.appendChild(textNode);
-    aNode.setAttribute("href", localizationLabels[currentLocalization][0]);
+    aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
     mainNode.append(aNode);
     mainNode.setAttribute("class", "language-bar-element " +  localizationLabels[currentLocalization][0]);
 
