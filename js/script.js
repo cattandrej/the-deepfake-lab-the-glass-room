@@ -93,8 +93,8 @@ $(".home-button").on('click', function(event) {
             $(".home-button").css("height", "0px");
             $(".home-button").css("bottom", "24px");
             $(".home-button").css("right", "24px");
-        }, 1000);
-    }, 1000);
+        }, 1250);
+    }, 1250);
 });
 
 
@@ -535,3 +535,47 @@ window.addEventListener('keyup',
         keys[e.keyCode] = false;
     },
 false);
+
+var idleTime = 0;
+
+var inactivityTime = function () {
+    var time;
+    window.onload = resetTimer;
+    // DOM Events
+    document.onmousemove = resetTimer;
+    document.onkeypress = resetTimer;
+    document.onmousemove = resetTimer;
+    document.onmousedown = resetTimer; // touchscreen presses
+    document.ontouchstart = resetTimer;
+    document.onclick = resetTimer;     // touchpad clicks
+    document.onkeypress = resetTimer;
+    document.addEventListener('scroll', resetTimer, true); // improved; see comments 
+
+    function logout() {
+        //location.href = 'logout.html'
+        if (currentViewportPos != 0) {
+            $(".home-button").click();
+            resetTimer;
+        }
+            
+       // alert("You are now logged out.")
+
+    }
+
+    function resetTimer() {
+        clearTimeout(time);
+        time = setTimeout(logout, 600000)
+        // 1000 milliseconds = 1 second
+    }
+};
+
+window.onload = function() {
+    inactivityTime(); 
+  }
+
+  var div = document.getElementById('res-log');
+  div.innerHTML = window.innerWidth + " x " + window.innerHeight;  
+  $(window).resize(function() {
+
+    div.innerHTML = window.innerWidth + " x " + window.innerHeight;    
+    });
