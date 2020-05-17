@@ -77,10 +77,6 @@ scroll_To("#" + viewportList[getCurrentViewportPos()]);
 $(".home-button").on('click', function(event) {
     goToVieweport(0);
 
-    setTimeout(function(){
-        $(".left-navbar").css("left", "-50px");
-    }, 500);
-
     $(".home-button-text").css("max-width", "500px");
     $(".home-button-text").css("padding-left", "24px");
     $(".home-button-text").css("padding-right", "48px");
@@ -245,14 +241,6 @@ window.addEventListener("wheel", event => {
         console.log(event.deltaY + ' Scrolling has stopped.');
         scrollValue = 0;
         scrollValuePrec = 0;
-
-        if((currentViewportPos == viewportList.length - 1) || (currentViewportPos < 2)) {
-            console.log("END OF THE LINE. "  + currentViewportPos);
-            $(".left-navbar").css("left", "-50px");
-        } else {
-            console.log("continue to scroll... " + currentViewportPos);
-            $(".left-navbar").css("left", "0px");
-        }
     
     }, 250);
 }, false);
@@ -495,6 +483,17 @@ function handleTouchEnd(event) {
 
 function goToVieweport(index) {
     viewport.target = "#" + viewportList[index];
+
+    if ((index < 2) || (index == viewportList.length - 1)) {
+        setTimeout(function(){
+            $(".left-navbar").css("left", "-50px");
+        }, 500);
+    } else {
+        setTimeout(function(){
+            $(".left-navbar").css("left", "0px");
+        }, 250);
+    }
+
 }
 
 var keys = {};
