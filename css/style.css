@@ -22,21 +22,21 @@
     src: url("../res/fonts/Jost-400-Book.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Jost";
     src: url("../res/fonts/Jost-600-Semi.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: "Jost";
     src: url("../res/fonts/Jost-900-Black.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
-  }
+}
 
 html, body {
     padding: 0px;
@@ -50,11 +50,11 @@ html, body {
 h1, h2, h3, h4, h5, h6, p {
     padding: 0px;
     margin: 0px;
-	font-family: "Jost";
-	font-weight: normal;
+    font-family: "Jost";
+    font-weight: normal;
 }
 
-h1, h2, a, a:hover {  
+h1, h2, a, a:hover {
     color: var(--accent-color);
 }
 
@@ -62,30 +62,48 @@ h1 {
     font-size: 10rem;
     font-weight: 600;
 }
+
 h2 {
     font-size: 3rem;
     font-weight: 600;
 }
+
 h3 {
     font-size: 2rem;
     font-weight: 600;
 }
+
 h4 {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
+
 h5 {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
+
 h6 {
-	font-size: 1rem;
+    font-size: 1rem;
 }
+
 p {
     font-size: 1rem;
 }
-.detail-text {
+
+.main {
+    padding-top: 5%;
+}
+
+.subtitle {
+    padding-left: 1rem;
+    padding-top: 5%;
+}
+
+.detail-text p {
+    font-size: .85rem;
     color: var(--light-color);
 }
-.source-text, .image-desc {
+
+.source-text, .image-desc p {
     font-size: .75rem;
 }
 
@@ -107,9 +125,8 @@ p {
 }
 
 .rows {
-    margin-top: 25px;
     height: auto;
-    padding: 0px 5%;
+    padding-top: 2.5vh
 }
 
 .row-container {
@@ -122,7 +139,8 @@ p {
 .vid {
     width: 55%;
     padding: 2%;
-
+    margin-top: 2.5%;
+    display: flex;
 }
 
 .caption {
@@ -142,6 +160,7 @@ p {
 
 .welcome-container {
     width: 100%;
+    padding-top: 5%;
 }
 
 .video-container {
@@ -149,6 +168,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.video-col {
+    display: flex;
+    align-items: flex-end;
 }
 
 .video-adapt {
@@ -277,7 +301,8 @@ p {
 }
 
 .graph {
-    max-width: 75%;
+    max-width: 95%;
+    padding-left: 5%;
     max-height: 15vh;
 }
 
@@ -286,11 +311,12 @@ p {
     justify-content: space-between;
 }
 
-.last-page{
+.last-page {
     display: flex;
     align-items: center;
     text-align: center;
-    height: auto;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
 footer {
@@ -299,7 +325,7 @@ footer {
     padding-top: 1rem;
     align-self: flex-end;
     background-color: #f6f6f6;
-    padding-bottom: 25px
+    padding-bottom: 25px;
 }
 
 .home-button {
@@ -332,50 +358,75 @@ footer {
     overflow: hidden;
 }
 
-.home-button-text-container {
- 
-}
+.home-button-text-container {}
 
 #viewport1 {
- padding-left: 0px;
+    padding-left: 0px;
 }
 
 @media only screen and (max-width: 1200px) {
-    .detail-col {
-        width: 100%;
-    }
 
-    html, body {
-    }    
-    .rows {
-        padding: 0px;
-    }
+    html, body {}
+
     .top-space-5 {
         padding-top: 2.5vh;
     }
     .left-space-5 {
         margin-left: 0px;
     }
-    .mobile-no-top-space {
-        padding-top: 0px;
-    }
+
     .image {
         max-height: 96px;
     }
 }
 
-@media only screen and (max-width: 1200px) and (orientation:landscape) {
-    html, body {
-        font-size: 12px;
-    }    
+body {
+    background-color: red;
+}
+
+@media (max-width: 1280px) and (orientation:landscape) {
+    body {
+        background-color: hotpink;
+    }
+
     .video-adapt {
         max-height: 400px;
     }
+
+    .top-space-5 {
+        padding-top: 2.5vh;
+    }
+
+    .image {
+        max-height: 100%;
+    }
 }
 
-@media only screen and (max-width: 768px) and (orientation:portrait) {
+@media (max-width: 1024px) and (orientation:landscape) {
+    html, body {
+        background-color: white;
+        font-size: 14px;
+    }
 
-.left-navbar { display: none;}
+    .left-space-5 {
+        margin-left: 2.5vw;
+    }
+
+    .left-space-2_5 {
+        padding-left: 1vw;
+    }
+}
+
+@media (max-width: 768px) and (orientation:landscape) {
+    body {
+        background-color: green;
+    }
+
+    .mobile-no-top-space {
+        padding-top: 0px;
+    }
+
+    .left-navbar { display: none;}
 
     html, body {
         font-size: 12px;
@@ -383,9 +434,7 @@ footer {
     .viewport {
         padding: 0px;
     }
-    .rows {
-        margin-top: 0px;
-    }
+
     .row-container {
         flex-wrap: wrap;
         height: auto;
@@ -405,3 +454,14 @@ footer {
         padding: 0px;
     }
 }
+
+
+@media (max-width: 640px) and (orientation:landscape) {
+    body {
+        background-color: blue;
+    }
+}
+
+
+
+

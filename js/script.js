@@ -549,7 +549,7 @@ var inactivityTime = function () {
     document.ontouchstart = resetTimer;
     document.onclick = resetTimer;     // touchpad clicks
     document.onkeypress = resetTimer;
-    document.addEventListener('scroll', resetTimer, true); // improved; see comments
+    document.addEventListener('scroll', resetTimer, true); // improved; see comments 
 
     function logout() {
         //location.href = 'logout.html'
@@ -572,3 +572,10 @@ var inactivityTime = function () {
 window.onload = function() {
     inactivityTime(); 
   }
+
+  var div = document.getElementById('res-log');
+  div.innerHTML = window.innerWidth + " x " + window.innerHeight;  
+  $(window).resize(function() {
+
+    div.innerHTML = window.innerWidth + " x " + window.innerHeight;    
+    });
