@@ -118,13 +118,13 @@ $(".home-button").on('click', function(event) {
     $(".home-button-text").css("padding-right", "48px");
     setTimeout(function(){
         $(".home-button-text").css("max-width", "0px");
-        $(".home-button-text").css("padding-left", "-24px");
+        $(".home-button-text").css("padding-left", "0px");
         $(".home-button-text").css("padding-right", "0px");
         setTimeout(function(){
             $(".home-button").css("min-width", "0px");
             $(".home-button").css("height", "0px");
-            $(".home-button").css("bottom", "0px");
-            $(".home-button").css("right", "48px");
+            $(".home-button").css("bottom", "24px");
+            $(".home-button").css("right", "24px");
         }, 1250);
     }, 1250);
 });
