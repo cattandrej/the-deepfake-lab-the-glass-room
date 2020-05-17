@@ -44,7 +44,7 @@ html, body {
     font-family: "Jost", sans-serif;
     font-weight: normal;
     color: var(--dark-color);
-    font-size: 15px;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -112,7 +112,7 @@ p {
     height: 100vh;
     max-width: 100%;
     overflow: hidden;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 200px 0px 250px;
 }
 
 .footer-container {
@@ -179,7 +179,7 @@ p {
 
 .video-adapt {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 66.6vh;
 }
 
 .space-between {
@@ -330,6 +330,10 @@ footer {
     padding-bottom: 25px;
 }
 
+.paragraph {
+    font-size: .85rem;
+}
+
 .home-button {
     position: fixed;
     bottom: 0;
@@ -337,6 +341,7 @@ footer {
     min-width: 48px;
     height: 48px;
     margin: 24px;
+    margin-right: 100px;
     border-radius: 24px;
     background-color: var(--accent-color);
     background-image: url("../res/ico/home_button.svg");
@@ -362,33 +367,33 @@ footer {
 }
 
 #viewport1 {
-    padding-left: 0px;
+    padding: 0px;
 }
 
-@media only screen and (max-width: 1200px) {
 
-    html, body {}
-
-    .top-space-5 {
-        padding-top: 2.5vh;
-    }
-    .left-space-5 {
-        margin-left: 0px;
+@media (max-width: 1919px) and (orientation:landscape) {
+    html, body {
+        font-size: 18px;
     }
 
-    .image {
-        max-height: 96px;
+    .viewport {
+        padding: 0px 0px 0px 50px;
     }
-}
-
-body {
-    background-color: red;
 }
 
 /* Lenovo Yoga Tablet 2 */ 
 @media (max-width: 1280px) and (orientation:landscape) {
-    body {
+    html, body {
         background-color: white;
+        font-size: 15px;
+    }
+    
+    .viewport {
+        padding: 0px 0px 0px 50px;
+    }
+
+    .home-button {
+        margin: 24px;
     }
 
     .video-adapt {
@@ -404,12 +409,9 @@ body {
     }
 }
 
-/* Samsung Galaxy Tab S2 */ 
-@media (max-width: 1024px) and (orientation:landscape) {
-    html, body {
-        background-color: white;
-        font-size: 14px;
-    }
+@media only screen and (max-width: 1200px) {
+
+    html, body {}
 
     .left-space-5 {
         margin-left: 2.5vw;
@@ -417,6 +419,14 @@ body {
 
     .left-space-2_5 {
         padding-left: 1vw;
+    }
+}
+
+/* Samsung Galaxy Tab S2 */ 
+@media (max-width: 1024px) and (orientation:landscape) {
+    html, body {
+        background-color: white;
+        font-size: 14px;
     }
 }
 

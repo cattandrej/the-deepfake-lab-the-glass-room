@@ -550,8 +550,7 @@ var inactivityTime = function () {
     document.onkeypress = resetTimer;
     document.addEventListener('scroll', resetTimer, true); // improved; see comments 
 
-    function logout() {
-        //location.href = 'logout.html'
+    function runHome() {
         if (currentViewportPos != 0) {
             $(".home-button").click();
             resetTimer;
@@ -563,8 +562,7 @@ var inactivityTime = function () {
 
     function resetTimer() {
         clearTimeout(time);
-        time = setTimeout(logout, 600000)
-        // 1000 milliseconds = 1 second
+        time = setTimeout(runHome, 600000)
     }
 };
 
