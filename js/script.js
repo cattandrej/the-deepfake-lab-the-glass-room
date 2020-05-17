@@ -52,7 +52,7 @@ $(viewportClass).each(function (i, obj) {
 localizationLabels = [
     ["en_UK", "English"],
     ["it_IT", "Italiano"],
-    ["sp_SP", "Español"],
+    ["es_ES", "Español"],
     ["fr_FR", "Français"],
     ["de_DE", "Deutsche"]
 ]
@@ -64,6 +64,7 @@ document.getElementById("viewport0").appendChild(languageBarNode);
 
 for (currentLocalization = 0; currentLocalization < localizationLabels.length; currentLocalization++) {
 
+    // language bar
     var mainNode = document.createElement("div");
     var aNode = document.createElement("a");
     var textNode = document.createTextNode(localizationLabels[currentLocalization][1]);
@@ -78,9 +79,16 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
 
 for (i = 0; i < localizationLabels.length; i++) {
     if ($("html").attr("lang") === localizationLabels[i][0]) {
+        // Applying style to current language
         $(".language-bar-element." + localizationLabels[i][0]).attr('id', 'langauge-selected');
+        
+        // qr-code href geneartion
+        $(".qr-code").attr("src", "./res/img/qr-" + localizationLabels[i][0] + ".png");
     }
 }
+
+
+
 
 var currentViewportPos = 0;
 var currentViewport = viewportList[0];
