@@ -30,6 +30,7 @@ $(viewportClass).each(function (i, obj) {
         $(this).attr("id", id + "-" + btnId);
     });
 
+    // navbar generation
     if ((i > 1) && (i < 11 + 1)) {
         var mainNode = document.createElement("div");
         var pNode = document.createElement("p");
@@ -45,6 +46,40 @@ $(viewportClass).each(function (i, obj) {
         document.getElementById("left-navbar").appendChild(mainNode);
     }
 });
+
+// language bar generation
+
+localizationLabels = [
+    ["en_UK", "English"],
+    ["it_IT", "Italiano"],
+    ["de_DE", "Deutsch"],
+    ["fr_FR", "Français"]
+]
+
+var languageBarNode = document.createElement("div");
+languageBarNode.setAttribute("class", "language-bar");
+languageBarNode.setAttribute("id", "language-bar");
+document.getElementById("viewport0").appendChild(languageBarNode);
+
+for (currentLocalization = 0; currentLocalization < localizationLabels.length; currentLocalization++) {
+
+    var mainNode = document.createElement("div");
+    var aNode = document.createElement("a");
+    var textNode = document.createTextNode(localizationLabels[currentLocalization][1]);
+
+    aNode.appendChild(textNode);
+    aNode.setAttribute("href", localizationLabels[currentLocalization][0]);
+    mainNode.append(aNode);
+    mainNode.setAttribute("class", "language-bar-element " +  localizationLabels[currentLocalization][0]);
+
+    document.getElementById("language-bar").appendChild(mainNode);
+}
+
+for (i = 0; i < localizationLabels.length; i++) {
+    if ($("html").attr("lang") === localizationLabels[i][0]) {
+        $(".language-bar-element." + localizationLabels[i][0]).attr('id', 'langauge-selected');
+    }
+}
 
 var currentViewportPos = 0;
 var currentViewport = viewportList[0];

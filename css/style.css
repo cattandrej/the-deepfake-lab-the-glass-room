@@ -370,6 +370,26 @@ footer {
     padding: 0px;
 }
 
+#viewport12 {
+    padding: 0px;
+}
+
+.language-bar {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 36px;
+}
+
+.language-bar-element {
+    margin: 0px 5px;
+}
+
+#langauge-selected {
+    font-weight: 600;
+}
+
 
 @media (max-width: 1919px) and (orientation:landscape) {
     html, body {
