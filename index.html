@@ -55,7 +55,7 @@
                 <h3>Unraveling the mystery around deepfakes.</h3>
             </div>
         </div>
-        
+
 
     </div>
 
@@ -194,11 +194,11 @@
                             </div>
                         </div>
                         <p class="source-text lighter-color"><br>Deepfake target
-                            video: <a href="https://youtu.be/phwgt64oGMs" target="_blank">YouTube - Cutest
+                            video: <a >YouTube - Cutest
                                 Baby
                                 Montage Ever</a> </p>
                         <p class="source-text lighter-color"><br>Deepfake video
-                            source: <a href="https://youtu.be/WHwQeetjLwk" target="_blank">YouTube - Baby
+                            source: <a >YouTube - Baby
                                 Elon</a>
                         </p>
                     </div>
@@ -269,9 +269,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="source-text lighter-color"><br>Target video source: <a
-                            href="https://www.youtube.com/watch?v=ZXsQAXx_ao0" target="_blank">YouTube -
-                            Just Do It!</a> </p>
+                        <p class="source-text lighter-color"><br>Target video source: <a>YouTube -
+                                Just Do It!</a> </p>
                     </div>
                 </div>
                 <div class="specs">
@@ -343,15 +342,17 @@
                                             <div class="detail-text">
                                                 <p> The images used to train the algorithm did not contain the right
                                                     facial expressions to cover Shia, nor did they contain footage of a
-                                                    facial profile. If the neural network is not trained for these situations,
-                                                    it cannot produce the right overlay. Pay attention to how Shia's mouth
+                                                    facial profile. If the neural network is not trained for these
+                                                    situations,
+                                                    it cannot produce the right overlay. Pay attention to how Shia's
+                                                    mouth
                                                     appears from underneath the mask, resulting in two mouths.</p>
                                             </div>
                                         </div>
                                         <div class="detail-col left-space-2_5 top-space-2_5">
 
                                             <img class="graph" src="./res/svg/graph-pipi-shia.svg">
-                
+
                                         </div>
                                     </div>
                                 </div>
@@ -382,8 +383,10 @@
                     </div>
                     <div class=" top-space-2_5 left-space-5">
                         <p>
-                            You need two videos, a source video, and a target video. The program will train itself according
-                            to both and create a mask that can be placed onto the target video with video editing software.
+                            You need two videos, a source video, and a target video. The program will train itself
+                            according
+                            to both and create a mask that can be placed onto the target video with video editing
+                            software.
                         </p>
 
                     </div>
@@ -394,37 +397,38 @@
                         <div class="video-container">
                             <div class="video-player">
                                 <div class="interactive-video">
-                                    <video class="video-adapt" id="vid-original" autoplay loop muted controls class="scale-2">
+                                    <video class="video-adapt" id="vid-original" autoplay loop muted controls
+                                        class="scale-2">
                                         <source src="res/vid/00-original.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="interactive-video">
-                                    <video class="video-adapt" id="vid-dataset" style="display: none;" autoplay loop muted
-                                        controls class="scale-2">
+                                    <video class="video-adapt" id="vid-dataset" style="display: none;" autoplay loop
+                                        muted controls class="scale-2">
                                         <source src="res/vid/0_dataset.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="interactive-video">
-                                    <video class="video-adapt" id="vid-mask" style="display: none;" autoplay loop muted controls
-                                        class="scale-2">
+                                    <video class="video-adapt" id="vid-mask" style="display: none;" autoplay loop muted
+                                        controls class="scale-2">
                                         <source src="res/vid/01-mask.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="interactive-video">
-                                    <video class="video-adapt" id="vid-alignment" style="display: none;" autoplay loop muted
-                                        controls class="scale-2">
+                                    <video class="video-adapt" id="vid-alignment" style="display: none;" autoplay loop
+                                        muted controls class="scale-2">
                                         <source src="res/vid/02-alignment.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="interactive-video">
-                                    <video class="video-adapt" id="vid-deepfake" style="display: none;" autoplay loop muted
-                                        controls class="scale-2">
+                                    <video class="video-adapt" id="vid-deepfake" style="display: none;" autoplay loop
+                                        muted controls class="scale-2">
                                         <source src="res/vid/03-deepfake.mp4" type="video/mp4">
                                     </video>
                                 </div>
                                 <div class="interactive-video">
-                                    <video class="video-adapt" id="vid-post" style="display: none;" autoplay loop muted controls
-                                        class="scale-2">
+                                    <video class="video-adapt" id="vid-post" style="display: none;" autoplay loop muted
+                                        controls class="scale-2">
                                         <source src="res/vid/04-post.mp4" type="video/mp4">
                                     </video>
                                 </div>
@@ -444,7 +448,7 @@
                     <div class="content-col video-col bottom-dx">
                         <div class="details">
                             <div class="detail-row border-bottom">
-        
+
                                 <div class="button process button-selected" id="original">
                                     <p>Original</p>
                                 </div>
@@ -468,61 +472,67 @@
                                 <div class="tab" id="original">
                                     <div class="interactive-detail-col left-space-2_5 top-space-2_5">
                                         <div class="interactive-detail-text detail-text-p">
-                                            <p>Select a target video you want to insert a face into. Choosing a video that is
+                                            <p>Select a target video you want to insert a face into. Choosing a video
+                                                that is
                                                 steady and consistent will give you a better result. </p>
                                         </div>
                                     </div>
                                 </div>
-        
+
                                 <div class="tab" id="dataset" style="display: none;">
                                     <div class="interactive-detail-col left-space-2_5 top-space-2_5">
                                         <div class="interactive-detail-text detail-text-p">
-                                            <p>Record a dataset for the face you want to place, matching the lighting and
+                                            <p>Record a dataset for the face you want to place, matching the lighting
+                                                and
                                                 expressions as much as possible.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-        
+
                                 <div class="tab" id="mask" style="display: none;">
                                     <div class="interactive-detail-col left-space-2_5 top-space-2_5">
                                         <div class="interactive-detail-text detail-text-p">
-                                            <p>Cover the faces from other people in the target video, else, the algorithm will
+                                            <p>Cover the faces from other people in the target video, else, the
+                                                algorithm will
                                                 use them to train itself.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-        
+
                                 <div class="tab" id="alignment" style="display: none;">
                                     <div class="interactive-detail-col left-space-2_5 top-space-2_5">
                                         <div class="interactive-detail-text detail-text-p">
-                                            <p>The algorithm will crop the faces for the training process and save the position
+                                            <p>The algorithm will crop the faces for the training process and save the
+                                                position
                                                 to later position the output mask correctly.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-        
+
                                 <div class="tab" id="deepfake" style="display: none;">
                                     <div class="interactive-detail-col left-space-2_5 top-space-2_5">
                                         <div class="interactive-detail-text detail-text-p">
-                                            <p>The algorithm generates a mask of the face of the source that you need to align
+                                            <p>The algorithm generates a mask of the face of the source that you need to
+                                                align
                                                 onto the target video. </p>
                                         </div>
                                     </div>
                                 </div>
-        
+
                                 <div class="tab" id="post" style="display: none;">
                                     <div class="interactive-detail-col left-space-2_5 top-space-2_5">
                                         <div class="interactive-detail-text detail-text-p">
-                                            <p>Video editing software will allow you to blend in the mask better and refine the
+                                            <p>Video editing software will allow you to blend in the mask better and
+                                                refine the
                                                 final result. </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-        
+
                         </div>
                     </div>
                 </div>
@@ -558,9 +568,9 @@
                     <div class=" top-space-2_5 left-space-5">
                         <p>
                             In this experiment, two programs were given a different
-                        number of images. More source material clearly improves the
-                        output. The model had more information on the face and could
-                        develop a better result.
+                            number of images. More source material clearly improves the
+                            output. The model had more information on the face and could
+                            develop a better result.
                         </p>
 
                     </div>
@@ -599,7 +609,7 @@
                                         <div class="detail-col left-space-2_5 top-space-2_5">
 
                                             <img class="graph" src="./res/svg/graph-pipi-shia.svg">
-                
+
                                         </div>
                                     </div>
                                 </div>
@@ -631,8 +641,8 @@
                             </div>
                         </div>
                         <p class="source-text lighter-color"><br>Original target video: <a
-                            href="https://youtu.be/MAA1e4_HWdA" target="_blank">Rooftop Showdown | The
-                            Reichenbach Fall | Sherlock</a> </p>
+                                >Rooftop Showdown | The
+                                Reichenbach Fall | Sherlock</a> </p>
                         </p>
                     </div>
                 </div>
@@ -703,8 +713,9 @@
                             </div>
                         </div>
                         <p class="source-text lighter-color"><br>Original target video:</strong> <a
-                            href="https://youtu.be/b8QGlwSt6vs" target="_blank">YouTube - Padmé meets
-                            Anakin</a> </p></p>
+                                >YouTube - Padmé meets
+                                Anakin</a> </p>
+                        </p>
                     </div>
                 </div>
                 <div class="specs">
@@ -762,7 +773,8 @@
                                                 <div class="detail-text">
                                                     <p><strong>Profile borders:</strong>
                                                         <br>The side view of the face seems incorrect. The deepfake
-                                                        mask is not working, less detailed, or incorrectly aligned. </br>
+                                                        mask is not working, less detailed, or incorrectly aligned.
+                                                        </br>
                                                     </p>
                                                 </div>
                                             </div>
@@ -787,7 +799,7 @@
                                         <div class="detail-col left-space-2_5 top-space-2_5">
 
                                             <img class="graph" src="./res/svg/graph-pipi-shia.svg">
-                
+
                                         </div>
                                     </div>
                                 </div>
@@ -827,8 +839,8 @@
                     <div class=" top-space-2_5 left-space-5">
                         <p>
                             Even with a good source, it can be hard to create a deepfake. Indiana
-                        Jones contains chaotic shots, compared to the cleaner videos we used
-                        before, the algorithm now has difficulty keeping up.
+                            Jones contains chaotic shots, compared to the cleaner videos we used
+                            before, the algorithm now has difficulty keeping up.
                         </p>
 
                     </div>
@@ -881,21 +893,21 @@
                                             </div>
                                         </div>
 
-                            <!-- DX ICON COL -->
-                            <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
-                                  <div class="icon-group">
-                                    <div class="ico">
-                                        <img class="ico" src="./res/ico/perspective.svg">
-                                    </div>
-                                    <div class="detail-text">
-                                        <p><strong>Wrong perspective:</strong>
-                                            <br>The deepfake has a different perspective from the rest
-                                            of the video. The source and target video differ in
-                                            focal length.</br>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/perspective.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Wrong perspective:</strong>
+                                                        <br>The deepfake has a different perspective from the rest
+                                                        of the video. The source and target video differ in
+                                                        focal length.</br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="tab" id="tech">
                                         <div class="detail-col left-space-2_5 top-space-2_5">
@@ -910,7 +922,7 @@
                                         <div class="detail-col left-space-2_5 top-space-2_5">
 
                                             <img class="graph" src="./res/svg/graph-andrej-indiana.svg">
-                
+
                                         </div>
                                     </div>
                                 </div>
@@ -942,8 +954,8 @@
                             </div>
                         </div>
                         <p class="source-text lighter-color"><br>Original target video:</strong> <a
-                            href="https://youtu.be/zYWLE9HIqUM" target="_blank">Rope Bridge Fight |
-                            Indiana Jones and the Temple of Doom</a> </p>
+                                >Rope Bridge Fight |
+                                Indiana Jones and the Temple of Doom</a> </p>
                     </div>
                 </div>
             </div>
@@ -968,11 +980,11 @@
                         </h3>
                     </div>
                     <div class=" top-space-2_5 left-space-5">
-      <p>
-                        This deepfake video was made out of a talk show fragment where Bill Hader
-                        impersonates Arnold Schwarzenegger. By using the right source material
-                        for Arnold Schwarzenegger, the results came out very convincing.
-                    </p>
+                        <p>
+                            This deepfake video was made out of a talk show fragment where Bill Hader
+                            impersonates Arnold Schwarzenegger. By using the right source material
+                            for Arnold Schwarzenegger, the results came out very convincing.
+                        </p>
                     </div>
                 </div>
 
@@ -1009,11 +1021,10 @@
                             </div>
                         </div>
                         <p class="source-text lighter-color"><br>Original target video: <a
-                            href="https://teamcoco.com/video/bill-hader-presents-schwarzenegger-baby"
-                            target="_blank">Bill Hader Presents: Schwarzenegger Baby</a> </p>
-                    <p class="source-text lighter-color"><br>Source deepfaked video: <a
-                            href="https://youtu.be/bPhUhypV27w" target="_blank">Bill Hader impersonates
-                            Arnold Schwarzenegger</a> </p>
+                                >Bill Hader Presents: Schwarzenegger Baby</a> </p>
+                        <p class="source-text lighter-color"><br>Source deepfaked video: <a
+                                >Bill Hader impersonates
+                                Arnold Schwarzenegger</a> </p>
                     </div>
                 </div>
                 <div class="specs">
@@ -1135,7 +1146,7 @@
                                         </div>
                                         <div class="detail-col left-space-2_5 top-space-2_5">
                                             <img class="graph" src="./res/svg/graph_pretty-yueling.svg">
-                    
+
                                         </div>
                                     </div>
                                 </div>
@@ -1167,8 +1178,8 @@
                             </div>
                         </div>
                         <p class="source-text lighter-color"><br>Original target video: <a
-                            href="https://www.youtube.com/watch?v=xQKy9eUl_X0&t=112s"
-                            target="_blank">Constance Wu Explains What "Couture" Means</a> </p>
+                                >Constance Wu
+                                Explains What "Couture" Means</a> </p>
                     </div>
                 </div>
             </div>
@@ -1195,8 +1206,8 @@
                     <div class=" top-space-2_5 left-space-5">
                         <p>
                             For this experiment, we created both the source and the target video
-                        ourselves. The approach of the algorithm is clearly visible. H128
-                        creates a square mask whilst SAEHD matches the face better.
+                            ourselves. The approach of the algorithm is clearly visible. H128
+                            creates a square mask whilst SAEHD matches the face better.
                         </p>
 
 
@@ -1265,7 +1276,7 @@
                                         <div class="detail-col left-space-2_5 top-space-2_5">
 
                                             <img class="graph" src="./res/svg/graph-andrej- arthur.svg">
-                
+
                                         </div>
                                     </div>
                                 </div>
@@ -1304,10 +1315,10 @@
                     <div class=" top-space-2_5 left-space-5">
                         <p>
                             Nowadays, deepfakes
-                        can reach a really high quality that is very difficult to recognize.
-                        Although we have solely focussed on face swaps, deepfakes can also
-                        re-enact a face to make it seem as if a person said something. Be
-                        aware of this technology and remember the signs we have showed you.
+                            can reach a really high quality that is very difficult to recognize.
+                            Although we have solely focussed on face swaps, deepfakes can also
+                            re-enact a face to make it seem as if a person said something. Be
+                            aware of this technology and remember the signs we have showed you.
                         </p>
 
                     </div>
@@ -1340,7 +1351,7 @@
                                         </div>
                                         <div class="detail-col left-space-2_5 top-space-2_5">
                                             <div class="detail-text">
-                                                <p>  Also,
+                                                <p> Also,
                                                     pay attention to the audio, there might be flaws or lip-sync
                                                     problems. If a video is likely to be a target, you question
                                                     if it is real, and, according to what you have learned on
@@ -1348,7 +1359,7 @@
                                                     always check the source.
                                                 </p>
                                             </div>
-                                      </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1359,8 +1370,8 @@
                 <div class="pics">
                     <div class="left-space-5">
                         <p class="source-text lighter-color"><br>Deepfake source video: <a
-                            href="https://www.youtube.com/watch?v=l2YkPik990o&feature=youtu.be"
-                            target="_blank">Fake Freeman mouth manipulation.</a> </p>
+                                >Fake
+                                Freeman mouth manipulation.</a> </p>
                     </div>
                 </div>
             </div>
