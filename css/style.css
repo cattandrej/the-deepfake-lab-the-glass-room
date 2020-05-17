@@ -134,6 +134,8 @@ p {
     width: 100%;
     padding: 0px 10px;
     min-height: 45%;
+    max-height: 55%;
+    overflow: hidden;
 }
 
 .vid {
@@ -383,9 +385,10 @@ body {
     background-color: red;
 }
 
+/* Lenovo Yoga Tablet 2 */ 
 @media (max-width: 1280px) and (orientation:landscape) {
     body {
-        background-color: hotpink;
+        background-color: white;
     }
 
     .video-adapt {
@@ -401,6 +404,7 @@ body {
     }
 }
 
+/* Samsung Galaxy Tab S2 */ 
 @media (max-width: 1024px) and (orientation:landscape) {
     html, body {
         background-color: white;
