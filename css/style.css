@@ -210,7 +210,10 @@ p {
     max-height: 100%;
     /* z-index: -100; */
     background-size: cover;
+}
 
+.content-col {
+    width: 100%;
 }
 
 .space-between {
@@ -286,6 +289,10 @@ p {
     align-items: center;
     justify-content: center;
     transition: all 0.25s ease 0s;
+}
+
+.button p {
+    font-size: .85rem;
 }
 
 .details {
