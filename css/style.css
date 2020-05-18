@@ -69,7 +69,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.85rem;
     font-weight: 600;
 }
 
@@ -99,6 +99,11 @@ p {
 }
 
 .detail-text p {
+    font-size: .80rem;
+    color: var(--light-color);
+}
+
+.detail-text-p p {
     font-size: .80rem;
     color: var(--light-color);
 }
@@ -231,6 +236,7 @@ p {
 }
 
 .image {
+    width: 15vw;
     height: 20vh;
     background-color: var(--accent-color);
 }
@@ -249,8 +255,15 @@ p {
 }
 
 .button-selected {
+    border-bottom: 4px solid var(--accent-color);
     font-weight: 700;
     background-color: rgba(238, 49, 60, 0.15);
+}
+
+.button-selected:hover {
+    border-bottom: 4px solid var(--accent-color);
+    font-weight: 700;
+    background-color:  rgb(238, 49, 60, 0.2);
 }
 
 .button {
