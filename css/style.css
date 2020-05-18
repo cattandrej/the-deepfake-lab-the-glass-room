@@ -489,7 +489,7 @@ footer {
 
 @media (max-width: 768px) and (orientation:landscape) {
     body {
-        background-color: green;
+        /* background-color: green; */
     }
 
     .mobile-no-top-space {
@@ -522,7 +522,7 @@ footer {
 
 @media (max-width: 640px) and (orientation:landscape) {
     body {
-        background-color: blue;
+        /* background-color: blue; */
     }
 }
 
