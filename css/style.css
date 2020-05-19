@@ -497,6 +497,40 @@ footer {
     }
 }
 
+/* Samsung Galaxy Tab S2 portrait */
+@media (max-width: 1024px) and (orientation:portrait) {
+    html, body {
+        background-color: white;
+        font-size: 14px;
+    }
+
+    .mobile-no-top-space {
+        padding-top: 0px;
+    }
+
+    .left-navbar { display: none;}
+
+    html, body {
+        font-size: 12px;
+    }    
+    .viewport {
+        padding: 0px;
+    }
+
+    .row-container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .mobile-flip {
+        flex-direction: column-reverse;
+    }
+    .vid, .caption, .specs, .pics {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
 @media (max-width: 768px) and (orientation:landscape) {
     body {
         /* background-color: green; */
