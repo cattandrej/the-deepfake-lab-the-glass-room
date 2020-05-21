@@ -13,12 +13,14 @@ $(viewportClass).each(function (i, obj) {
     viewportList.push(id);
     $(this).attr('id', id);
 
+    $(this).css("height", $(window.top).height());
+
     if (i != 4) {
-            $($(this).find("video")).each(function (j, obj) {
-                var vidId = $(this).attr("id");
-                $(this).attr("id", "vid-" + id);
-            });
-        }
+        $($(this).find("video")).each(function (j, obj) {
+            var vidId = $(this).attr("id");
+            $(this).attr("id", "vid-" + id);
+        });
+    }
 
     $($(this).find(".button")).each(function (j, obj) {
         var btnId = $(this).attr("id");
@@ -72,7 +74,7 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
     aNode.appendChild(textNode);
     aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
     mainNode.append(aNode);
-    mainNode.setAttribute("class", "language-bar-element " +  localizationLabels[currentLocalization][0]);
+    mainNode.setAttribute("class", "language-bar-element " + localizationLabels[currentLocalization][0]);
 
     document.getElementById("language-bar").appendChild(mainNode);
 }
@@ -81,7 +83,7 @@ for (i = 0; i < localizationLabels.length; i++) {
     if ($("html").attr("lang") === localizationLabels[i][0]) {
         // Applying style to current language
         $(".language-bar-element." + localizationLabels[i][0]).attr('id', 'langauge-selected');
-        
+
         // qr-code href geneartion
         $(".qr-code").attr("src", "./res/img/qr-" + localizationLabels[i][0] + ".png");
     }
@@ -113,22 +115,22 @@ viewport.registerListener(function (val) {
     console.log("New target: " + val);
 });
 
-$(".left-navbar").css("left", "-50px")  
+$(".left-navbar").css("left", "-50px")
 goToVieweport(getCurrentViewportPos());
 currentViewportPos = getCurrentViewportPos();
 scroll_To("#" + viewportList[getCurrentViewportPos()]);
 
-$(".home-button").on('click', function(event) {
+$(".home-button").on('click', function (event) {
     goToVieweport(0);
 
     $(".home-button-text").css("max-width", "500px");
     $(".home-button-text").css("padding-left", "24px");
     $(".home-button-text").css("padding-right", "48px");
-    setTimeout(function(){
+    setTimeout(function () {
         $(".home-button-text").css("max-width", "0px");
         $(".home-button-text").css("padding-left", "0px");
         $(".home-button-text").css("padding-right", "0px");
-        setTimeout(function(){
+        setTimeout(function () {
             $(".home-button").css("min-width", "0px");
             $(".home-button").css("height", "0px");
             $(".home-button").css("bottom", "24px");
@@ -229,23 +231,23 @@ function scroll_To(id) {
     $(".left-navbar-element#left-navbar-element-" + viewport.target.substring(1, viewport.target.length)).addClass("left-navbar-element-selected");
 
     vid = document.getElementById("vid-" + id.substring(1, id.length));
-        console.log("Unmuted video: " + id);
-        if (vid != null) {
-            vid.muted = false;
-            vid.play();
-        }
+    console.log("Unmuted video: " + id);
+    if (vid != null) {
+        vid.muted = false;
+        vid.play();
+    }
 
-        if (currentViewportPos != 0) {
-                    $(".home-button").css("min-width", "48px");
-                    $(".home-button").css("height", "48px");
-                    $(".home-button").css("bottom", "0px");
-                    $(".home-button").css("right", "0px");
-         } else {
-            $(".home-button").css("min-width", "0px");
-            $(".home-button").css("height", "0px");
-            $(".home-button").css("bottom", "24px");
-            $(".home-button").css("right", "24px");
-         }
+    if (currentViewportPos != 0) {
+        $(".home-button").css("min-width", "48px");
+        $(".home-button").css("height", "48px");
+        $(".home-button").css("bottom", "0px");
+        $(".home-button").css("right", "0px");
+    } else {
+        $(".home-button").css("min-width", "0px");
+        $(".home-button").css("height", "0px");
+        $(".home-button").css("bottom", "24px");
+        $(".home-button").css("right", "24px");
+    }
 }
 
 page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function () {
@@ -285,7 +287,7 @@ window.addEventListener("wheel", event => {
         console.log(event.deltaY + ' Scrolling has stopped.');
         scrollValue = 0;
         scrollValuePrec = 0;
-    
+
     }, 250);
 }, false);
 
@@ -368,7 +370,7 @@ $(".button").click(function () {
                             console.log("----> hiding: " + type);
                             // console.log("#vid-" + type.substring(1, type.length) + " is now hidden");
                             currentTime = vid.currentTime;
-    
+
                         }
 
                     }
@@ -529,11 +531,11 @@ function goToVieweport(index) {
     viewport.target = "#" + viewportList[index];
 
     if ((index < 2) || (index == viewportList.length - 1)) {
-        setTimeout(function(){
+        setTimeout(function () {
             $(".left-navbar").css("left", "-50px");
         }, 500);
     } else {
-        setTimeout(function(){
+        setTimeout(function () {
             $(".left-navbar").css("left", "0px");
         }, 250);
     }
@@ -542,42 +544,42 @@ function goToVieweport(index) {
 
 var keys = {};
 window.addEventListener("keydown",
-    function(e){
+    function (e) {
         var currentViewport = getCurrentViewportPos();
 
         keys[e.keyCode] = true;
-        switch(e.keyCode){
-            case 37: case 39: case 38:  case 40: // Arrow keys
-            {
-                if (e.keyCode == 38) {
-                    if (currentViewport > 0) {
-                        currentViewport--;
-                    } else {
-                        currentViewport == 0;
+        switch (e.keyCode) {
+            case 37: case 39: case 38: case 40: // Arrow keys
+                {
+                    if (e.keyCode == 38) {
+                        if (currentViewport > 0) {
+                            currentViewport--;
+                        } else {
+                            currentViewport == 0;
+                        }
+                        goToVieweport(currentViewport)
                     }
-                    goToVieweport(currentViewport)
-                }
-                if (e.keyCode == 40) {
-                    console.log("LOL");
-                    if (currentViewport < viewportList.length - 1) {
-                        currentViewport++;
-                    } else {
-                        currentViewport == viewportList.length - 1;
+                    if (e.keyCode == 40) {
+                        console.log("LOL");
+                        if (currentViewport < viewportList.length - 1) {
+                            currentViewport++;
+                        } else {
+                            currentViewport == viewportList.length - 1;
+                        }
+                        goToVieweport(currentViewport)
                     }
-                    goToVieweport(currentViewport)
+                    break;
                 }
-                break;
-            }
             case 32: e.preventDefault(); break; // Space
             default: break; // do not block other keys
         }
     },
-false);
+    false);
 window.addEventListener('keyup',
-    function(e){
+    function (e) {
         keys[e.keyCode] = false;
     },
-false);
+    false);
 
 var idleTime = 0;
 
@@ -599,8 +601,8 @@ var inactivityTime = function () {
             $(".home-button").click();
             resetTimer;
         }
-            
-       // alert("You are now logged out.")
+
+        // alert("You are now logged out.")
 
     }
 
@@ -610,13 +612,17 @@ var inactivityTime = function () {
     }
 };
 
-window.onload = function() {
-    inactivityTime(); 
-  }
+window.onload = function () {
+    inactivityTime();
+}
 
-  var div = document.getElementById('res-log');
-  div.innerHTML = window.innerWidth + " x " + window.innerHeight;  
-  $(window).resize(function() {
+var div = document.getElementById('res-log');
+div.innerHTML = window.innerWidth + " x " + window.innerHeight;
+$(window).resize(function () {
 
-    div.innerHTML = window.innerWidth + " x " + window.innerHeight;    
+    $(viewportClass).each(function (i, obj) {
+        $(this).css("height", $(window.top).height());
     });
+    
+    div.innerHTML = window.innerWidth + " x " + window.innerHeight;
+});

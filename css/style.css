@@ -114,7 +114,7 @@ p {
 
 .viewport {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     max-width: 100%;
     overflow: hidden;
     padding: 0px 100px 0px 150px;
