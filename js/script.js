@@ -8,6 +8,7 @@ var mostVisible = "undefined";
 var mostVisiblePrec = "undefined";
 var vid = document.getElementById("vid-original");
 
+// Viewport procedural generation
 $(viewportClass).each(function (i, obj) {
     var id = viewportID + i;
     viewportList.push(id);
@@ -59,6 +60,7 @@ localizationLabels = [
     ["de_DE", "Deutsche"]
 ]
 
+// language bar HTML node creation
 var languageBarNode = document.createElement("div");
 languageBarNode.setAttribute("class", "language-bar");
 languageBarNode.setAttribute("id", "language-bar");
@@ -72,7 +74,11 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
     var textNode = document.createTextNode(localizationLabels[currentLocalization][1]);
 
     aNode.appendChild(textNode);
-    aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
+    // don't create a link to the translated page if the selected language is currently displayed
+    if ($("html").attr("lang") !== localizationLabels[currentLocalization][0]) {
+        aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
+    }
+
     mainNode.append(aNode);
     mainNode.setAttribute("class", "language-bar-element " + localizationLabels[currentLocalization][0]);
 
@@ -613,12 +619,13 @@ window.onload = function () {
     inactivityTime();
 }
 
+// resolution debug on screen log
 var div = document.getElementById('res-log');
-
 if (div != null) {
     div.innerHTML = window.innerWidth + " x " + window.innerHeight;
 }
 
+// real viewport size change detector
 function windowResizeDetector(){
     if (div != null)
         div.innerHTML = window.innerWidth + " x " + window.innerHeight;
@@ -628,8 +635,5 @@ function windowResizeDetector(){
     });
     console.log("resized");
 }
-
 window.addEventListener("resize", windowResizeDetector);
-
-
 windowResizeDetector();
