@@ -136,7 +136,7 @@ p {
 @keyframes scroll {
     0% {
     }
-    25% {
+    20% {
         transform: translateY(.5rem);
     }
 
