@@ -89,9 +89,6 @@ for (i = 0; i < localizationLabels.length; i++) {
     }
 }
 
-
-
-
 var currentViewportPos = 0;
 var currentViewport = viewportList[0];
 
@@ -617,12 +614,22 @@ window.onload = function () {
 }
 
 var div = document.getElementById('res-log');
-div.innerHTML = window.innerWidth + " x " + window.innerHeight;
-$(window).resize(function () {
+
+if (div != null) {
+    div.innerHTML = window.innerWidth + " x " + window.innerHeight;
+}
+
+function windowResizeDetector(){
+    if (div != null)
+        div.innerHTML = window.innerWidth + " x " + window.innerHeight;
 
     $(viewportClass).each(function (i, obj) {
         $(this).css("height", $(window.top).height());
     });
-    
-    div.innerHTML = window.innerWidth + " x " + window.innerHeight;
-});
+    console.log("resized");
+}
+
+window.addEventListener("resize", windowResizeDetector);
+
+
+windowResizeDetector();
