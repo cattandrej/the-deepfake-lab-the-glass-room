@@ -401,12 +401,6 @@ p {
     width: 16.66%;
 }
 
-.graph {
-    max-width: 95%;
-    padding-left: 5%;
-    max-height: 15vh;
-}
-
 .space-between {
     display: flex;
     justify-content: space-between;
@@ -628,13 +622,7 @@ footer {
         width: 100%;
     }
 
-    .graph {
-        max-width: 95%;
-        padding-left: 0%;
-        max-height: 12vh;
-    }
-    
-    .icon-group {
+      .icon-group {
         display: flex;
         padding-bottom: 1vh;
     }
