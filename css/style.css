@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: normal;
 }
 
-h1, h2, a, a:hover {
+h1, h2, a, a:hover, a:visited {
     color: var(--accent-color);
 }
 
@@ -178,8 +178,10 @@ p {
 }
 
 .logo {
-    max-width: 75%;
-}
+    margin: auto;
+    height: 4rem;
+    padding-bottom: 0.5rem;
+  }
 
 .rows {
     height: auto;
@@ -220,7 +222,7 @@ p {
 .welcome-container {
     width: 100%;
     padding-top: 5%;
-    max-height: 66vh;
+    max-height: 70vh;
 }
 
 .video-container {
@@ -353,6 +355,14 @@ p {
 .icon-group {
     display: flex;
     padding-bottom: 2.5vh;
+}
+
+.sources {
+    padding-top: 1rem;
+}
+
+.intro {
+    padding-top: 2rem;
 }
 
 .left-navbar {
@@ -562,6 +572,11 @@ footer {
     .mobile-flip {
         flex-direction: column-reverse;
     }
+    
+    .home-button {
+        margin: 11px;
+    }
+    
     .vid, .caption, .specs, .pics {
         width: 100%;
         margin: 0px;
@@ -577,10 +592,29 @@ footer {
         max-height: 18vh;
         background-size: cover;
     }
+
+    .welcome-container {
+        max-height: 60vh;
+    }
+
+    #vid-viewport1 {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 100%;
+        background-size: cover;
+    }
+
+    .intro {
+        padding-top: 4rem;
+    }
+
     .pics {
         width: 70%;
         margin: auto;
+        padding-top: 0.5rem;
     }
+
     .image {
         height: 12vh;
         background-color: var(--accent-color);
@@ -590,7 +624,7 @@ footer {
         margin: auto;
         padding: 3% 0 3% 0;
     }
-    /*.detail-col {
+    .detail-col {
         width: 100%;
     }
 
@@ -598,20 +632,30 @@ footer {
         max-width: 95%;
         padding-left: 0%;
         max-height: 12vh;
-    }*/
+    }
     
     .icon-group {
         display: flex;
         padding-bottom: 1vh;
     }
-    .mobile-no-top-space {
-        padding-top: 0px;
+
+    .sources {
+        padding-top: 0.5rem;
     }
+
+    .logo {
+        height: 5rem;
+        padding-bottom: 1rem;
+      }
+    
     .top-space-5 {
         padding-top: 2vh;
     }
     .top-space-2_5 {
         padding-top: 1.5vh;
+    }
+    .mobile-no-top-space {
+        padding-top: 0px;
     }
     .left-space-5 {
         margin-left: 0;
@@ -668,7 +712,7 @@ footer {
         width: 100%;
     }
     .home-button {
-        margin: 24px;
+        margin: 11px;
     }
 }
 
@@ -681,11 +725,11 @@ footer {
 @media (max-width: 414px) and (orientation:portrait) {
     .language-bar {
         flex-direction: column;
-        padding: 36px;
+        padding: 10px 36px;
         text-align: right;
     }
     .language-bar-element {
-        margin: 1rem 0rem;
+        margin: 0.2rem 0rem;
         padding: .25rem 1rem;
         font-size: 1.25rem;
     }
