@@ -76,7 +76,11 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
     aNode.appendChild(textNode);
     // don't create a link to the translated page if the selected language is currently displayed
     if ($("html").attr("lang") !== localizationLabels[currentLocalization][0]) {
-        aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
+        if (localizationLabels[currentLocalization][0] !== "en_UK") {
+            aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
+        } else {
+            aNode.setAttribute("href", "index.html");
+        }
     }
 
     mainNode.append(aNode);
