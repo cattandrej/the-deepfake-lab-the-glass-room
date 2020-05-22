@@ -2,7 +2,7 @@
     --accent-color-ligth: #F7989E;
     --ulralight-color: #e6e6e6;
 
-    --graph-grey: #939393;
+    --graph-grey: #656565;
     --graph-line-height: .66rem;
     --graph-text-size: calc(var(--graph-line-height) * 1);
 }
