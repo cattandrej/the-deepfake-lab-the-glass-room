@@ -35,13 +35,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Jost";
-    src: url("../res/fonts/Jost-900-Black.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-
 html, body {
     padding: 0px;
     margin: 0px;
@@ -319,13 +312,11 @@ p {
 
 .button-selected {
     border-bottom: 4px solid var(--accent-color);
-    font-weight: 700;
     background-color: rgba(238, 49, 60, 0.15);
 }
 
 .button-selected:hover {
     border-bottom: 4px solid var(--accent-color);
-    font-weight: 700;
     background-color: rgb(238, 49, 60, 0.2);
 }
 
