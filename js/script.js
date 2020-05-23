@@ -99,6 +99,8 @@ for (i = 0; i < localizationLabels.length; i++) {
     }
 }
 
+$(".scroll-down-arrow").attr("onClick", "goToVieweport(1);");
+
 var currentViewportPos = 0;
 var currentViewport = viewportList[0];
 
