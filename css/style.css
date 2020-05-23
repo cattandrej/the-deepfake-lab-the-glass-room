@@ -115,7 +115,7 @@ p {
     display: flex;
     align-content: center;
     height: 4rem;
-    animation: scroll 1.5s infinite ease-out;
+    animation: scroll 2s infinite ease-out;
 }
 
 .scroll-down-arrow {
@@ -132,7 +132,12 @@ p {
     20% {
         transform: translateY(.5rem);
     }
-
+    30% {
+        transform: translateY(-.25rem);
+    }
+    40% {
+        transform: translateY(.5rem);
+    }
     100% {
     }
 }
