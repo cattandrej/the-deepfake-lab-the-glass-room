@@ -1,3 +1,10 @@
+/*     ▼       ▼       ▼     */
+/*                           */
+/*    D  E  F  A  U  L  T    */
+/*    S   T    Y    L   E    */
+/*                           */
+/*     ▼       ▼       ▼     */
+
 :root {
     --accent-color: #ee313c;
     --dark-color: #333333;
@@ -474,11 +481,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 1280px) {
-    .language-bar {
-        padding-right: 150px;
-    }
-}
+
 
 .language-bar-element {
     margin: 0px 5px;
@@ -493,21 +496,33 @@ footer {
 #langauge-selected a {
     color: white
 }
+/*         ▲       ▲         */
+/*         ▲       ▲         */
+/*         ▲       ▲         */
+/* Code above is defautl     */
+/*         ▲       ▲         */
+/*         ▲       ▲         */
+/*         ▲       ▲         */
 
+
+/* Here the fun begins       */
+
+
+/*     ▼       ▼       ▼     */
+/*                           */
+/*     L A N D S C A P E     */
+/*     O    N     L    Y     */
+/*                           */
+/*     ▼       ▼       ▼     */
+
+
+/*                           */
+/* Devices up to big tablets */
+/* Galaxy Tab 2 (1280 x 800) */
+/* landscape                 */
 @media (max-width: 1919px) and (orientation:landscape) {
-    html, body {
-        font-size: 18px;
-    }
-    .viewport {
-        padding: 0px 0px 0px 50px;
-    }
-}
 
-/* Lenovo Yoga Tablet 2 */
-
-@media (max-width: 1280px) and (orientation:landscape) {
     html, body {
-        background-color: white;
         font-size: 15px;
     }
     .viewport {
@@ -527,19 +542,11 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1200px) {
-    html, body {}
-    .left-space-5 {
-        margin-left: 2.5vw;
-    }
-    .left-space-2_5 {
-        padding-left: 1vw;
-    }
-}
-
-/* Samsung Galaxy Tab S2 */
-
-@media (max-width: 1024px) and (orientation:landscape) {
+/*                           */
+/* Devices up to med tablets */
+/* Galaxy Tab S2 (1024 x 768)*/
+/* landscape                 */
+@media (max-width: 1199px) and (orientation:landscape) {
     html, body {
         background-color: white;
         font-size: 14px;
@@ -558,26 +565,47 @@ footer {
         font-size: .75rem;
         color: var(--light-color);
     }
+    .left-space-5 {
+        margin-left: 2.5vw;
+    }
+    .left-space-2_5 {
+        padding-left: 1vw;
+    }
 }
 
-/* Samsung Galaxy Tab S2 portrait */
+/*     ▼       ▼       ▼     */
+/*                           */
+/*       P O R T R A I T     */
+/*       O    N    L   Y     */
+/*                           */
+/*     ▼       ▼       ▼     */
 
-@media (max-width: 1024px) and (orientation:portrait) {
-    html, body {
-        background-color: white;
-        font-size: 14px;
+/*                           */
+/* Default code for portrait */
+@media (orientation:portrait) {
+    /*
+    htmnl, body {
+        font-size: 12px;
     }
-    .main {
-        padding: 2rem 1rem 0rem 1rem;
+    h2 {
+        font-size: 2.3rem;
     }
+    h3 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+    .detail-text p {
+        font-size: .75rem;
+        color: var(--light-color);
+    } */
+
     .left-navbar {
         display: none;
     }
-    html, body {
-        font-size: 12px;
-    }
     .viewport {
-        padding: 0px;
+        padding: 25px 100px;
     }
     .row-container {
         flex-wrap: wrap;
@@ -668,19 +696,7 @@ footer {
     .left-space-5 {
         margin-left: 0;
     }
-    h2 {
-        font-size: 2.3rem;
-    }
-    h3 {
-        font-size: 1.25rem;
-    }
-    p {
-        font-size: 0.85rem;
-    }
-    .detail-text p {
-        font-size: .75rem;
-        color: var(--light-color);
-    }
+
     .button {
         cursor: pointer;
         height: 3.5vh;
@@ -689,92 +705,5 @@ footer {
         align-items: center;
         justify-content: center;
         transition: all 0.25s ease 0s;
-    }
-}
-
-@media (max-width: 600px) {
-    .title-fake {
-        float: right;
-        margin-left: auto;
-    }
-    .title-Lab {
-        margin-left: 12.5vw;
-    }
-    .title-line-container {
-        display: flex;
-        width: 100%;
-        line-height: var(--title-phoneUp-height);
-    }
-    h1 {
-        font-size: var(--title-phoneUp-size);
-        line-height: var(--title-phoneUp-height);
-    }
-    .title-line-container {
-        height: var(--title-phoneUp-height);
-    }
-    .title-line {
-        background-color: var(--accent-color);
-        ;
-        height: 1rem;
-        margin: calc(var(--title-phoneUp-height) * 0.55 + 0%) 15px calc(var(--title-phoneUp-height) * 0.45 + 0%);
-        width: 100%;
-    }
-    .home-button {
-        margin: 11px;
-    }
-}
-
-/* Samsung Galaxy Tab S10+ portrait (412) */
-
-/* Samsung Galaxy A50 portrait (412) */
-
-/* Apple iPhone 6+ Prortrait (414) */
-
-@media (max-width: 414px) and (orientation:portrait) {
-    .language-bar {
-        flex-direction: column;
-        padding: 10px 36px;
-        text-align: right;
-    }
-    .language-bar-element {
-        margin: 0.2rem 0rem;
-        padding: .25rem 1rem;
-        font-size: 1.25rem;
-    }
-}
-
-@media (max-width: 768px) and (orientation:landscape) {
-    body {
-        /* background-color: green; */
-    }
-    .mobile-no-top-space {
-        padding-top: 0px;
-    }
-    .left-navbar {
-        display: none;
-    }
-    html, body {
-        font-size: 12px;
-    }
-    .viewport {
-        padding: 0px;
-    }
-    .row-container {
-        flex-wrap: wrap;
-        height: auto;
-    }
-    .mobile-flip {
-        flex-direction: column-reverse;
-    }
-    .vid, .caption, .specs, .pics {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-}
-
-@media (max-width: 640px) and (orientation:landscape) {
-    body {
-        /* background-color: blue; */
     }
 }
