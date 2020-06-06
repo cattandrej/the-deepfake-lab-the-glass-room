@@ -573,12 +573,12 @@ footer {
 }
 
 /*                           */
-/* Devices up to mobile */
-/* */
+/* Devices up to big mobile */
+/* Samsung A50 & S10*/
 /* landscape                 */
 @media (max-width: 991px) and (orientation:landscape) {
     html, body {
-        font-size: 14px;
+        font-size: 12.5px;
     }
     
     .viewport {
@@ -591,6 +591,56 @@ footer {
 
     .vid, .caption, .specs, .pics {
         padding: 1%;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+    .detail-text p {
+        font-size: .75rem;
+        color: var(--light-color);
+    }
+}
+
+/*                           */
+/* Devices up to small mobile */
+/* #1 common screen*/
+/* landscape                 */
+@media (max-width: 720px) and (orientation:landscape) {
+    html, body {
+        font-size: 11.5px;
+    }
+    
+    .viewport {
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .left-navbar {
+        display: none;
+    }
+
+    .vid, .caption, .specs, .pics {
+        padding: 1%;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+    .detail-text p {
+        font-size: .7rem;
+        color: var(--light-color);
     }
 }
 
