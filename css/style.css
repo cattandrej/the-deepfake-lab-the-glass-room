@@ -782,10 +782,10 @@ footer {
 /* Devices up to tablets     */
 /* Galaxy Tab S2 (1024 x 768)*/
 /* portraits                 */
-@media (max-width: 800px) and (orientation:portrait) {
+@media (max-width: 834px) and (orientation:portrait) {
     html, body {
         background-color: white;
-        font-size: 19px;
+        font-size: 18px;
     }
     .main {
         padding: 2rem 1rem 0rem 1rem;
