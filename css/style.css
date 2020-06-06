@@ -48,7 +48,7 @@ html, body {
     font-family: "Jost", sans-serif;
     font-weight: normal;
     color: var(--dark-color);
-    font-size: 30px;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -151,17 +151,17 @@ p {
 }
 
 .detail-text p {
-    font-size: .85rem;
+    font-size: .80rem;
     color: var(--light-color);
 }
 
 .detail-text-p p {
-    font-size: .85rem;
+    font-size: .80rem;
     color: var(--light-color);
 }
 
 .source-text, .image-desc p {
-    font-size: .8rem;
+    font-size: .75rem;
 }
 
 .viewport {
