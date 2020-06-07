@@ -48,7 +48,7 @@ html, body {
     font-family: "Jost", sans-serif;
     font-weight: normal;
     color: var(--dark-color);
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -151,7 +151,7 @@ p {
 }
 
 .detail-text p {
-    font-size: .85rem;
+    font-size: .8rem;
     color: var(--light-color);
 }
 
@@ -161,7 +161,7 @@ p {
 }
 
 .source-text, .image-desc p {
-    font-size: .8rem;
+    font-size: .75rem;
 }
 
 .viewport {
@@ -183,6 +183,8 @@ p {
 
 #viewport12 {
     padding: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-container {
@@ -292,7 +294,7 @@ p {
 }
 
 .left-space-5 {
-    margin-left: 5vw;
+    padding-left: 5vw;
 }
 
 .right-space-5 {
@@ -419,6 +421,7 @@ p {
 }
 
 .last-page {
+    width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -495,6 +498,44 @@ footer {
 #langauge-selected a {
     color: white
 }
+
+.last-page-row {
+    width: 100%;
+}
+
+.footer-viewport {
+    flex-wrap: wrap;
+}
+.qr-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.qr-square {
+    height: 196px;
+    width: 196px;
+}
+
+.qr-code {
+    height: 100%;
+    width: auto;
+} 
+
+#summary {
+    padding-top: 7.5vh;
+}
+
+.software-credits {
+    align-self: flex-end;
+    text-align: center;
+    padding: 2.5vh 33.33%;
+}
+
+.software-credits p {
+    font-size: .75rem;
+}
+
 /*         ▲       ▲         */
 /*         ▲       ▲         */
 /*         ▲       ▲         */
@@ -539,6 +580,16 @@ footer {
     .language-bar {
         padding: 36px;
     }
+
+    .qr-square {
+        height: 128px;
+        width: 128px;
+    }
+
+    .software-credits {
+        padding: 2.5vh 25%;
+    }
+    
 }
 
 /*                           */
@@ -565,11 +616,12 @@ footer {
         color: var(--light-color);
     }
     .left-space-5 {
-        margin-left: 2.5vw;
+        padding-left: 2.5vw;
     }
     .left-space-2_5 {
         padding-left: 1vw;
     }
+
 }
 
 /*                           */
@@ -593,6 +645,10 @@ footer {
         padding: 1%;
     }
 
+    h1 {
+        font-size: 6rem;
+         line-height: 7rem;
+    }
     h2 {
         font-size: 2.3rem;
     }
@@ -605,6 +661,16 @@ footer {
     .detail-text p {
         font-size: .75rem;
         color: var(--light-color);
+    }
+    .qr-square {
+        height: 64px;
+        width: 64px;
+    }
+    .row-container {
+        max-height: 50%;
+    }
+    .main {
+        padding: 1.25rem 2.5rem;
     }
 }
 
@@ -642,6 +708,14 @@ footer {
         font-size: .7rem;
         color: var(--light-color);
     }
+    .qr-square {
+        height: 64px;
+        width: 64px;
+    }
+
+    .left-space-5 {
+        padding-left: 0px;
+    }
 }
 
 /*     ▼       ▼       ▼     */
@@ -654,23 +728,7 @@ footer {
 /*                           */
 /* Default code for portrait */
 @media (orientation:portrait) {
-    /*
-    htmnl, body {
-        font-size: 12px;
-    }
-    h2 {
-        font-size: 2.3rem;
-    }
-    h3 {
-        font-size: 1.25rem;
-    }
-    p {
-        font-size: 0.85rem;
-    }
-    .detail-text p {
-        font-size: .75rem;
-        color: var(--light-color);
-    } */
+
 
     .left-navbar {
         display: none;
@@ -764,7 +822,7 @@ footer {
         padding-top: 0px;
     }
     .left-space-5 {
-        margin-left: 0;
+        padding-left: 0;
     }
 
     .button {
@@ -775,140 +833,19 @@ footer {
         align-items: center;
         justify-content: center;
         transition: all 0.25s ease 0s;
+    }
+
+    .graph {
+        padding: 0px 15%;
+    }
+    #graph-ivana-anne {
+        padding: 0px;
+    }
+
+    .row-container {
+        min-height: unset;
     }
 }
-
-/*                           */
-/* Devices up to tablets     */
-/* Galaxy Tab 2 & iPadPro*/
-/* portraits                 */
-/*@media (max-width: 834px) and (orientation:portrait) {
-    html, body {
-        background-color: white;
-        font-size: 18px;
-    }
-    .main {
-        padding: 2rem 1rem 0rem 1rem;
-    }
-    .left-navbar {
-        display: none;
-    }
-
-    .viewport {
-        padding: 0px;
-    }
-    .row-container {
-        flex-wrap: wrap;
-        height: auto;
-        min-height: 40%;
-    }
-    .mobile-flip {
-        flex-direction: column-reverse;
-    }
-    
-    .home-button {
-        margin: 11px;
-    }
-    
-    .vid, .caption, .specs, .pics {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .vid {
-        padding-top: 1vh;
-    }
-    .video-adapt {
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        max-height: 20vh;
-        background-size: cover;
-    }
-
-    .welcome-container {
-        max-height: 60vh;
-    }
-
-    #vid-viewport1 {
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        max-height: 100%;
-        background-size: cover;
-    }
-
-    .intro {
-        padding-top: 4rem;
-    }
-
-    .pics {
-        width: 70%;
-        margin: auto;
-        padding-top: 0.5rem;
-    }
-
-    .image {
-        height: 12vh;
-    }
-    .specs {
-        width: 100%;
-        margin: auto;
-        padding: 3% 0 3% 0;
-    }
-    .detail-col {
-        width: 100%;
-    }
-
-      .icon-group {
-        display: flex;
-        padding-bottom: 1vh;
-    }
-
-    .sources {
-        padding-top: 0.5rem;
-    }
-
-    .logo {
-        height: 5rem;
-        padding-bottom: 1rem;
-      }
-    
-    .top-space-5 {
-        padding-top: 2vh;
-    }
-    .top-space-2_5 {
-        padding-top: 1.5vh;
-    }
-    .mobile-no-top-space {
-        padding-top: 0px;
-    }
-    .left-space-5 {
-        margin-left: 0;
-    }
-    h2 {
-        font-size: 2.4rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    .detail-text p {
-        font-size: .9rem;
-        color: var(--light-color);
-    }
-    .button {
-        cursor: pointer;
-        height: 3.5vh;
-        width: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.25s ease 0s;
-    }
-}*/
 
 /*                           */
 /* Devices up to tablets     */
@@ -1016,7 +953,7 @@ footer {
         padding-top: 0px;
     }
     .left-space-5 {
-        margin-left: 0;
+        padding-left: 0;
     }
     h2 {
         font-size: 2.4rem;
@@ -1040,11 +977,21 @@ footer {
         justify-content: center;
         transition: all 0.25s ease 0s;
     }
+    .qr-square {
+        height: 128px;
+        width: 128px;
+    }
+    .button {
+        width: 33.3%;
+    }
+    .software-credits {
+        padding: 2.5vh 25%;
+    }
 }
 
-/*                           */
-/* Devices up to mobile */
-/* */
+/*                          */
+/* Devices up to mobile     */
+/*                          */
 /* portrait                 */
 @media (max-width: 480px) and (orientation:portrait) {
     html, body {
@@ -1155,7 +1102,7 @@ footer {
         padding-top: 0px;
     }
     .left-space-5 {
-        margin-left: 0;
+        padding-left: 0;
     }
     h2 {
         font-size: 2.3rem;
@@ -1170,7 +1117,51 @@ footer {
         font-size: .75rem;
         color: var(--light-color);
     }
-    .button {
-        width: 33.3%;
+  
+    .qr-square {
+        height: 64px;
+        width: 64px;
+    }
+    .title-fake {
+        float: right;
+        margin-left: auto;
+    }
+    .title-Lab {
+        margin-left: 12.5vw;
+    }
+    .title-line-container {
+        display: flex;
+        width: 100%;
+        line-height: var(--title-phoneUp-height);
+    }
+    h1 {
+        font-size: var(--title-phoneUp-size);
+        line-height: var(--title-phoneUp-height);
+    }
+    .title-line-container {
+        height: var(--title-phoneUp-height);
+    }
+    .title-line {
+        background-color: var(--accent-color);
+        ;
+        height: 1rem;
+        margin: calc(var(--title-phoneUp-height) * 0.55 + 0%) 15px calc(var(--title-phoneUp-height) * 0.45 + 0%);
+        width: 100%;
+    }
+    .language-bar {
+        flex-direction: column;
+        padding: 10px 36px;
+        text-align: right;
+    }
+    .language-bar-element {
+        margin: 0.2rem 0rem;
+        padding: .25rem 1rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) and (orientation:portrait) { 
+    h1 {
+        font-size: 7.5rem;
     }
 }

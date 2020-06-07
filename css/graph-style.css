@@ -72,6 +72,7 @@
     height: calc(var(--graph-line-height) / 4);
 }
 
+
 /*        */
 /* Colors */
 /*        */
@@ -93,15 +94,17 @@
 
 .algorithm {
     border: solid var(--accent-color);
-    border-width: 1px;
-    padding: 0px 5px;
 }
 
 .algorithm-2 {
     border: solid var(--accent-color-ligth);
+    margin-left: .25rem;
+}
+
+.algorithm, .algorithm-2 {
     border-width: 1px;
-    padding: 0px .333rem;
-    margin-left: .5rem;
+    padding: 0px .25rem;
+    font-size: calc(var(--graph-text-size) * .75) !important;
 }
 
 .graph-col-data {
