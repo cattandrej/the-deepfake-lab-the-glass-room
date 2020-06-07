@@ -991,6 +991,10 @@ footer {
     .software-credits {
         padding: 2.5vh 25%;
     }
+
+    footer {
+        padding-bottom: 1rem;
+    }
 }
 
 /*                          */
