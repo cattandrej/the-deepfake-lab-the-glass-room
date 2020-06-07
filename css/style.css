@@ -613,7 +613,7 @@ footer {
     .button {
         width: 33.3%;
     }
-    
+
     h2 {
         font-size: 2.3rem;
     }
@@ -657,6 +657,10 @@ footer {
         padding: 1%;
     }
 
+    .home-button {
+        margin: 11px;
+    }
+    
     .button {
         width: 33.3%;
     }
@@ -709,6 +713,10 @@ footer {
 
     .vid, .caption, .specs, .pics {
         padding: 1%;
+    }
+
+    .home-button {
+        margin: 9px;
     }
 
     .button {
@@ -1044,7 +1052,7 @@ footer {
     }
     
     .home-button {
-        margin: 11px;
+        margin: 9px;
     }
     
     .vid, .caption, .specs, .pics {
