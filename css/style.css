@@ -526,6 +526,10 @@ footer {
     padding-top: 7.5vh;
 }
 
+#summary h3 {
+    text-align: center;
+}
+
 .software-credits {
     align-self: flex-end;
     text-align: center;
