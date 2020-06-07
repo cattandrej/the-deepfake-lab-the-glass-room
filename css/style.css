@@ -200,7 +200,7 @@ p {
 
 .rows {
     height: auto;
-    padding-top: 2.5vh
+    padding-top: 2.5vh;
 }
 
 .row-container {
@@ -761,9 +761,11 @@ footer {
     .left-navbar {
         display: none;
     }
+
     .viewport {
-        padding: 25px 60px;
+        padding: 0px;
     }
+
     .row-container {
         flex-wrap: wrap;
         height: auto;
@@ -873,6 +875,16 @@ footer {
     .row-container {
         min-height: unset;
     }
+}
+
+/*                           */
+/* Devices up to tablets     */
+/* Galaxy Tab S2 (1024 x 768)*/
+/* portraits                 */
+@media (max-width: 834px) and (orientation:portrait) {
+.rows {
+    padding-top: 1vh;
+}
 }
 
 /*                           */
@@ -1030,6 +1042,11 @@ footer {
         background-color: white;
         font-size: 14px;
     }
+
+    .rows {
+        padding-top: 2.5vh;
+    }
+
     .main {
         padding: 2rem 1rem 0rem 1rem;
     }
@@ -1195,5 +1212,15 @@ footer {
 @media (max-width: 480px) and (orientation:portrait) { 
     h1 {
         font-size: 7.5rem;
+    }
+}
+
+@media (max-width: 360px) and (orientation:portrait) { 
+    .rows{
+    padding-top: 0.5vh;
+    }
+
+    p {
+        font-size: 0.8rem;
     }
 }
