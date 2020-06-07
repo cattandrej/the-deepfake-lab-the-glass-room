@@ -610,6 +610,10 @@ footer {
         font-size: 18px;
     }
 
+    .button {
+        width: 33.3%;
+    }
+    
     h2 {
         font-size: 2.3rem;
     }
@@ -651,6 +655,10 @@ footer {
 
     .vid, .caption, .specs, .pics {
         padding: 1%;
+    }
+
+    .button {
+        width: 33.3%;
     }
 
     h1 {
@@ -703,6 +711,10 @@ footer {
         padding: 1%;
     }
 
+    .button {
+        width: 33.3%;
+    }
+
     h2 {
         font-size: 2.3rem;
     }
@@ -742,7 +754,7 @@ footer {
         display: none;
     }
     .viewport {
-        padding: 25px 100px;
+        padding: 25px 60px;
     }
     .row-container {
         flex-wrap: wrap;
