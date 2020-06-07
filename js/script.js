@@ -633,12 +633,16 @@ if (div != null) {
 
 // real viewport size change detector
 function windowResizeDetector(){
+  
     if (div != null)
         div.innerHTML = window.innerWidth + " x " + window.innerHeight;
 
     $(viewportClass).each(function (i, obj) {
         $(this).css("height", $(window.top).height());
     });
+    $('html, body').animate({
+        scrollTop: $('#viewport' + currentViewportPos).offset().top
+    }, 0)
     console.log("resized");
 }
 window.addEventListener("resize", windowResizeDetector);
