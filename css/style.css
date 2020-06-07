@@ -305,6 +305,10 @@ p {
     padding-top: 5vh;
 }
 
+.bottom-space-2_5 {
+    padding-bottom: 2.5vh;
+}
+
 .image {
     height: 20vh;
 }
@@ -514,12 +518,12 @@ footer {
 
 .qr-square {
     height: 196px;
-    width: 196px;
+    width: 196px;    
 }
 
 .qr-code {
     height: 100%;
-    width: auto;
+    width: auto;    
 } 
 
 #summary {
