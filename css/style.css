@@ -195,6 +195,7 @@ p {
 .logo {
     margin: auto;
     height: 4rem;
+    max-width: 100%;
     padding-bottom: 0.5rem;
   }
 
@@ -633,7 +634,9 @@ footer {
     .left-space-2_5 {
         padding-left: 1vw;
     }
-
+    .process {
+        width: 33.33%;
+    }
 }
 
 /*                           */
@@ -839,6 +842,7 @@ footer {
 
     .logo {
         height: 5rem;
+        max-width: 100%;
         padding-bottom: 1rem;
       }
     
@@ -881,17 +885,7 @@ footer {
 /* Devices up to tablets     */
 /* Galaxy Tab S2 (1024 x 768)*/
 /* portraits                 */
-@media (max-width: 834px) and (orientation:portrait) {
-.rows {
-    padding-top: 1vh;
-}
-}
-
-/*                           */
-/* Devices up to tablets     */
-/* Galaxy Tab S2 (1024 x 768)*/
-/* portraits                 */
-@media (max-width: 799px) and (orientation:portrait) {
+@media (max-width: 799px) and (orientation: portrait) {
     html, body {
         background-color: white;
         font-size: 18px;
@@ -910,6 +904,9 @@ footer {
         flex-wrap: wrap;
         height: auto;
         min-height: 40%;
+    }
+    .rows {
+        padding-top: 1vh;
     }
     .mobile-flip {
         flex-direction: column-reverse;
@@ -977,12 +974,7 @@ footer {
     .sources {
         padding-top: 0.5rem;
     }
-
-    .logo {
-        height: 5rem;
-        padding-bottom: 1rem;
-      }
-    
+  
     .top-space-5 {
         padding-top: 2vh;
     }
@@ -1021,8 +1013,8 @@ footer {
         height: 128px;
         width: 128px;
     }
-    .button {
-        width: 33.3%;
+    .process {
+        width: 33.33%;
     }
     .software-credits {
         padding: 2.5vh 25%;
@@ -1133,6 +1125,7 @@ footer {
 
     .logo {
         height: 5rem;
+        max-width: 100%;
         padding-bottom: 1rem;
       }
     
@@ -1184,6 +1177,7 @@ footer {
         line-height: var(--title-phoneUp-height);
     }
     h1 {
+        font-size: 7.5rem;
         font-size: var(--title-phoneUp-size);
         line-height: var(--title-phoneUp-height);
     }
@@ -1206,12 +1200,6 @@ footer {
         margin: 0.2rem 0rem;
         padding: .25rem 1rem;
         font-size: 1.25rem;
-    }
-}
-
-@media (max-width: 480px) and (orientation:portrait) { 
-    h1 {
-        font-size: 7.5rem;
     }
 }
 
