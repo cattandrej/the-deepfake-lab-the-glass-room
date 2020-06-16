@@ -57,37 +57,77 @@ localizationLabels = [
     ["it_IT", "Italiano"],
     ["es_ES", "Español"],
     ["fr_FR", "Français"],
-    ["de_DE", "Deutsche"]
+    ["de_DE", "Deutsche"],
+    ["sv_SV", "Svenska"],
+    ["ln_06", "lang06"],
+    ["ln_07", "lang07"],
+    ["ln_08", "lang08"],
+    ["ln_09", "lang09"]
 ]
 
-// language bar HTML node creation
-var languageBarNode = document.createElement("div");
-languageBarNode.setAttribute("class", "language-bar");
-languageBarNode.setAttribute("id", "language-bar");
-document.getElementById("viewport0").appendChild(languageBarNode);
+// current page language identification
+var pageLanguage = 0;
+
+for (i = 0; i < i < localizationLabels.length; i++) {
+    if ($("html").attr("lang") === localizationLabels[i][0]) {
+        pageLanguage = i;
+        break;
+    }
+}
+console.log("pageLanguage = " + localizationLabels[pageLanguage][1]);
+
+
+// language selector
+var languageBar = document.getElementById("language-bar");
+var dropdownMenu = document.getElementById("custom-dropdown-menu");
 
 for (currentLocalization = 0; currentLocalization < localizationLabels.length; currentLocalization++) {
 
-    // language bar
-    var mainNode = document.createElement("div");
+    // language-bar generation
+    var languageBarNode = document.createElement("div");
     var aNode = document.createElement("a");
     var textNode = document.createTextNode(localizationLabels[currentLocalization][1]);
 
+    languageBarNode.setAttribute("class", "language-bar-node");
+    languageBarNode.setAttribute("id", localizationLabels[currentLocalization][0]);
+    if (pageLanguage != currentLocalization) {
+        aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
+    } else {
+        languageBarNode.classList.add("language-selected");
+    }
+
     aNode.appendChild(textNode);
-    // don't create a link to the translated page if the selected language is currently displayed
-    if ($("html").attr("lang") !== localizationLabels[currentLocalization][0]) {
-        if (localizationLabels[currentLocalization][0] !== "en_UK") {
+    languageBarNode.appendChild(aNode);
+    languageBar.append(languageBarNode);
+
+    // dropdown-menu generation
+    if (pageLanguage != currentLocalization) {
+        var dropdownMenuNode = document.createElement("div");
+        aNode = document.createElement("a");
+        textNode = document.createTextNode(localizationLabels[currentLocalization][1]);
+
+        dropdownMenuNode.setAttribute("class", "dropdown-menu-node");
+        dropdownMenuNode.setAttribute("id", localizationLabels[currentLocalization][0]);
+        if (currentLocalization != 0) {
             aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
         } else {
             aNode.setAttribute("href", "index.html");
         }
+
+
+        aNode.appendChild(textNode);
+        dropdownMenuNode.appendChild(aNode);
+        dropdownMenu.append(dropdownMenuNode);
+    } else {
+        textNode = document.createTextNode("Language: " + localizationLabels[pageLanguage][1]);
+        document.getElementById("current-language").appendChild(textNode);
     }
-
-    mainNode.append(aNode);
-    mainNode.setAttribute("class", "language-bar-element " + localizationLabels[currentLocalization][0]);
-
-    document.getElementById("language-bar").appendChild(mainNode);
 }
+
+$(".current-language").click(function () {
+    $(".custom-dropdown-menu").toggleClass("dropdown-menu-open");
+    console.log("click");
+});
 
 for (i = 0; i < localizationLabels.length; i++) {
     if ($("html").attr("lang") === localizationLabels[i][0]) {
