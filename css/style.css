@@ -1,8 +1,19 @@
+/*     ▼       ▼       ▼     */
+/*                           */
+/*    D  E  F  A  U  L  T    */
+/*    S   T    Y    L   E    */
+/*                           */
+/*     ▼       ▼       ▼     */
+
 :root {
     --accent-color: #ee313c;
     --dark-color: #333333;
     --light-color: #656565;
     --lighter-color: #919aa1;
+    --title-tabledUp-size: 10rem;
+    --title-phoneUp-size: 8rem;
+    --title-tabledUp-height: 11rem;
+    --title-phoneUp-height: 8rem;
 }
 
 .disable-touch {
@@ -31,13 +42,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Jost";
-    src: url("../res/fonts/Jost-900-Black.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-
 html, body {
     padding: 0px;
     margin: 0px;
@@ -54,13 +58,14 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: normal;
 }
 
-h1, h2, a, a:hover {
+h1, h2, a, a:hover, a:visited {
     color: var(--accent-color);
 }
 
 h1 {
     font-size: 10rem;
     font-weight: 600;
+    line-height: var(--title-tabledUp-height);
 }
 
 h2 {
@@ -69,7 +74,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
     font-weight: 600;
 }
 
@@ -90,21 +95,68 @@ p {
 }
 
 .main {
-    padding-top: 5%;
+    padding-top: 4rem;
 }
 
-.subtitle {
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.title-break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.title-Deep {}
+
+.subtitle h3 {
     padding-left: 1rem;
-    padding-top: 5%;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.scroll-container {
+    display: flex;
+    align-content: center;
+    height: 4rem;
+    animation: scroll 2s infinite ease-out;
+}
+
+.scroll-down-arrow {
+    border: solid var(--accent-color);
+    border-width: 0 4px 4px 0;
+    padding: .5rem;
+    transform: rotate(45deg);
+    margin: auto;
+    cursor: pointer;
+}
+
+@keyframes scroll {
+    0% {
+    }
+    20% {
+        transform: translateY(.5rem);
+    }
+    30% {
+        transform: translateY(-.25rem);
+    }
+    40% {
+        transform: translateY(.5rem);
+    }
+    100% {
+    }
 }
 
 .detail-text p {
-    font-size: .80rem;
+    font-size: .8rem;
     color: var(--light-color);
 }
 
 .detail-text-p p {
-    font-size: .80rem;
+    font-size: .85rem;
     color: var(--light-color);
 }
 
@@ -114,7 +166,7 @@ p {
 
 .viewport {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     max-width: 100%;
     overflow: hidden;
     padding: 0px 100px 0px 150px;
@@ -123,15 +175,16 @@ p {
 #viewport0 {
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 #viewport1 {
-    padding: 0px;  
+    padding: 0px;
 }
 
 #viewport12 {
     padding: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-container {
@@ -140,12 +193,15 @@ p {
 }
 
 .logo {
-    max-width: 75%;
-}
+    margin: auto;
+    height: 4rem;
+    max-width: 100%;
+    padding-bottom: 0.5rem;
+  }
 
 .rows {
     height: auto;
-    padding-top: 2.5vh
+    padding-top: 2.5vh;
 }
 
 .row-container {
@@ -153,7 +209,7 @@ p {
     width: 100%;
     padding: 0px 10px;
     min-height: 45%;
-    max-height: 55%;
+    max-height: 60%;
     overflow: hidden;
 }
 
@@ -182,7 +238,7 @@ p {
 .welcome-container {
     width: 100%;
     padding-top: 5%;
-    max-height: 66vh;
+    max-height: 70vh;
 }
 
 .video-container {
@@ -239,7 +295,7 @@ p {
 }
 
 .left-space-5 {
-    margin-left: 5vw;
+    padding-left: 5vw;
 }
 
 .right-space-5 {
@@ -250,10 +306,12 @@ p {
     padding-top: 5vh;
 }
 
+.bottom-space-2_5 {
+    padding-bottom: 2.5vh;
+}
+
 .image {
-    width: 15vw;
     height: 20vh;
-    background-color: var(--accent-color);
 }
 
 .image-adapt {
@@ -261,6 +319,10 @@ p {
     background-repeat: no-repeat;
     background-position: center center;
     height: 100%;
+}
+
+.gif-margin {
+    margin-right: 1rem;
 }
 
 .detail-row, .tab {
@@ -271,14 +333,12 @@ p {
 
 .button-selected {
     border-bottom: 4px solid var(--accent-color);
-    font-weight: 700;
     background-color: rgba(238, 49, 60, 0.15);
 }
 
 .button-selected:hover {
     border-bottom: 4px solid var(--accent-color);
-    font-weight: 700;
-    background-color:  rgb(238, 49, 60, 0.2);
+    background-color: rgb(238, 49, 60, 0.2);
 }
 
 .button {
@@ -306,14 +366,22 @@ p {
 
 .ico {
     filter: brightness(.666);
-    height: 2.5vw;
-    width: 2.5vw;
-    margin-right: 15px;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.95rem;
 }
 
 .icon-group {
     display: flex;
     padding-bottom: 2.5vh;
+}
+
+.sources {
+    padding-top: 1rem;
+}
+
+.intro {
+    padding-top: 2rem;
 }
 
 .left-navbar {
@@ -352,18 +420,13 @@ p {
     width: 16.66%;
 }
 
-.graph {
-    max-width: 95%;
-    padding-left: 5%;
-    max-height: 15vh;
-}
-
 .space-between {
     display: flex;
     justify-content: space-between;
 }
 
 .last-page {
+    width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -422,92 +485,286 @@ footer {
     align-items: flex-end;
     justify-content: flex-end;
     padding: 36px;
-    padding-right: 150px;
+    text-align: center;
 }
 
+
+
 .language-bar-element {
-    min-width: 75px;
     margin: 0px 5px;
+    padding: .25rem .75rem;
 }
 
 #langauge-selected {
-    font-weight: 600;
+    background-color: var(--accent-color);
+    border-radius: 32px;
 }
 
+#langauge-selected a {
+    color: white
+}
 
+.last-page-row {
+    width: 100%;
+}
+
+.footer-viewport {
+    flex-wrap: wrap;
+}
+.qr-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.qr-square {
+    height: 196px;
+    width: 196px;    
+}
+
+.qr-code {
+    height: 100%;
+    width: auto;    
+} 
+
+#summary {
+    padding-top: 7.5vh;
+}
+
+#summary h3 {
+    text-align: center;
+}
+
+.software-credits {
+    align-self: flex-end;
+    text-align: center;
+    padding: 2.5vh 33.33%;
+}
+
+.software-credits p {
+    font-size: .75rem;
+}
+
+/*         ▲       ▲         */
+/*         ▲       ▲         */
+/*         ▲       ▲         */
+/* Code above is default     */
+/*         ▲       ▲         */
+/*         ▲       ▲         */
+/*         ▲       ▲         */
+
+
+/* Here the fun begins       */
+
+
+/*     ▼       ▼       ▼     */
+/*                           */
+/*     L A N D S C A P E     */
+/*     O    N     L    Y     */
+/*                           */
+/*     ▼       ▼       ▼     */
+
+
+/*                           */
+/* Devices up to big tablets */
+/* Galaxy Tab 2 (1280 x 800) */
+/* landscape                 */
 @media (max-width: 1919px) and (orientation:landscape) {
-    html, body {
-        font-size: 18px;
-    }
 
-    .viewport {
-        padding: 0px 0px 0px 50px;
-    }
-}
-
-/* Lenovo Yoga Tablet 2 */ 
-@media (max-width: 1280px) and (orientation:landscape) {
     html, body {
-        background-color: white;
         font-size: 15px;
     }
-    
     .viewport {
         padding: 0px 0px 0px 50px;
     }
-
     .home-button {
         margin: 24px;
     }
-
     .top-space-5 {
         padding-top: 2.5vh;
     }
-
     .image {
         max-height: 100%;
     }
-
     .language-bar {
         padding: 36px;
     }
-}
 
-@media only screen and (max-width: 1200px) {
-
-    html, body {}
-
-    .left-space-5 {
-        margin-left: 2.5vw;
+    .qr-square {
+        height: 128px;
+        width: 128px;
     }
 
+    .software-credits {
+        padding: 2.5vh 25%;
+    }
+    
+}
+
+/*                           */
+/* Devices up to med tablets */
+/* Galaxy Tab S2 (1024 x 768)*/
+/* landscape                 */
+@media (max-width: 1199px) and (orientation:landscape) {
+    html, body {
+        background-color: white;
+        font-size: 18px;
+    }
+
+    .button {
+        width: 33.3%;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+    .detail-text p {
+        font-size: .75rem;
+        color: var(--light-color);
+    }
+    .left-space-5 {
+        padding-left: 2.5vw;
+    }
     .left-space-2_5 {
         padding-left: 1vw;
     }
-}
-
-/* Samsung Galaxy Tab S2 */ 
-@media (max-width: 1024px) and (orientation:landscape) {
-    html, body {
-        background-color: white;
-        font-size: 14px;
+    .process {
+        width: 33.33%;
     }
 }
 
-@media (max-width: 768px) and (orientation:landscape) {
-    body {
-        /* background-color: green; */
-    }
-
-    .mobile-no-top-space {
-        padding-top: 0px;
-    }
-
-    .left-navbar { display: none;}
-
+/*                           */
+/* Devices up to big mobile */
+/* Samsung A50 & S10*/
+/* landscape                 */
+@media (max-width: 991px) and (orientation:landscape) {
     html, body {
-        font-size: 12px;
-    }    
+        font-size: 12.5px;
+    }
+    
+    .viewport {
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .left-navbar {
+        display: none;
+    }
+
+    .vid, .caption, .specs, .pics {
+        padding: 1%;
+    }
+
+    .home-button {
+        margin: 11px;
+    }
+
+    .button {
+        width: 33.3%;
+    }
+
+    h1 {
+        font-size: 6rem;
+         line-height: 7rem;
+    }
+    h2 {
+        font-size: 2.3rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+    .detail-text p {
+        font-size: .75rem;
+        color: var(--light-color);
+    }
+    .qr-square {
+        height: 64px;
+        width: 64px;
+    }
+    .row-container {
+        max-height: 50%;
+    }
+    .main {
+        padding: 1.25rem 2.5rem;
+    }
+}
+
+/*                           */
+/* Devices up to small mobile */
+/* #1 common screen*/
+/* landscape                 */
+@media (max-width: 720px) and (orientation:landscape) {
+    html, body {
+        font-size: 11.5px;
+    }
+    
+    .viewport {
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .left-navbar {
+        display: none;
+    }
+
+    .vid, .caption, .specs, .pics {
+        padding: 1%;
+    }
+
+    .home-button {
+        margin: 9px;
+    }
+
+    .button {
+        width: 33.3%;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+    .detail-text p {
+        font-size: .7rem;
+        color: var(--light-color);
+    }
+    .qr-square {
+        height: 64px;
+        width: 64px;
+    }
+
+    .left-space-5 {
+        padding-left: 0px;
+    }
+}
+
+/*     ▼       ▼       ▼     */
+/*                           */
+/*       P O R T R A I T     */
+/*       O    N    L   Y     */
+/*                           */
+/*     ▼       ▼       ▼     */
+
+/*                           */
+/* Default code for portrait */
+@media (orientation:portrait) {
+
+
+    .left-navbar {
+        display: none;
+    }
+
     .viewport {
         padding: 0px;
     }
@@ -519,16 +776,439 @@ footer {
     .mobile-flip {
         flex-direction: column-reverse;
     }
+    
+    .home-button {
+        margin: 11px;
+    }
+    
     .vid, .caption, .specs, .pics {
         width: 100%;
         margin: 0px;
         padding: 0px;
     }
+    .vid {
+        padding-top: 1vh;
+    }
+    .video-adapt {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 18vh;
+        background-size: cover;
+    }
+
+    .welcome-container {
+        max-height: 60vh;
+    }
+
+    #vid-viewport1 {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 100%;
+        background-size: cover;
+    }
+
+    .intro {
+        padding-top: 4rem;
+    }
+
+    .pics {
+        width: 70%;
+        margin: auto;
+        padding-top: 0.5rem;
+    }
+
+    .image {
+        height: 12vh;
+    }
+    .specs {
+        width: 100%;
+        margin: auto;
+        padding: 3% 0 3% 0;
+    }
+    .detail-col {
+        width: 100%;
+    }
+
+      .icon-group {
+        display: flex;
+        padding-bottom: 1vh;
+    }
+
+    .sources {
+        padding-top: 0.5rem;
+    }
+
+    .logo {
+        height: 5rem;
+        max-width: 100%;
+        padding-bottom: 1rem;
+      }
+    
+    .top-space-5 {
+        padding-top: 2vh;
+    }
+    .top-space-2_5 {
+        padding-top: 1.5vh;
+    }
+    .mobile-no-top-space {
+        padding-top: 0px;
+    }
+    .left-space-5 {
+        padding-left: 0;
+    }
+
+    .button {
+        cursor: pointer;
+        height: 3.5vh;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.25s ease 0s;
+    }
+
+    .graph {
+        padding: 0px 15%;
+    }
+    #graph-ivana-anne {
+        padding: 0px;
+    }
+
+    .row-container {
+        min-height: unset;
+    }
 }
 
+/*                           */
+/* Devices up to tablets     */
+/* Galaxy Tab S2 (1024 x 768)*/
+/* portraits                 */
+@media (max-width: 799px) and (orientation: portrait) {
+    html, body {
+        background-color: white;
+        font-size: 18px;
+    }
+    .main {
+        padding: 2rem 1rem 0rem 1rem;
+    }
+    .left-navbar {
+        display: none;
+    }
 
-@media (max-width: 640px) and (orientation:landscape) {
-    body {
-        /* background-color: blue; */
+    .viewport {
+        padding: 0px;
+    }
+    .row-container {
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 40%;
+    }
+    .rows {
+        padding-top: 1vh;
+    }
+    .mobile-flip {
+        flex-direction: column-reverse;
+    }
+    
+    .home-button {
+        margin: 11px;
+    }
+    
+    .vid, .caption, .specs, .pics {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .vid {
+        padding-top: 1vh;
+    }
+    .video-adapt {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 20vh;
+        background-size: cover;
+    }
+
+    .welcome-container {
+        max-height: 60vh;
+    }
+
+    #vid-viewport1 {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 100%;
+        background-size: cover;
+    }
+
+    .intro {
+        padding-top: 4rem;
+    }
+
+    .pics {
+        width: 70%;
+        margin: auto;
+        padding-top: 0.5rem;
+    }
+
+    .image {
+        height: 12vh;
+    }
+    .specs {
+        width: 100%;
+        margin: auto;
+        padding: 3% 0 3% 0;
+    }
+    .detail-col {
+        width: 100%;
+    }
+
+      .icon-group {
+        display: flex;
+        padding-bottom: 1vh;
+    }
+
+    .sources {
+        padding-top: 0.5rem;
+    }
+  
+    .top-space-5 {
+        padding-top: 2vh;
+    }
+    .top-space-2_5 {
+        padding-top: 1.5vh;
+    }
+    .mobile-no-top-space {
+        padding-top: 0px;
+    }
+    .left-space-5 {
+        padding-left: 0;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .detail-text p {
+        font-size: .9rem;
+        color: var(--light-color);
+    }
+    .button {
+        cursor: pointer;
+        height: 3.5vh;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.25s ease 0s;
+    }
+    .qr-square {
+        height: 128px;
+        width: 128px;
+    }
+    .process {
+        width: 33.33%;
+    }
+    .software-credits {
+        padding: 2.5vh 25%;
+    }
+
+    footer {
+        padding-bottom: 1rem;
+    }
+}
+
+/*                          */
+/* Devices up to mobile     */
+/*                          */
+/* portrait                 */
+@media (max-width: 480px) and (orientation:portrait) {
+    html, body {
+        background-color: white;
+        font-size: 14px;
+    }
+
+    .rows {
+        padding-top: 2.5vh;
+    }
+
+    .main {
+        padding: 2rem 1rem 0rem 1rem;
+    }
+    .left-navbar {
+        display: none;
+    }
+    html, body {
+        font-size: 12px;
+    }
+    .viewport {
+        padding: 0px;
+    }
+    .row-container {
+        flex-wrap: wrap;
+        height: auto;        
+        min-height: 38%;
+    }
+    .mobile-flip {
+        flex-direction: column-reverse;
+    }
+    
+    .home-button {
+        margin: 9px;
+    }
+    
+    .vid, .caption, .specs, .pics {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .vid {
+        padding-top: 1vh;
+    }
+    .video-adapt {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 18vh;
+        background-size: cover;
+    }
+
+    .welcome-container {
+        max-height: 60vh;
+    }
+
+    #vid-viewport1 {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 100%;
+        background-size: cover;
+    }
+
+    .intro {
+        padding-top: 4rem;
+    }
+
+    .pics {
+        width: 70%;
+        margin: auto;
+        padding-top: 0.5rem;
+    }
+
+    .image {
+        height: 12vh;
+    }
+    .specs {
+        width: 100%;
+        margin: auto;
+        padding: 3% 0 3% 0;
+    }
+    .detail-col {
+        width: 100%;
+    }
+
+      .icon-group {
+        display: flex;
+        padding-bottom: 1vh;
+    }
+
+    .sources {
+        padding-top: 0.5rem;
+    }
+
+    .logo {
+        height: 5rem;
+        max-width: 100%;
+        padding-bottom: 1rem;
+      }
+    
+    .top-space-5 {
+        padding-top: 2vh;
+    }
+    .top-space-2_5 {
+        padding-top: 1.5vh;
+    }
+
+    .left-space-2_5 {
+        padding-left: 0;
+    }
+
+    .mobile-no-top-space {
+        padding-top: 0px;
+    }
+    .left-space-5 {
+        padding-left: 0;
+    }
+    h2 {
+        font-size: 2.3rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.85rem;
+    }
+    .detail-text p {
+        font-size: .75rem;
+        color: var(--light-color);
+    }
+  
+    .qr-square {
+        height: 64px;
+        width: 64px;
+    }
+    .title-fake {
+        float: right;
+        margin-left: auto;
+    }
+    .title-Lab {
+        margin-left: 12.5vw;
+    }
+    .title-line-container {
+        display: flex;
+        width: 100%;
+        line-height: var(--title-phoneUp-height);
+    }
+    h1 {
+        font-size: 7.5rem;
+        font-size: var(--title-phoneUp-size);
+        line-height: var(--title-phoneUp-height);
+    }
+    .title-line-container {
+        height: var(--title-phoneUp-height);
+    }
+    .title-line {
+        background-color: var(--accent-color);
+        ;
+        height: 1rem;
+        margin: calc(var(--title-phoneUp-height) * 0.55 + 0%) 15px calc(var(--title-phoneUp-height) * 0.45 + 0%);
+        width: 100%;
+    }
+    .language-bar {
+        flex-direction: column;
+        padding: 10px 36px;
+        text-align: right;
+    }
+    .language-bar-element {
+        margin: 0.2rem 0rem;
+        padding: .25rem 1rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 360px) and (orientation:portrait) { 
+    .rows{
+    padding-top: 0.5vh;
+    }
+
+    p {
+        font-size: 0.8rem;
     }
 }
