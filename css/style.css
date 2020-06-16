@@ -609,6 +609,7 @@ custom-dropdown-menu{
     cursor: pointer;
     text-align: right;
     padding: 16px 25px;
+    border-radius: 64px;
 }
 
 .dropdown-menu-node:hover {
@@ -740,6 +741,11 @@ custom-dropdown-menu{
         margin: 11px;
     }
 
+    .language-bar-container {
+        right: 11px;
+        bottom: 64px;
+    }
+
     .button {
         width: 33.3%;
     }
@@ -802,7 +808,7 @@ custom-dropdown-menu{
         right: 9px;
         bottom: 64px;
     }
-    
+
     .button {
         width: 33.3%;
     }
@@ -860,6 +866,12 @@ custom-dropdown-menu{
     
     .home-button {
         margin: 11px;
+    }
+
+    
+    .language-bar-container {
+        right: 11px;
+        bottom: 64px;
     }
     
     .vid, .caption, .specs, .pics {
@@ -997,6 +1009,11 @@ custom-dropdown-menu{
         margin: 11px;
     }
     
+    .language-bar-container {
+        right: 11px;
+        bottom: 64px;
+    }
+
     .vid, .caption, .specs, .pics {
         width: 100%;
         margin: 0px;
