@@ -58,11 +58,7 @@ localizationLabels = [
     ["es_ES", "Español"],
     ["fr_FR", "Français"],
     ["de_DE", "Deutsche"],
-    ["sv_SV", "Svenska"],
-    ["ln_06", "lang06"],
-    ["ln_07", "lang07"],
-    ["ln_08", "lang08"],
-    ["ln_09", "lang09"]
+    ["sv_SV", "Svenska"]
 ]
 
 // current page language identification
@@ -102,22 +98,28 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
 
     // dropdown-menu generation
     if (pageLanguage != currentLocalization) {
+        var dropdownMenuNodeLink = document.createElement("a");
         var dropdownMenuNode = document.createElement("div");
         aNode = document.createElement("a");
         textNode = document.createTextNode(localizationLabels[currentLocalization][1]);
 
+        
         dropdownMenuNode.setAttribute("class", "dropdown-menu-node");
         dropdownMenuNode.setAttribute("id", localizationLabels[currentLocalization][0]);
         if (currentLocalization != 0) {
+            dropdownMenuNodeLink.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
             aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
         } else {
+            dropdownMenuNodeLink.setAttribute("href", "index.html");
             aNode.setAttribute("href", "index.html");
         }
 
 
         aNode.appendChild(textNode);
         dropdownMenuNode.appendChild(aNode);
-        dropdownMenu.append(dropdownMenuNode);
+        dropdownMenuNodeLink.append(dropdownMenuNode);
+        dropdownMenu.appendChild(dropdownMenuNodeLink);
+
     } else {
         textNode = document.createTextNode("Language: " + localizationLabels[pageLanguage][1]);
         document.getElementById("current-language").appendChild(textNode);
