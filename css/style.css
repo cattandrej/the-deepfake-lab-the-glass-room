@@ -599,7 +599,7 @@ custom-dropdown-menu{
     background-color: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(15px);
     transition: max-height 0.33s ease-out;
-    border-radius: 16px;
+    border-radius: 32px;
     margin-bottom: 8px;
     filter: drop-shadow(8px 8px 32px rgba(0,0,0,0.125));
     border: solid 1px white;
