@@ -58,7 +58,9 @@ localizationLabels = [
     ["es_ES", "Español"],
     ["fr_FR", "Français"],
     ["de_DE", "Deutsche"],
-    ["sv_SV", "Svenska"]
+    ["sv_SV", "Svenska"],
+    ["sl_SL", "Slovenian"],
+    ["lt_LT", "Lithuanian"]
 ]
 
 // current page language identification
