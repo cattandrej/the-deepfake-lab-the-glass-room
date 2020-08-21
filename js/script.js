@@ -200,6 +200,7 @@ $(".home-button").on('click', function (event) {
 $(window).scroll(function () {
 
     currentViewportPos = getCurrentViewportPos();
+    updateViewportSize();
 
 });
 
@@ -676,7 +677,7 @@ if (div != null) {
 }
 
 // real viewport size change detector
-function windowResizeDetector(){
+function updateViewportSize(){
   
     if (div != null)
         div.innerHTML = window.innerWidth + " x " + window.innerHeight;
@@ -689,5 +690,5 @@ function windowResizeDetector(){
     }, 0)
     console.log("resized");
 }
-window.addEventListener("resize", windowResizeDetector);
-windowResizeDetector();
+window.addEventListener("resize", updateViewportSize);
+updateViewportSize();
