@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+html, body, h2, h3, h4, h5, h6, p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.current-language, .custom-dropdown-menu {
+    font-family: "Jost", sans-serif;
+}
