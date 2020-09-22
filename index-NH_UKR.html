@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html class="disable-touch" lang="en_UK">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Deepfake Lab</title>
+    <meta name="theme-color" content="#ee313c"/>
+    <meta name="The Deepfake Lab" content="index,follow" />
+    <title>Empowering people to discover deepfakes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/img-urls.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/graph-style.css">
+
+    <!-- link to Favicon -->
+    <link href="res/favicon.ico" rel="icon" type="res/favicon.ico" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="res/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <title>Deepfake Lab</title>
+    <meta name="keywords" content="deepfake, lab, video">
+
+</head>
+
+<body class="disable-touch">
+
+    <div class="home-button" onclick="goToVieweport(0);">
+        <div class="home-button-text">
+            <p>Restarting the experience</p>
+        </div>
+    </div>
+
+    <div class="left-navbar" id="left-navbar">
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="viewport">
+        <div class="main">
+            <div class="title">
+                <div class="title-line-container">
+                    <div class="title-Deep">
+                        <h1>Deep</h1>
+                    </div>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="title-line-container">
+                    <div class="title-line"></div>
+                    <div class="title-fake">
+                        <h1>fake</h1>
+                    </div>
+                </div>
+
+                <div class="title-break"></div>
+
+                <div class="title-line-container">
+                    <div class="title-Lab">
+                        <h1>Lab</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle">
+                <h3>Проливаємо світло на таємницю діпфейків.</h3>
+            </div>
+        </div>
+
+        <div class="scroll-container">
+            <div class="scroll-down-arrow">
+
+            </div>
+        </div>
+        <div class="language-bar-container">
+
+            <div class="compact-language-bar">
+                <div class="custom-dropdown-menu" id="custom-dropdown-menu"></div>
+                <div class="current-language" id="current-language">
+                </div>
+            </div>
+
+            <div class="extended-language-bar" style="display: none;">
+                <div class="language-bar" id="language-bar"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 2 -->
+    <!-- WELCOME VIDEO -->
+    <div class="viewport">
+        <div class="welcome-container">
+            <div class="video-container rescale">
+                <video class="video-adapt" autoplay loop muted controls class="scale-2">
+                    <source src="res/vid/a00_intro.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="container-fluid">
+                <div class="col-xs-10 col-sm-10 col-lg-6 col-xs-offset-1 col-sm-offset-1 col-lg-offset-3">
+                    <div class="intro">
+                        <p>Дізнайтеся, як працюють так звані «діпфейки», або
+                          «глибинні фейки, та за якими візуальними ознаками їх можна
+                          розпізнати, на основі наших практичних досліджень та
+                          прикладів з інтернету. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <!-- ELON -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a01_elon_baby.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>01. Малятко Тесла</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Погляньмо на популярний приклад з інтернету.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                          У цьому відео на обличчя немовляти наклали Ілона Маска.
+                          Така заміна обличчя — найбільш типове використання
+                          технології deepfake. Погляньте уважно: краї розмиті, а
+                          тон шкіри інакший.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Технічні деталі:</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Візуальні недоліки:</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/skin_tone.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Розбіжності в кольорі шкіри:</strong>
+                                                        Тон шкіри маски та обличчя, на яке її накладають,
+                                                        відрізняються. Схоже, що на обличчі є нашарування
+                                                        кольорів; видно краї чи плями.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Діпфейки створює комп’ютерна програма,
+                                                  здатна навчатися відтворювати обличчя за
+                                                  допомогою аналізу численних зображень людини.
+                                                  Далі програма накладає відтворене обличчя
+                                                  на наявне відео — це наче цифрова маска.
+                                                  Сліди такої маски можна побачити в цьому відео:
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-02_Baby  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Target Video</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-02_Elon  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Deepfaked Video</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Відео, на яке наклали зображення: <a>YouTube | AndrewSchrock | Cutest Baby Montage Ever.</a></p>
+                            <p class="source-text lighter-color">Джерело:<a>YouTube | TheFakening | Baby Elon Musk Montage Deepfake</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 4 -->
+    <!-- PIPI-SHIA -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>02. Саморобка</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Ви можете й самі повторити це вдома. Ми покажемо, як.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Діпфейки можна робити й на своєму комп'ютері, але
+                            потрібен досить потужний графічний адаптер. Це відео —
+                            наша перша спроба, на якій видно, чому важливо
+                            використовувати підходящі вихідні відео.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a02_pipi_shia.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-pipi-shia-02  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Shia LaBeouf</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-pipi-shia-01  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Pilar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Відео, на яке наклали зображення: <a>YouTube | MotivaShian | Shia LaBeouf "Just Do It" Motivational Speech</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Технічні деталі:</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Пояснення іконок:
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/skin_tone.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Розбіжності в кольорі шкіри:</strong>
+                                                        Тон шкіри маски та обличчя, на яке її накладають,
+                                                        відрізняються. Схоже, що на обличчі є нашарування
+                                                        кольорів; видно краї чи плями.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/expression.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Розбіжності у виразах:</strong>
+                                                        Вирази на масці не збігаються з виразами
+                                                        лиця, на яке накладають відео. Риси рухаються
+                                                        неприродньо, їх не видно, вони розмиті чи повторюються.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/edges.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Видимі краї:</strong>
+                                                        	Видно краї маски — чіткі чи
+                                                          розмиті краї навколо обличчя.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> TЗображення, які використовувалися для навчання
+                                                  алгоритму, не включали тих виразів обличчя, які
+                                                  потрібні були для відтворення обличчя Шаї Лабафа у
+                                                  відео, не було й зображень у профіль. Якщо
+                                                  нейромережі не дати такий матеріал для навчання,
+                                                  вона не може створити точну цифрову маску. Зверніть
+                                                  увагу, як з-під маски видно рот Шаї, через що на
+                                                  відео виходить два рота.
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- SINGLE ROW GRAPH -->
+                                            <!-- Graph #1 -->
+                                            <!-- Pipi-Shia -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">H64</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-bar-background">
+
+                                                        <div class="graph-bar" style="width: 10%;"></div>
+
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 40%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 50%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 13%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">200</p>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">106000</p>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">64</p>
+                                                            <p class="graph-grey">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">31</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 5 -->
+    <!-- IVANA-ANNE -->
+
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>03. Процес</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>То як створити діпфейк?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Вам потрібно два відео: вихідне і цільове. Програма
+                            навчатиметься на обох і створить маску з відео-джерела,
+                            яку можна буде накласти на цільове відео за допомогою
+                            програми для роботи з відео.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="content-col video-col top-dx">
+                        <div class="video-container">
+                            <div class="video-player">
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-original" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b00_original.webm" type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-dataset" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b01_dataset.webm" type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-mask" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b02_mask.webm" type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-alignment" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b03_alignment.webm" type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-deepfake" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b04_deepfake.webm" type="video/webm">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-post" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b05_post.webm" type="video/webm">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+
+                <div class="pics">
+                    <!-- SINGLE ROW GRAPH -->
+                    <!-- Graph #2 -->
+                    <!-- Ivana-Anne -->
+                    <div class="graph left-space-5" id="graph-ivana-anne">
+
+                        <!-- 1st column -->
+                        <div class="graph-col" id="graph-col-0">
+                            <div class="graph-col-row graph-align-right">
+                                <p>Algorithm</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Dataset size</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Iteration amount</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Output resolution</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Training time</p>
+                            </div>
+                        </div>
+
+                        <!-- 2nd column -->
+                        <div class="graph-col" id="graph-col-1">
+                            <div class="graph-col-row">
+                                <p class="algorithm">SAEHD</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-bar-background">
+
+                                <div class="graph-bar" style="width: 45%;"></div>
+
+                            </div>
+
+                            <div class="graph-line-spacing"></div>
+
+                            <div class="graph-col-row graph-bar-background">
+                                <div class="graph-bar" style="width: 75%;"></div>
+                            </div>
+
+                            <div class="graph-line-spacing"></div>
+
+                            <div class="graph-col-row graph-bar-background">
+                                <div class="graph-bar" style="width: 100%;"></div>
+                            </div>
+
+                            <div class="graph-line-spacing"></div>
+
+                            <div class="graph-col-row graph-bar-background">
+                                <div class="graph-bar" style="width: 29%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd column -->
+                        <div class="graph-col" id="graph-col-2">
+                            <div class="graph-col-row">
+                                <p class="graph-grey">Project reach</p>
+                            </div>
+
+                            <div class="graph-col-data">
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">750</p>
+                                    <p class="graph-grey">/2000 images</p>
+                                </div>
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">200000</p>
+                                    <p class="graph-grey">/268000 times</p>
+                                </div>
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">128</p>
+                                    <p class="graph-grey">/128 pixels</p>
+                                </div>
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">48</p>
+                                    <p class="graph-grey">/63 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="source-text lighter-color left-space-5"><br>Оригінал цільового відео: <a>The Devil Wears Prada | Andy's Interview</a></p>
+                </div>
+                <div class="specs">
+                    <div class="content-col video-col bottom-dx">
+                        <div class="details">
+                            <div class="detail-row border-bottom">
+
+                                <div class="button process button-selected" id="original">
+                                    <p>Відео-оригінал</p>
+                                </div>
+                                <div class="button process" id="dataset">
+                                    <p>Набір даних</p>
+                                </div>
+                                <div class="button process" id="mask">
+                                    <p>Маска</p>
+                                </div>
+                                <div class="button process" id="alignment">
+                                    <p>Зведення</p>
+                                </div>
+                                <div class="button process" id="deepfake">
+                                    <p>Діпфейк</p>
+                                </div>
+                                <div class="button process" id="post">
+                                    <p>Обробка</p>
+                                </div>
+                            </div>
+                            <div class="interactive-detail-col">
+                                <div class="tab" id="original">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Оберіть відео, на яке ви хочете накласти обличчя. Щоб
+                                              результат був кращим, оберіть відео, де камера не рухається,
+                                              а фон не змінюється протягом всього часу.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="dataset" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Запишіть набір даних для обличчя, яке ви хочете накласти
+                                              (з відео-джерела), підбираючи освітлення та вирази,
+                                              наскільки це можливо.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="mask" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Прикрийте обличчя інших людей у відео, інакше
+                                              алгоритм їх теж розпізнає, а це заплутає процес
+                                              машинного навчання.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="alignment" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Алгоритм обріже обличчя, щоб навчатися на їх основі,
+                                              та збереже їхні позиції, щоб зрештою точно накласти маску.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="deepfake" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Алгоритм створює маску обличчя з відео-джерела,
+                                              а тоді накладає її на цільове відео.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="post" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Програми для обробки відео дозволяють відредагувати
+                                              маску для кращого поєднання з відео та зробити
+                                              накладення ще точнішим.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 6 -->
+    <!--  ARTHUR-SHERLOCK -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a04_arthur_sherlock.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>04. Дані для навчання</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>А якщо дати програмі більше контенту для навчання? Результат буде кращим?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Для експерименту у дві програми завантажили різну
+                            кількість кадрів. Видно, що результат кращий, коли
+                            вихідного матеріалу більше. Програма більше «знає»
+                            про обличчя, і маска виходить більш якісною.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Технічні деталі:</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> В експерименті використали те саме відео-джерело,
+                                                  яке експортували з різною частотою кадрів — інші умови
+                                                  були однаковими. На одне зображення припадала така
+                                                  сама кількість навчальних циклів, однак у випадку
+                                                  більшого набору даних потрібно було більше часу для
+                                                  навчання. Видно, що алгоритм, в який завантажили
+                                                  більше кадрів, може досягти більш точного результату,
+                                                  який краще збігається з цільовим відео.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- DOUBLE ROW GRAPH -->
+                                            <!-- Graph #3 -->
+                                            <!-- Arthur-Sherlock -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 10%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 75%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 75%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 49%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">200</p>
+                                                            <p class="text-color-light">/2000 images</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">200000</p>
+                                                            <p class="text-color-light">/20000</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="text-color-light">/128 pixels</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">8</p>
+                                                            <p class="text-color-light">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-05_Sherlock  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Benedict Cumberbatch</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-05_Arthur  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arthur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Оригінал цільового відео:<a>Sherlock | The Reichenbach Fall | Rooftop Showdown</a></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 7 -->
+    <!-- PIPI-NATALIE -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>05. Соціальне шахрайство</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>А наскільки ви в зоні ризику? Чи вдасться нам вкрасти дані з ваших соцмереж і створити якісний діпфейк?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Ми взяли всі фото однієї з членів нашої команди з Фейсбука та створили діпфейк. Майже
+                            на всіх вихідних фото вона посміхалася, тому алгоритм не міг створити маску без посмішки.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a05_pipi_padme.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-06_Natalie image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Natalie Portman</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-pipi-fb  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Pilar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Оригінал цільового відео:</strong> <a>Star Wars: Episode I – The Phantom Menace | Padmé meets Anakin</a></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Технічні деталі</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Пояснення іконок</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/blur.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Розмите обличчя: </strong>
+                                                        Маска розмита. Видно різницю в чіткості
+                                                        зображення, якщо порівняти маску з рештою відео.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/expression.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Розбіжності у виразах:</strong>
+                                                        Вирази на масці не збігаються з виразами лиця, на яке накладають відео.
+                                                        Риси рухаються неприродньо, їх не видно, вони розмиті чи повторюються.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/profile.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Межі профілю:</strong>
+                                                        Вигляд обличчя збоку неправильний. Маска,
+                                                        створена за допомогою deepfake, викривлена,
+                                                        менш детальна чи неправильно розміщена.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> У відео значно більше нюансів обличчя, ніж на фото з
+                                                  Фейсбука. Фото, які учасниця нашої команди розміщує в
+                                                  соцмережах, вона відбирає сама, тому там не вистачає зображень,
+                                                  які потрібні для створення реалістичних виразів під час розмови.
+                                                  За допомогою кращих технологій, ймовірно, вдалося б краще
+                                                  зімітувати вирази обличчя, але без різноманітних вихідних
+                                                  фото переконливий діпфейк створити неможливо.</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- SINGLE ROW GRAPH -->
+                                            <!-- Graph #4 -->
+                                            <!-- Pipi-Padme -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-bar-background">
+
+                                                        <div class="graph-bar" style="width: 8.25%;"></div>
+
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 80%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 70%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">165</p>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">215000</p>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="graph-grey">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">44</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 8 -->
+    <!--  INDIANA-ANDREJ -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a06_andrej_indiana.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>6. Вибір цільового відео</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Ми вже побачили, наскільки вихідні дані важливі
+                          для навчання алгоритму. А як щодо відео, на яке накладається маска?
+
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Навіть коли джерело якісне, зробити діпфейк може бути
+                            складно. Наприклад, у фільмах «Індіана Джонс» кадри
+                            хаотичні. Порівняно з «чистішими» відео, які ми
+                            використовували, алгоритму стає важче.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Технічні деталі</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Пояснення іконок</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/blur.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Розмите обличчя: </strong>
+                                                        Маска розмита. Видно різницю в чіткості
+                                                        зображення, якщо порівняти маску з рештою відео.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/flicker.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Ефект мигтіння: </strong>
+                                                        Видно мигтіння між справжнім обличчям
+                                                        і маскою. В якийсь момент алгоритм не може
+                                                        знайти обличчя і припиняє накладати маску.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/perspective.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Неправильна перспектива:</strong>
+                                                        Кут, під яким показано маску, відрізняється від
+                                                        решти відео. Фокусна довжина відео-джерела та цільового відео різна.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Діпфейк зберегли з роздільною здатністю 64 пікселі.
+                                                  Завдяки низькій роздільній здатності алгоритм тренується
+                                                  швидше, бо він має навчитися відтворювати лише зображення
+                                                  з нечіткою роздільною здатністю. У кадрах великим планом
+                                                  низьку роздільну здатність відразу ж видно.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- SINGLE ROW GRAPH -->
+                                            <!-- Graph #5 -->
+                                            <!-- Andrej-Indiana -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-bar-background">
+
+                                                        <div class="graph-bar" style="width: 70%;"></div>
+
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 37%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 50%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 13%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">1400</p>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">100000</p>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">64</p>
+                                                            <p class="graph-grey">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">8</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-07_Indiana  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Harrison Ford</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-07_Andrej  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Andrej</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Оригінал цільового відео:</strong> <a>Indiana Jones and the Temple of Doom | Rope Bridge Fight</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 9 -->
+    <!-- BILL-ARNOLD-->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>7. Не пропустіть момент</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Іноді два відео поєднуються ідеально. У цьому відео
+                          людина, на яку накладають маску, навіть імітує своє ж
+                          нове обличчя.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Цей діпфейк зробили з фрагменту ток-шоу, в якому Білл
+                            Гейдер пародіює Арнольда Шварценеггера. Завдяки
+                            використанню якісного вихідного матеріалу зі Шварценеггером
+                            результат вийшов переконливий.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a07_arnold_bill.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-08_Bill_hader image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Bill Hader</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-08_Arnold  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arnold Schwarzenegger</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Оригінал цільового відео: <a>Bill Hader Presents: Schwarzenegger Baby</a></p>
+                            <p class="source-text lighter-color">Джерело: <a>YouTube | Ctrl Shift Face | Bill Hader impersonates Arnold Schwarzenegger [DeepFake]</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Технічні деталі</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Пояснення іконок</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/occlusion.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Загородження маскою:</strong>
+                                                        Коли перед обличчям з’являється об’єкт,
+                                                        маска його спотворює чи загороджує.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Поєднання облич, тон шкіри та роздільна здатність якісні.
+                                                  Через кадр дальнього плану важко помітити якісь неточності.
+                                                  Обробили відео професійно. Єдине, що наводить на думку про діпфейк,
+                                                  — коли Гейдер проводить пальцем перед обличчям, і палець зникає
+                                                  за маскою. Різниця в чіткості та куті, під яким розміщено
+                                                  палець, вказує, що автор діпфейку старався приховати цей
+                                                  недолік під час обробки відео.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 10 -->
+    <!--  CONSTANCE-YUELING -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a08_yueling_constance.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>8. Час має значення</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>А що, як ми дозволимо алгоритму довше вчитися на
+                          вихідному контенті? Результати покращаться?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Для цього експерименту одна модель навчалась протягом
+                            чотирьох годин, а інша — протягом 48 годин. Другій
+                            моделі вдалося більш детально відтворити обличчя та
+                            зробити його більш тривимірним.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Технічні деталі</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p>Від часу навчання залежить, скільки разів алгоритм
+                                                  обробить зображення. Цей процес включає створення
+                                                  обличчя (чи цифрової маски), порівняння з вихідним
+                                                  зображенням та редагування, щоб збільшити подібність
+                                                  маски до джерела. Модель таким чином обробляє всі
+                                                  зображення, а тоді починає все знову. Швидкість
+                                                  роботи залежить від потужності комп’ютера. </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <!-- DOUBLE ROW GRAPH -->
+                                            <!-- Graph #6 -->
+                                            <!-- Yueling-Constance -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 20%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 20%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 7%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 6%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 76%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">400</p>
+                                                            <p class="text-color-light">/400</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">20000</p>
+                                                            <p class="text-color-light">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="text-color-light">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">4</p>
+                                                            <p class="text-color-light">/48</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-09_Constance  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Constance Wu</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-09_Yueling  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Yueling</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Оригінал цільового відео:<a>YouTube | The Late Show with Stephen Colbert | Constance Wu Explains What "Couture" Means</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 11 -->
+    <!-- ARTHUR-ANDREJ-->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>9. Алгоритми</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Останній експеримент. Як різні алгоритми реагують на певні умови?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Для цього експерименту ми самі зняли відео-джерело
+                            та цільове відео. Методи алгоритму добре видно.
+                            H128 створює квадратну маску, а SAEHD краще поєднує обличчя.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a09_andrej_arthur.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-10_Arthur  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arthur</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-10_Andrej  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Andrej</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Технічні деталі</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Н128 — «легша» модель, яка швидше
+                                                  досягає результату. SAEHD — точніша
+                                                  маска, вона краще справляється з рукою
+                                                  та краще змішує різні тони залежно від
+                                                  світла. Схоже, що Н128 краще навчена
+                                                  створювати обличчя — маска чіткіша, стабільніша
+                                                  і має більш реалістичний вигляд зі змінами руху
+                                                  та перспективи. Однак експерти стверджують, що
+                                                  якщо дати SAEHD більше часу на навчання, вона
+                                                  зрештою досягне кращого результату, ніж Н128.</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- DOUBLE ROW GRAPH -->
+                                            <!-- Graph #7 -->
+                                            <!-- Andrej-Arthur -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                        <p class="algorithm-2">H128</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 25%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 25%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 56%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 56%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 38%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 63%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">500</p>
+                                                            <p class="text-color-light">/500</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">150000</p>
+                                                            <p class="text-color-light">/150000</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="text-color-light">/128 pixels</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">24</p>
+                                                            <p class="text-color-light">/40</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 12 -->
+    <!--  MORGAN -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a10_morgan_freeman.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>10.	Пильнуйте</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Погляньмо, яка насправді ситуація з діпфейками.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Увага: діпфейки можуть бути якісні, а розпізнати їх іноді
+                            важко. Ми вивчали заміщення обличчя, але діпфейки також
+                            використовують для реконструкції — створення відео, де людина
+                            нібито щось говорить.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Технічні деталі</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Реконструкція потребує більшої потужності комп’ютера,
+                                                  але її набагато важче розпізнати. Чимало труднощів з
+                                                  вихідним матеріалом не стосуються реконструкції, але
+                                                  алгоритм працює подібним чином. Реконструйовані риси
+                                                  обличчя просто будуть трохи розмиті й не такі детальні.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Звертайте увагу на аудіо та шукайте недоліки в синхронізації
+                                                  руху губ із мовленням. Ви вже знаєте, як це працює, тож можете
+                                                  поміркувати, чи легко таке відео використати для відтворення
+                                                  обличчя та чи підходить воно для можливого діпфейку. Якщо
+                                                  сумніваєтесь, завжди варто перевірити джерело відео.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="sources">
+                            <p class="source-text lighter-color">Джерело:<a>YouTube | VFXChris Ume | Fake Freeman mouth manipulation.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 11 -->
+    <!-- FOOTER -->
+    <div class="viewport">
+        <div class="last-page-row bottom-space-2_5" id="summary">
+            <div class="col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-2">
+                <h3>Ось коротке резюме того, що ви дізналися на цьому сайті,
+                  щоб ви могли самостійно перевірити відео. </h3>
+            </div>
+        </div>
+        <div class="qr-square">
+            <a> <img class="qr-code" src="./res/img/qr-code.png" style="width: 100%;"></a>
+        </div>
+        <div class="last-page-row software-credits">
+            <p>All the original deepfakes in this project were created with the open source software DeepFaceLab v10.1 by Iperov, under the GNU General Public License v3.0</p>
+        </div>
+        <div class="last-page-row" style="align-self: flex-end;">
+            <footer class="container-fluid space-xs-3 space-sm-3">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-1 col-sm-offset-1 footer-img">
+                        <img class="logo" src="res/svg/logo-density.svg" alt="DensityDesign logo">
+                    </div>
+                    <div class="col-xs-8 col-sm-3 space-xs-1 footer-img">
+                        <img class="logo" src="res/svg/logo-polimi.svg" alt="Politecnico di Milano logo">
+                    </div>
+                    <div class="col-xs-4 col-sm-2 space-xs-1">
+                        <p class="paragraph"><strong>Проєкт створено:</strong><br><br>
+                            Andrej Cattaneo<br>
+                            Ivana Riva<br>
+                            Noura Sammoura<br>
+                            Maria del Pilar Suarez Anzorena<br>
+                            Arthur van der Werf<br>
+                            Yueling Wu<br></p>
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <p class="paragraph"><strong>Факультет:</strong><br><br>
+                            Michele Mauri<br>
+                            Angeles Briones<br>
+                            Gabriele Colombo<br>
+                            Simone Vantini<br>
+                            Salvatore Zingale<br></p>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <p class="paragraph"><strong>Асистенти кафедри:</strong><br><br>
+                            Andrea Benedetti<br>
+                            Lea Mara Fabiano<br>
+                            Alessandra Facchin<br>
+                            Beatrice Gobbo<br>
+                            Tommaso Elli<br>
+                            Jacopo Di Iorio<br>
+                            Anna Riboldi<br></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
