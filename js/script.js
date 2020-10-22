@@ -62,8 +62,7 @@ localizationLabels = [
     ["sv_SV", "Svenska"],
     ["ua_UA", "Ukrainian"],
     ["sl_SL", "Slovenian"],
-    ["lt_LT", "Lithuanian"],
-    ["ru_RU", "Russian"]
+    ["lt_LT", "Lithuanian"]
 ]
 
 // current page language identification
