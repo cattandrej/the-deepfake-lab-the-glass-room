@@ -203,7 +203,7 @@ $(".home-button").on('click', function (event) {
 
 $(window).scroll(function () {
 
-    currentViewportIndex = getCurrentViewportPos();
+    //currentViewportIndex = getCurrentViewportPos();
     //updateViewportSize();
 
 });
@@ -313,7 +313,7 @@ page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", func
     //page.stop();
 });
 
-var isScrolling = false;
+var isWheelScrolling = false;
 var scrollValuePrec = 0;
 var scrollValue = 0;
 
@@ -338,12 +338,12 @@ window.addEventListener("wheel", event => {
 
     scrollValuePrec = event.deltaY;
     // Clear our timeout throughout the scroll
-    window.clearTimeout(isScrolling);
+    window.clearTimeout(isWheelScrolling);
 
     // Set a timeout to run after scrolling ends
-    isScrolling = setTimeout(function () {
+    isWheelScrolling = setTimeout(function () {
         // Run the callback
-        console.log(event.deltaY + ' Scrolling has stopped.');
+        console.log(event.deltaY + 'Wheel scrolling has stopped.');
         scrollValue = 0;
         scrollValuePrec = 0;
 
@@ -699,3 +699,22 @@ function updateViewportSize(){
 }
 window.addEventListener("resize", updateViewportSize);
 updateViewportSize();
+
+var isScrolling;
+
+// Listen for scroll events
+window.addEventListener('scroll', function ( event ) {
+
+	// Clear our timeout throughout the scroll
+	window.clearTimeout( isScrolling );
+
+	// Set a timeout to run after scrolling ends
+	isScrolling = setTimeout(function() {
+
+		// Run the callback
+        console.log( 'Scrolling has stopped. :D ' );
+        currentViewportIndex = getCurrentViewportPos();
+
+	}, 66);
+
+}, false);
