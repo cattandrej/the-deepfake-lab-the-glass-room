@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<html class="disable-touch" lang="en_UK">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Deepfake Lab</title>
+    <meta name="theme-color" content="#ee313c"/>
+    <meta name="The Deepfake Lab" content="index,follow" />
+    <title>Empowering people to discover deepfakes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/img-urls.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/graph-style.css">
+
+    <!-- link to Favicon -->
+    <link href="res/favicon.ico" rel="icon" type="res/favicon.ico" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="res/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <title>Deepfake Lab</title>
+    <meta name="keywords" content="deepfake, lab, video">
+
+</head>
+
+<body class="disable-touch">
+
+    <div class="home-button" onclick="goToVieweport(0);">
+        <div class="home-button-text">
+            <p>Restarting the experience</p>
+        </div>
+    </div>
+
+    <div class="left-navbar" id="left-navbar">
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="viewport">
+        <div class="main">
+            <div class="title">
+                <div class="title-line-container">
+                    <div class="title-Deep">
+                        <h1>Deep</h1>
+                    </div>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="title-line-container">
+                    <div class="title-line"></div>
+                    <div class="title-fake">
+                        <h1>fake</h1>
+                    </div>
+                </div>
+
+                <div class="title-break"></div>
+
+                <div class="title-line-container">
+                    <div class="title-Lab">
+                        <h1>Lab</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle">
+                <h3>Բացահայտելով դիփֆեյքի գաղտնիքները.</h3>
+            </div>
+        </div>
+
+        <div class="scroll-container">
+            <div class="scroll-down-arrow">
+
+            </div>
+        </div>
+        <div class="language-bar-container">
+
+            <div class="compact-language-bar">
+                <div class="custom-dropdown-menu" id="custom-dropdown-menu"></div>
+                <div class="current-language" id="current-language">
+                </div>
+            </div>
+
+            <div class="extended-language-bar" style="display: none;">
+                <div class="language-bar" id="language-bar"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 2 -->
+    <!-- WELCOME VIDEO -->
+    <div class="viewport">
+        <div class="welcome-container">
+            <div class="video-container rescale">
+                <video class="video-adapt" autoplay loop muted controls class="scale-2">
+                    <source src="res/vid/a00_intro.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container-fluid">
+                <div class="col-xs-10 col-sm-10 col-lg-6 col-xs-offset-1 col-sm-offset-1 col-lg-offset-3">
+                    <div class="intro">
+                        <p>Մեր մասնագետների օգնությամբ և համացանցից բերված օրինակներով բացահայտեք՝
+                          ինչպես է աշատում դիփքֆեյքը, և ինչ վիզուալ հուշումներ
+                          կան այն հայտնաբերելու համար. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <!-- ELON -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a01_elon_baby.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>01. Տեսլա փոքրիկ</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Եկե՛ք աչքի անցացնենք համացանցում տարածված մի քանի հայտնի օրինակներ:
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Այս տեսանյութում Էլոն Մասկի վրա տեղադրել են երեխայի
+                            դեմք: Պատկերը փոխելու այս տեսակը դիփֆեյքի
+                            ամենատարածված ձևն է: Ուշադի՛ր նայեք. պատկերի
+                            եզրերը սուր չեն, մաշկի գույնն էլ տարբեր է:
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>	Տեխնիկական նյուանսներ</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Վիզուալ էֆեկտներ</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/skin_tone.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Մաշկի գույնի անհամապատասխանություն:</strong>
+                                                        Դիմակի և թիրախ-դեմքի մաշկի գույները տարբերվում
+                                                        են: Թվում է` դեմքի վրա մի քանի գույն կա՝
+                                                        անկյուններով և հետքերով:
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Դիփֆեյքը ստեղծվում է համակարգչային ծրագրի միջոցով,
+                                                  որը վերծանելով մարդու բազմաթիվ լուսանկարներ՝
+                                                  վերարտադրում է դեմքը: Հետո արդեն ստեղծված դեմքը
+                                                  տեղադրվում է տեսանյութի վրա, կարծես թվային դիմակ
+                                                  լինի: Այդ դիմակի հետքերը կարող եք տեսնել այս
+                                                  տեսանյութում.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-02_Baby  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Target Video</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-02_Elon  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Deepfaked Video</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Դիփֆեյքի թիրախ-տեսանյութ՝<a>YouTube | AndrewSchrock | Cutest Baby Montage Ever.</a></p>
+                            <p class="source-text lighter-color">Դիփֆեյք աղբյուր-տեսանյութ`<a>YouTube | TheFakening | Baby Elon Musk Montage Deepfake</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 4 -->
+    <!-- PIPI-SHIA -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>02. Արա՛ ինքդ </h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Սա կարող եք նաև տանը փորձել: Հիմա կասենք՝ ինչպես:
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Դիփֆեյք տեսանյութեր կարելի է պատրաստել տան
+                            համակարգիչներով, բայց անհրաժեշտ է բավականին
+                            հզոր գրաֆիկ քարտ: Այս տեսանյութում մեր առաջին
+                            փորձն է, որը ցույց է տալիս, թե ինչու է պետք
+                            օգտագործել համապատասխան սկզբնաղբյուր-տեսանյութ:
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a02_pipi_shia.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-pipi-shia-02  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Shia LaBeouf</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-pipi-shia-01  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Pilar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Թիրախ-տեսանյութի աղբյուր՝
+                              <a>YouTube | MotivaShian | Shia LaBeouf "Just Do It" Motivational Speech</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>	Տեխնիկական հուշումներ.</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Նշանների բացատրություն</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/skin_tone.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Մաշկի գույնի անհամապատասխանություն.</strong>
+                                                      Դիմակի և թիրախ-դեմքի մաշկի գույները տարբերվում են:
+                                                      Դեմքը կարծես մի քանի գունավորում ունի, երևում
+                                                      են անկյուններ և հետքեր:
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/expression.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Արտահայտության անհամապատասխանություն.</strong>
+                                                        Դիփֆեյք դեմքի արտահայտությունը չի
+                                                        համապատասխանում թիրախ-դեմքին:
+                                                        Դիմագծերը բնական չեն, չեն երևում,
+                                                        լղոզված են կամ կրկնվում են:
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/edges.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>	Տեսանելի անկյուններ.</strong>
+                                                        Դիմակի անկյունները տեսանելի են, դեմքի
+                                                        շուրջ սուր կամ լղոզված եզրեր են:
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Ալգորիթմի մշակման համար ընտրված
+                                                  նկարներն այնքան էլ համապատասխան
+                                                  չէին՝ տեսանյութում Շայայի դեմքը ծածկելու
+                                                  համար, բացի այդ, չկար պրոֆիլից լուսանկար:
+                                                  Եթե նեյրոնային ցանցը սովոր չէ աշխատել
+                                                  այդպիսի սյուժեների հետ, այն չի կարող
+                                                  ստեղծել ճշգրիտ թվային դիմակ: Նկատեք,
+                                                  որ Շայայի դեմքը դիմակի տակից երևում է,
+                                                  արդյունքում ստացվում է երկու բերան:</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- SINGLE ROW GRAPH -->
+                                            <!-- Graph #1 -->
+                                            <!-- Pipi-Shia -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">H64</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-bar-background">
+
+                                                        <div class="graph-bar" style="width: 10%;"></div>
+
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 40%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 50%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 13%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">200</p>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">106000</p>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">64</p>
+                                                            <p class="graph-grey">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">31</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 5 -->
+    <!-- IVANA-ANNE -->
+
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>03. Ընթացքը</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Այդ դեպքում ինչպե՞ս ստեղծել դիփքեյք
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Ձեզ պետք կգա երկու տեսանյութ՝ աղբյուր և թիրախ:
+                            Ծրագիրը կսովորի դրանք երկուսն էլ օգտագործել և
+                            պատրաստել դիմակ սկզբնաղբյուր տեսանյութից, որը
+                            կարելի է տեղադրել թիրախ տեսանյութի վրա: Դրա
+                            համար կիրառվում է խմբագրման ծրագիր:
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="content-col video-col top-dx">
+                        <div class="video-container">
+                            <div class="video-player">
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-original" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b00_original.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-dataset" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b01_dataset.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-mask" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b02_mask.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-alignment" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b03_alignment.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-deepfake" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b04_deepfake.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-post" style="display: none;" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b05_post.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+
+                <div class="pics">
+                    <!-- SINGLE ROW GRAPH -->
+                    <!-- Graph #2 -->
+                    <!-- Ivana-Anne -->
+                    <div class="graph left-space-5" id="graph-ivana-anne">
+
+                        <!-- 1st column -->
+                        <div class="graph-col" id="graph-col-0">
+                            <div class="graph-col-row graph-align-right">
+                                <p>Algorithm</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Dataset size</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Iteration amount</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Output resolution</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Training time</p>
+                            </div>
+                        </div>
+
+                        <!-- 2nd column -->
+                        <div class="graph-col" id="graph-col-1">
+                            <div class="graph-col-row">
+                                <p class="algorithm">SAEHD</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-bar-background">
+
+                                <div class="graph-bar" style="width: 45%;"></div>
+
+                            </div>
+
+                            <div class="graph-line-spacing"></div>
+
+                            <div class="graph-col-row graph-bar-background">
+                                <div class="graph-bar" style="width: 75%;"></div>
+                            </div>
+
+                            <div class="graph-line-spacing"></div>
+
+                            <div class="graph-col-row graph-bar-background">
+                                <div class="graph-bar" style="width: 100%;"></div>
+                            </div>
+
+                            <div class="graph-line-spacing"></div>
+
+                            <div class="graph-col-row graph-bar-background">
+                                <div class="graph-bar" style="width: 29%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd column -->
+                        <div class="graph-col" id="graph-col-2">
+                            <div class="graph-col-row">
+                                <p class="graph-grey">Project reach</p>
+                            </div>
+
+                            <div class="graph-col-data">
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">750</p>
+                                    <p class="graph-grey">/2000 images</p>
+                                </div>
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">200000</p>
+                                    <p class="graph-grey">/268000 times</p>
+                                </div>
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">128</p>
+                                    <p class="graph-grey">/128 pixels</p>
+                                </div>
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">48</p>
+                                    <p class="graph-grey">/63 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="source-text lighter-color left-space-5"><br>Target video source: <a>The Devil Wears Prada | Andy's Interview</a></p>
+                </div>
+                <div class="specs">
+                    <div class="content-col video-col bottom-dx">
+                        <div class="details">
+                            <div class="detail-row border-bottom">
+
+                                <div class="button process button-selected" id="original">
+                                    <p>Բնօրինակ:</p>
+                                </div>
+                                <div class="button process" id="dataset">
+                                    <p>Տվյալների շտեմարան</p>
+                                </div>
+                                <div class="button process" id="mask">
+                                    <p>Դիմակ</p>
+                                </div>
+                                <div class="button process" id="alignment">
+                                    <p>Հավասարեցում</p>
+                                </div>
+                                <div class="button process" id="deepfake">
+                                    <p>Դիփֆեյք</p>
+                                </div>
+                                <div class="button process" id="post">
+                                    <p>Հրապարակում</p>
+                                </div>
+                            </div>
+                            <div class="interactive-detail-col">
+                                <div class="tab" id="original">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Ընտրեք թիրախ տեսանյութը, որի վրա ցանկանում եք դեմք տեղադրել:
+                                              Ավելի լավ արդյունք կունենաք, եթե ընտրեք միատոն ֆոնով տեսանյութ:</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="dataset" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Գրանցեք տեղադրվող դեմքի տվյալների շտեմարանը՝ հնարավորինս
+                                              համապատասխանեցնելով լույսը և դեմքի արտահայտությունները:
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="mask" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Ծածկեք մյուս մարդկանց դեմքերը թիրախ տեսանյութում,
+                                              այլապես ալգորիթմը նրանց էլ կընտրի և ճանաչելու գործընթացը կխճճվի:
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="alignment" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p> Ալգիրիթմը դեմքերը կկկտրի այնպես, որպեսզի իր սովորելու
+                                              համար հարմար չափսեր լինեն, և կպահի դրանց դիրքը,
+                                              որպեսզի հետո ճիշտ տեղադրի:
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="deepfake" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Ալգորիթմը դեմքի դիմակ է ստեղծում սկզբնաղբյուր տեսանյութից, որը
+                                              հետո դուք պետք է համապատասխանեցնեք թիրախ-տեսանյութին:  </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="post" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Վիդեոխմբագրման ծրագիրը թույլ կտա հնարավորինս լավ
+                                              տեղադրել դիմակը և կհղկի վերջնական արդյունքը: </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 6 -->
+    <!--  ARTHUR-SHERLOCK -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a04_arthur_sherlock.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>04. Տվյալներ ուսուցման համար</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Ի՞նչ կլինի, եթե մենք ծրագրին ավելի շատ կոնտենտով
+                          ապահովենք: Դա կազդի՞ որակի վրա:
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Այս փորձի ժամանակ երկու ծրագրերի տրվել են տարբեր
+                            թվով նկարներ: Փորձը ցույց է տվել, որ երբ աղբյուրները
+                            շատ են, արդյունքը զգալիորեն ավելի լավն է: Մոդելն
+                            ունենում է դեմքի մասին ավելի շատ տեղեկատվություն և
+                            կարողանում է մշակել ավելի լավ դիմակ:
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>	Տեխնիկական նյուանսներ</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Փորձարկումն արվել է միևնույն աղբյուր-տեսանյութով,
+                                                  որոնք մուտք են արվել կադրերի տարբեր հաճախականությամբ.
+                                                   երկու մոդելներն էլ սովորել են միևնույն կարգավորումներով:
+                                                   Սովորելու ցիկլերի քանակը յուրաքանչյուր նկարի համար
+                                                   նույնն է եղել, բայց տվյալների ավելի մեծ շտեմարանով
+                                                   տեսանյութը սովորելու վրա ավելի շատ ժամանակ է
+                                                   պահանջվել: Ակնհայտ է դառնում, որ ավելի շատ
+                                                   պատկերների վրա սովորած ալգորիթմը ավելի ճշգրիտ
+                                                   արդյունք կարող է տալ, որն ավելի լավ է
+                                                   համապատասխանում թիրախին:
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- DOUBLE ROW GRAPH -->
+                                            <!-- Graph #3 -->
+                                            <!-- Arthur-Sherlock -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 10%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 75%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 75%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 49%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">200</p>
+                                                            <p class="text-color-light">/2000 images</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">200000</p>
+                                                            <p class="text-color-light">/20000</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="text-color-light">/128 pixels</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">8</p>
+                                                            <p class="text-color-light">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-05_Sherlock  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Benedict Cumberbatch</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-05_Arthur  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arthur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">	Բնօրինակ թիրախ-տեսանյութ՝<a>Sherlock | The Reichenbach Fall | Rooftop Showdown</a></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 7 -->
+    <!-- PIPI-NATALIE -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>05. Սոցիալական խաբեություն </h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Որքանով եք Դուք խոցելի. Կարո՞ղ ենք մենք գողանալ սոցիալական
+                          մեդիայի Ձեր կոնտենտը և լավ դիփքֆյեք ստեղծել:
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Մենք վերցրել մեր թիմի անդամներից մեկի ֆեյսբուքյան
+                            լուսանկարները և ստեղծել դիփֆեյք: Գրեթե բոլոր
+                            սկզբնաղբյուր լուսանկարներում նա ժպտում է, ուստի
+                            ալգորիթմը չի կարող գեներացնել չժպտացող դիմակ:
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a05_pipi_padme.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-06_Natalie image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Natalie Portman</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-pipi-fb  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Pilar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Բնօրինակ թիրախ-տեսանյութը՝</strong> <a>Star Wars: Episode I – The Phantom Menace | Padmé meets Anakin</a></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>	Տեխնիկական նյուանսներ.</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Նշանների բացատրություն.</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/blur.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>	Լղոզված դեմք. </strong>
+                                                        Դիմակը լղոզված է: Դիմակը և տեսանյութի մյուս
+                                                        հատվածները տարբերվում են պատկերների գույներով:
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/expression.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Արտահայտությունների անհամապատասխանություն.</strong>
+                                                        Դիփֆեյք դիմակի արտահայտությունները չեն
+                                                        համապատասխանում թիրախ-դեմքին: Դիմագծերն անբնական
+                                                        են, լավ չեն երևում, լղոզված են կամ կրկնվում են:
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/profile.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>	Պատկերի եզրերը.</strong>
+                                                        Կողքից դեմքը աղավաղված է երևում: Դիփֆեյք դիմակը
+                                                        դեֆորմացված է, մանրամասն չի մշակված և սխալ է հավասարեցված:
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Տեսանյութը պարունակում է ավելի շատ դիմագծեր,
+                                                  քան այն լուսանկարները, որոնք մենք վերցրել ենք
+                                                  Facebook-ից: Սոցիալական ցանցում մեր թիմի
+                                                  անդամի լուսանկարները ընտրվում են ավտոմատ
+                                                  կերպով, ուստի դրանց մեջ չկան նկարներ, որոնք
+                                                  անհրաժեշտ են խոսքի ժամանակ իրական դեմքի
+                                                  արտահայտություն ստեղծելու համար: Եվ չնայած
+                                                  առավել կատարելագործված տեխնոլոգիաները
+                                                  կարող են ստեղծել այդպիսի արտահայտություններ՝
+                                                  առանց բազմազան սկզբնաղբյուր նյութի՝ համոզիչ
+                                                  բան չեք ստանա: </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- SINGLE ROW GRAPH -->
+                                            <!-- Graph #4 -->
+                                            <!-- Pipi-Padme -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-bar-background">
+
+                                                        <div class="graph-bar" style="width: 8.25%;"></div>
+
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 80%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 70%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">165</p>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">215000</p>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="graph-grey">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">44</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 8 -->
+    <!--  INDIANA-ANDREJ -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a06_andrej_indiana.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>06. Թիրախի ընտրություն</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Մենք տեսանք, թե որքան կարևոր է աղբյուրը ալգորիթմի
+                          սովորելու համար: Իսկ թիրա՞խ- տեսանյութը:
+
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Անգամ լավ աղբյուրի դեպքում դժվար կլինի ստեղծել դիփֆեյք:
+                            Ինդիանա Ջոնսը քաոտիկ կադրեր ունի: Համեմատած
+                            նախկինում մեր օգտագործած առավել մաքուր տեսանյութերի
+                            հետ՝ ալգորիթմը հիմա արագության հետ չի հասցնում:
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>	Տեխնիկական նյուանսներ.</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Նշանների բացատություն.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/blur.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>	Լղոզված դեմք. </strong>
+                                                        Դիմակը լղոզված է: Դիմակը և տեսանյութի
+                                                        մյուս հատվածները տարբերվում են պատկերների գույներով:
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/flicker.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong> Առկայծման էֆեկտ.</strong>
+                                                        Բնօրինակից դիփֆեյք դեմքին անցնելիս առկայծում
+                                                        կա: Ալգորիթմը չի կարողանում ճանաչել դեմքը
+                                                        և մի պահ դադարում է դիմակ ստեղծել:
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/perspective.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>	Սխալ տարածություն.</strong>
+                                                        Դիփֆեյքը տեսանյութի մյուս հատվածների նկատմամբ այլ կերպ է երևում:
+                                                        Աղբյուրը և թիրախ-տեսանյութը տարբեր են ֆոկուսային հեռավորությամբ:
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Դիփֆեյք տեսանյութը ներբեռնվել է
+                                                  64 պիքսելով: Ցածր պիքսելները նշանակում է,
+                                                  որ ալգորիթմին ավելի քիչ ժամանակ է պահանջվել
+                                                  սովորելու համար: Խոշոր պլանով դեմքերի դեպքում
+                                                  ցածր պիքսելներով լուսանկարն ակնհայտ երևում է:
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- SINGLE ROW GRAPH -->
+                                            <!-- Graph #5 -->
+                                            <!-- Andrej-Indiana -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-bar-background">
+
+                                                        <div class="graph-bar" style="width: 70%;"></div>
+
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 37%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 50%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 13%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">1400</p>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">100000</p>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">64</p>
+                                                            <p class="graph-grey">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">8</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-07_Indiana  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Harrison Ford</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-07_Andrej  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Andrej</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Բնօրինակ թիրախ-տեսանյութ՝</strong> <a>Indiana Jones and the Temple of Doom | Rope Bridge Fight</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 9 -->
+    <!-- BILL-ARNOLD-->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>07. Մի՛ թարթեք</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Երբեմն երկու տեսանյութերը համակցվում են իրար: Այս
+                          տեսանյութում թիրախն անգամ իմիտացնում է իր նոր դեմքը:
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Այս դիփֆեյք տեսանյութը պատրաստվել է թոք շոուի մի
+                            կտորից, որում Բիլ Հեյդերը պատկերում է Արնոլդ
+                            Շվարցեներգերին: Քանի որ Արնոլդ Շվարցենեգերից
+                            օգտագործվել է համապատասխան սզկզբնաղբյուրային
+                            նյութեր, արդյունքը համոզիչ է:
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a07_arnold_bill.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-08_Bill_hader image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Bill Hader</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-08_Arnold  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arnold Schwarzenegger</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Բնօրինակ թիրախ-տեսանյութ՝<a>Bill Hader Presents: Schwarzenegger Baby</a></p>
+                            <p class="source-text lighter-color">Աղբյուր հանդիսացող թիփֆեյքի տեսանյութ՝ <a>YouTube | Ctrl Shift Face | Bill Hader impersonates Arnold Schwarzenegger [DeepFake]</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Տեխնիկական նյուանսներ.</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Նշանների բացատրություն</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/occlusion.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>	Դեմքի պատնեշ.</strong>
+                                                        Երբ դեմքի առաջ օբյեկտներ են երևում,
+                                                        դիմակն աղավաղում է կամ փակում է այդ օբյեկտները:
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Դեմքի տեղադրումը, մաշկի գույնը և պիքսելները
+                                                  շատ լավն են: Քանի որ պատկերը հեռու է, դժվար
+                                                  է նկատել լղոզվածություն: Հետարտադրական
+                                                  գործընթացը պրոֆեսիոնալ է արվել: Միակ թերությունն
+                                                  այն է, որ երբ Բիլ Հարդերը մատը դեմքի մոտ է պահում,
+                                                  այն կորչում է դիմակի հետևում: Մատի անկյան տարբերությունը
+                                                  թույլ է տալիս ենթադրել, որ տեսանյութի հեղինակը
+                                                  հետարտադրական փուլում փորձել է թաքցնել դա:
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 10 -->
+    <!--  CONSTANCE-YUELING -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a08_yueling_constance.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>08. Ժամանակը կարևոր է</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Ի՞նչ կլինի, եթե թույլ տանք, որ ալգորիթմն ավելի շատ
+                          սովորի աղբյուր տեսանյութը: Արդյո՞ք դրանից արդյունքը կբարելավվի:
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Այս փորձի համար մոդելներից մեկը սովորելու վրա ծախսել
+                            է 4, մյուսը 48 ժամ: 48 ժամ ծախսած մոդելը ցույց է տվել ավելի կատարելագործված դիմագծեր և դեմքի համաչափություն:
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>	Տեխնիկական նյուանսներ.</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p>Սովորելու ժամանակը կապված է այն բանի հետ,
+                                                  թե քանի անգամ է ալգորիթմը մշակում լուսանկարը:
+                                                  Այդ գործընթացն իր մեջ ներառում է դեմք ստեղծելը
+                                                  (թվային դիմակ), աղբյուր-լուսանկարի հետ
+                                                  համեմատությունը, հետո մանր աշխատանքը՝
+                                                  դիմակին աղբյուր-լուսանկարի նմանություն տալու
+                                                  համար: Մոդելն այս ցիկլն  անցնում է բոլոր
+                                                  աղբյուր-լուսանկարների համար մեկ անգամ, և
+                                                  հետո նորից սկսում: Աշխատանքի ժամանակը
+                                                  կախված է օգտագործվող համակարգչի հզորությունից: </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <!-- DOUBLE ROW GRAPH -->
+                                            <!-- Graph #6 -->
+                                            <!-- Yueling-Constance -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 20%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 20%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 7%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 6%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 76%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">400</p>
+                                                            <p class="text-color-light">/400</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">20000</p>
+                                                            <p class="text-color-light">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="text-color-light">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">4</p>
+                                                            <p class="text-color-light">/48</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-09_Constance  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Constance Wu</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-09_Yueling  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Yueling</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">	Բնօրինակ թիրախ-տեսանյութ՝ <a>YouTube | The Late Show with Stephen Colbert | Constance Wu Explains What "Couture" Means</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 11 -->
+    <!-- ARTHUR-ANDREJ-->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>09. Ալգորիթմներ</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Վերջին փորձը: Ինչպե՞ս են տարբեր ալգորիթմներն
+                          արձագանքում որոշակի պայմանների
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Այս փորձի համար մենք ինքնուրույն ստեղծեցին և՛ աղբյուր,
+                            և՛ թիրախ տեսանյութերը: Ալգորիթմների մեթոդները լավ
+                            նկատելի են: H128-ը ստեղծում է քառակուսի դիմակ,
+                            մինչդեռ SAEHD-ը ավելի լավ է համապատասխանում դեմքին:
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a09_andrej_arthur.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-10_Arthur  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arthur</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-10_Andrej  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Andrej</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Տեխնիկական նյուանսներ</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> H128-ը առավել թեթև տարբերակն է:
+                                                  Այն ավելի հեշտ է հասնում որակյալ արդյունքի:
+                                                  SAEHD-ի առավել ճշգրիտ դիմակը ավելի հեշտ է
+                                                  կարգավորել ձեռքով և հեշտ է մերվում լույսի հետ:
+                                                  H128-ը կարծես ավելի լավ է սովորում դեմք ստեղծել.
+                                                  դիմակն ավելի սուր է, ավելի կայուն և ավելի լավ է
+                                                  աշխատում շարժումների ժամանակ: Այնուամենայնիվ,
+                                                  փորձագետներն ասում են, որ սովորելու ավելի շատ
+                                                  ժամանակ ունենալու դեպքում SAEHD-ը կգերազանցի
+                                                  H128-ին: </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- DOUBLE ROW GRAPH -->
+                                            <!-- Graph #7 -->
+                                            <!-- Andrej-Arthur -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                        <p class="algorithm-2">H128</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 25%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 25%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 56%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 56%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 38%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 63%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">500</p>
+                                                            <p class="text-color-light">/500</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">150000</p>
+                                                            <p class="text-color-light">/150000</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="text-color-light">/128 pixels</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">24</p>
+                                                            <p class="text-color-light">/40</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 12 -->
+    <!--  MORGAN -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a10_morgan_freeman.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>10. Նկատի ունեցեք</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Եկեք տեսնենք՝ ինչ է իրականում կատարվում դիփֆեյք տեսանյութերի հետ
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Նկատի ունեցեք. Դիփֆեյքերը կարող են լինել բարձր որակի
+                            և դժվար լինի դրանք հայտնաբերել: Չնայած մենք
+                            կենտրոնացանք դեմքը փոխելու վրա, դիփֆեյքեր կարող
+                            են ստեղծվել դեմքը վերափոխելու համար՝ տպավորություն
+                            ստեղծելու, որ մարդն ինչ-որ բան ասաց:
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Տեխնիկական նյուանսներ </p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Դեմքի վերափոխումն ավելի մեծ
+                                                  համակարգչային հզորություն է պահանջում,
+                                                  բայց այն շատ ավելի դժվար է տարբերել:
+                                                  Աղբյուր-տեսանյութի հետ կապված խնդիրների
+                                                  մեծ մասը վերափոխման դեպքում կիրառելի չեն,
+                                                  բայց ալգորիթմը նույն կերպ է գործում: Դեմքի
+                                                  վերստեղծված հատվածները կարող են թեթևակի
+                                                  լղոզված լինել և ավելի քիչ դետալացված:
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Նաև ուշաշդրություն դարձրեք ձայնի վրա և նայեք՝
+                                                  արդյոք այն սինխրոնացված է շրթունքների շարժումների
+                                                  հետ: Օգտագործելով այս կայքից ստացած
+                                                  տեղեկատվությունը՝ հարց տվեք Ձեզ՝ արդյոք կարող է
+                                                  տեսանյութը դառնալ թիրախ, և արդյոք դրա պայմանները
+                                                  համապատասխանում են հնարավոր դիփֆեյքին: Եթե
+                                                  կասկած չկա, անպայման ստուգեք տեսանյութի աղբյուրը:
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="sources">
+                            <p class="source-text lighter-color">Դիփֆեյքի աղբյուր-տեսանյութ՝ <a>YouTube | VFXChris Ume | Fake Freeman mouth manipulation.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 11 -->
+    <!-- FOOTER -->
+    <div class="viewport">
+        <div class="last-page-row bottom-space-2_5" id="summary">
+            <div class="col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-2">
+                <h3>Կարճ ամփոփում այն հմտությունների, որոնց Դուք ծանոթացաք այս կայքում՝ տեսանյութերն ինքնուրույն ստուգելու համար:</h3>
+            </div>
+        </div>
+        <div class="qr-square">
+            <a> <img class="qr-code" src="./res/img/qr-code.png" style="width: 100%;"></a>
+        </div>
+        <div class="last-page-row software-credits">
+            <p>All the original deepfakes in this project were created with the open source software DeepFaceLab v10.1 by Iperov, under the GNU General Public License v3.0</p>
+        </div>
+        <div class="last-page-row" style="align-self: flex-end;">
+            <footer class="container-fluid space-xs-3 space-sm-3">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-1 col-sm-offset-1 footer-img">
+                        <img class="logo" src="res/svg/logo-density.svg" alt="DensityDesign logo">
+                    </div>
+                    <div class="col-xs-8 col-sm-3 space-xs-1 footer-img">
+                        <img class="logo" src="res/svg/logo-polimi.svg" alt="Politecnico di Milano logo">
+                    </div>
+                    <div class="col-xs-4 col-sm-2 space-xs-1">
+                        <p class="paragraph"><strong>Նախագծի հեղինակ՝</strong><br><br>
+                            Andrej Cattaneo<br>
+                            Ivana Riva<br>
+                            Noura Sammoura<br>
+                            Maria del Pilar Suarez Anzorena<br>
+                            Arthur van der Werf<br>
+                            Yueling Wu<br></p>
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <p class="paragraph"><strong>Ֆակուլտետ՝</strong><br><br>
+                            Michele Mauri<br>
+                            Angeles Briones<br>
+                            Gabriele Colombo<br>
+                            Simone Vantini<br>
+                            Salvatore Zingale<br></p>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <p class="paragraph"><strong>Օգնական՝</strong><br><br>
+                            Andrea Benedetti<br>
+                            Lea Mara Fabiano<br>
+                            Alessandra Facchin<br>
+                            Beatrice Gobbo<br>
+                            Tommaso Elli<br>
+                            Jacopo Di Iorio<br>
+                            Anna Riboldi<br></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
