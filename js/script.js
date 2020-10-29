@@ -41,7 +41,7 @@ $(viewportClass).each(function (i, obj) {
 
         mainNode.setAttribute("class", "left-navbar-element");
         mainNode.setAttribute("id", "left-navbar-element-" + id);
-        mainNode.setAttribute("onClick", "goToVieweport(" + i + ");");
+        mainNode.setAttribute("onClick", "goToViewport(" + i + ");");
 
         pNode.appendChild(textNode);
         mainNode.appendChild(pNode);
@@ -145,7 +145,7 @@ for (i = 0; i < localizationLabels.length; i++) {
     }
 }
 
-$(".scroll-down-arrow").attr("onClick", "goToVieweport(1);");
+$(".scroll-down-arrow").attr("onClick", "goToViewport(1);");
 
 //var currentViewportIndex = 0;
 var currentViewport = viewportList[0];
@@ -173,12 +173,12 @@ viewport.registerListener(function (val) {
 });
 
 $(".left-navbar").css("left", "-50px")
-goToVieweport(getCurrentViewportPos());
+goToViewport(getCurrentViewportPos());
 currentViewportIndex = getCurrentViewportPos();
 //scroll_To("#" + viewportList[getCurrentViewportPos()]);
 
 $(".home-button").on('click', function (event) {
-    goToVieweport(0);
+    goToViewport(0);
 
     $(".home-button-text").css("max-width", "500px");
     $(".home-button-text").css("padding-left", "24px");
@@ -332,7 +332,7 @@ window.addEventListener("wheel", event => {
                 currentViewportIndex--;
             }
         }
-        goToVieweport(currentViewportIndex);
+        goToViewport(currentViewportIndex);
         scrollValue = event.deltaY;
     }
 
@@ -508,6 +508,7 @@ function handleTouchStart(event) {
 
 function handleTouchMove(event) {
 
+    $('html,body').stop();
     distance = initialY - currentY;
     currentY = event.touches[0].clientY;
     window.scrollTo(0, scrollPos + distance);
@@ -526,7 +527,7 @@ function handleTouchMove(event) {
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
 
-    //window.scrollTo(top, left);
+    //window.scrollTo(top, 0);
 
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {/*Trovo quello più significativo sulle assi X e Y*/
@@ -584,10 +585,10 @@ function handleTouchEnd(event) {
         }
     }
 
-    goToVieweport(currentViewportIndex);
+    goToViewport(currentViewportIndex);
 }
 
-function goToVieweport(index) {
+function goToViewport(index) {
     viewport.target = "#" + viewportList[index];
 
     if ((index < 2) || (index == viewportList.length - 1)) {
@@ -618,7 +619,7 @@ window.addEventListener("keydown",
                         } else {
                             currentViewportIndex == 0;
                         }
-                        goToVieweport(currentViewportIndex)
+                        goToViewport(currentViewportIndex)
                     }
                     if (e.keyCode == 40) {
                         console.log("LOL");
@@ -627,7 +628,7 @@ window.addEventListener("keydown",
                         } else {
                             currentViewportIndex == viewportList.length - 1;
                         }
-                        goToVieweport(currentViewportIndex)
+                        goToViewport(currentViewportIndex)
                     }
                     break;
                 }
