@@ -149,6 +149,7 @@ $(".scroll-down-arrow").attr("onClick", "goToVieweport(1);");
 
 var currentViewportPos = 0;
 var currentViewport = viewportList[0];
+var currentViewportKeyDown = 0;
 
 viewport = {
     targetInternal: viewportList[0],
@@ -166,14 +167,14 @@ viewport = {
 }
 
 viewport.registerListener(function (val) {
-    scroll_To(val);
     console.log("New target: " + val);
+    scroll_To(val);
 });
 
 $(".left-navbar").css("left", "-50px")
 goToVieweport(getCurrentViewportPos());
 currentViewportPos = getCurrentViewportPos();
-scroll_To("#" + viewportList[getCurrentViewportPos()]);
+//scroll_To("#" + viewportList[getCurrentViewportPos()]);
 
 $(".home-button").on('click', function (event) {
     goToVieweport(0);
@@ -201,8 +202,8 @@ $(".home-button").on('click', function (event) {
 
 $(window).scroll(function () {
 
-    currentViewportPos = getCurrentViewportPos();
-    updateViewportSize();
+    //currentViewportPos = getCurrentViewportPos();
+    //updateViewportSize();
 
 });
 
@@ -216,6 +217,7 @@ function getCurrentViewportPos() {
         if (currentElement < element) {
             currentElement = element;
             currentViewport = viewportList[i];
+            currentViewportKeyDown = i;
             //currentViewportPos = i;
             currentElementPos = i;
         }
@@ -394,6 +396,7 @@ $(".button").click(function () {
     for (var i = 0; i < viewportList.length; i++) {
         if ($(this).attr("id").includes(viewportList[i])) {
             currentViewport = viewportList[i];
+            currentViewportKeyDown = i;
         }
     }
 
@@ -601,28 +604,28 @@ function goToVieweport(index) {
 var keys = {};
 window.addEventListener("keydown",
     function (e) {
-        var currentViewport = getCurrentViewportPos();
+        //var currentViewportKeyDown = getCurrentViewportPos();
 
         keys[e.keyCode] = true;
         switch (e.keyCode) {
             case 37: case 39: case 38: case 40: // Arrow keys
                 {
                     if (e.keyCode == 38) {
-                        if (currentViewport > 0) {
-                            currentViewport--;
+                        if (currentViewportKeyDown > 0) {
+                            currentViewportKeyDown--;
                         } else {
-                            currentViewport == 0;
+                            currentViewportKeyDown == 0;
                         }
-                        goToVieweport(currentViewport)
+                        goToVieweport(currentViewportKeyDown)
                     }
                     if (e.keyCode == 40) {
                         console.log("LOL");
-                        if (currentViewport < viewportList.length - 1) {
-                            currentViewport++;
+                        if (currentViewportKeyDown < viewportList.length - 1) {
+                            currentViewportKeyDown++;
                         } else {
-                            currentViewport == viewportList.length - 1;
+                            currentViewportKeyDown == viewportList.length - 1;
                         }
-                        goToVieweport(currentViewport)
+                        goToVieweport(currentViewportKeyDown)
                     }
                     break;
                 }
