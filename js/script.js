@@ -168,6 +168,7 @@ viewport = {
 
 viewport.registerListener(function (val) {
     console.log("New target: " + val);
+    $('html,body').stop();
     scroll_To(val);
 });
 
@@ -604,6 +605,7 @@ function goToVieweport(index) {
 var keys = {};
 window.addEventListener("keydown",
     function (e) {
+        
         //var currentViewportKeyDown = getCurrentViewportPos();
 
         keys[e.keyCode] = true;
