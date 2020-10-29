@@ -4,7 +4,7 @@ This is the source code of the Deepfake Lab project, now exhibited in the Glass 
 
 ## Current state of the project
 
-* [Deepfake Lab preview](https://cattandrej.github.io/the-deepfake-lab-the-glass-room/) - You can check the actual status of the project visiting this link.
+* [Deepfake Lab preview](https://cattandrej.github.io/the-deepfake-lab-the-glass-room/) - You can check the actual status of the project visiting by this link.
 
 ## Implementation
 
