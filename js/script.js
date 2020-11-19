@@ -61,6 +61,7 @@ localizationLabels = [
     ["nl_NL", "Dutch"],
     ["sv_SV", "Svenska"],
     ["ua_UA", "Ukrainian"],
+    ["ru_RU", "Russian (WIP)"],
     ["sl_SL", "Slovenian"],
     ["lt_LT", "Lithuanian"],
     ["am_AM", "Armenian"]
