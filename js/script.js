@@ -59,6 +59,7 @@ localizationLabels = [
     ["fr_FR", "Français"],
     ["de_DE", "Deutsche"],
     ["nl_NL", "Dutch"],
+    ["da_DA", "Danish"],
     ["sv_SV", "Svenska"],
     ["ua_UA", "Ukrainian"],
     ["ru_RU", "Russian"],
@@ -66,6 +67,8 @@ localizationLabels = [
     ["lt_LT", "Lithuanian"],
     ["am_AM", "Armenian"]
 ]
+
+//localizationLabels.sort(compareSecondColumn);
 
 // current page language identification
 var pageLanguage = 0;
@@ -721,3 +724,12 @@ window.addEventListener('scroll', function ( event ) {
 	}, 66);
 
 }, false);
+
+function compareSecondColumn(a, b) {
+    if (a[1] === b[1]) {
+        return 0;
+    }
+    else {
+        return (a[1] < b[1]) ? -1 : 1;
+    }
+}

@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html class="disable-touch" lang="da_DA">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Deepfake Lab</title>
+    <meta name="theme-color" content="#ee313c" />
+    <meta name="The Deepfake Lab" content="index,follow" />
+    <title>Empowering people to discover deepfakes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/img-urls.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/graph-style.css">
+
+    <!-- link to Favicon -->
+    <link href="res/favicon.ico" rel="icon" type="res/favicon.ico" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="res/favicon/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="res/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <title>Deepfake Lab</title>
+    <meta name="keywords" content="deepfake, lab, video">
+
+</head>
+
+<body class="disable-touch">
+
+    <div class="home-button" onclick="goToVieweport(0);">
+        <div class="home-button-text">
+            <p>Restarting the experience</p>
+        </div>
+    </div>
+
+    <div class="left-navbar" id="left-navbar">
+    </div>
+
+    <!-- PAGE 1 -->
+    <div class="viewport">
+        <div class="main">
+            <div class="title">
+                <div class="title-line-container">
+                    <div class="title-Deep">
+                        <h1>Deep</h1>
+                    </div>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="title-line-container">
+                    <div class="title-line"></div>
+                    <div class="title-fake">
+                        <h1>fake</h1>
+                    </div>
+                </div>
+
+                <div class="title-break"></div>
+
+                <div class="title-line-container">
+                    <div class="title-Lab">
+                        <h1>Lab</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle">
+                <h3>Sætter fokus på deepfakes</h3>
+            </div>
+        </div>
+
+        <div class="scroll-container">
+            <div class="scroll-down-arrow">
+
+            </div>
+        </div>
+        <div class="language-bar-container">
+
+            <div class="compact-language-bar">
+                <div class="custom-dropdown-menu" id="custom-dropdown-menu"></div>
+                <div class="current-language" id="current-language">
+                </div>
+            </div>
+
+            <div class="extended-language-bar" style="display: none;">
+                <div class="language-bar" id="language-bar"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 2 -->
+    <!-- WELCOME VIDEO -->
+    <div class="viewport">
+        <div class="welcome-container">
+            <div class="video-container rescale">
+                <video class="video-adapt" autoplay loop muted controls class="scale-2">
+                    <source src="res/vid/a00_intro.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container-fluid">
+                <div class="col-xs-10 col-sm-10 col-lg-6 col-xs-offset-1 col-sm-offset-1 col-lg-offset-3">
+                    <div class="intro">
+                        <p>Gennem vores hands-on undersøgelser og de eksempler, vi har indsamlet på internettet, kan du
+                            gå på opdagelse i, hvordan deepfakes fungerer og de visuelle spor, du skal kigge efter for
+                            at spotte dem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <!-- ELON -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a01_elon_baby.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>01. Tesla Baby</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Lad os se på et populært eksempel fra internettet.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            I denne video er et barns ansigt blevet overlejret med Elon Musk's. Denne type ansigtsbytte
+                            er den mest almindelige måde at bruge deepfakes på. Se nøje efter: kanterne er ikke skarpe,
+                            og hudtonen er anderledes.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Tekniske detaljer</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Visuelle fejl</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/skin_tone.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Uoverensstemmelse i hudtone:</strong>
+                                                        Der er forskel i hudtonen mellem masken og mål-ansigtet.
+                                                        Ansigtet ser ud til at være dækket af et lag farve, der viser
+                                                        sig som kanter eller pletter.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> En deepfake skabes af et computerprogram, der kan lære sig selv at
+                                                    genskabe et ansigt ved at analysere adskillige billeder af personen.
+                                                    Programmet lægger derefter det ansigt, det har genskabt, på en
+                                                    eksisterende video - næsten som en digital maske. Du kan se spor af
+                                                    en sådan en maske i denne video.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-02_Baby  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Target Video</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-02_Elon  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Deepfaked Video</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Original mål-video: <a>YouTube | AndrewSchrock | Cutest
+                                    Baby Montage Ever.</a></p>
+                            <p class="source-text lighter-color">Deepfake video
+                                source: <a>YouTube | TheFakening | Baby Elon Musk Montage Deepfake</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 4 -->
+    <!-- PIPI-SHIA -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>02. DIY</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Du kan også prøve det derhjemme. Vi viser dig hvordan.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Deepfake-videoer kan laves på en hjemmecomputer, men du har brug for et kraftigt grafikkort.
+                            Videoen her er vores første test, som også gør det klart, hvorfor det er vigtigt fra starten
+                            at bruge en videokilde, der er egnet til den slags digital bearbejdning.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a02_pipi_shia.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-pipi-shia-02  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Shia LaBeouf</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-pipi-shia-01  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Pilar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Original mål-video: <a>YouTube | MotivaShian | Shia
+                                    LaBeouf "Just Do It" Motivational Speech</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Tekniske detaljer</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Visuelle fejl</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/skin_tone.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Uoverensstemmelse i hudtone:</strong>
+                                                        Der er forskel i hudtonen mellem masken og mål-ansigtet.
+                                                        Ansigtet ser ud til at være dækket af et lag farve, der viser
+                                                        sig som kanter eller pletter.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/expression.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Uoverensstemmelse i ansigtsudtryk:</strong>
+                                                        Udtrykkene på deepfake-ansigtet stemmer ikke overens med
+                                                        mål-ansigtet. Ansigtstræk opfører sig unaturligt, er usynlige,
+                                                        slørede eller replikerede.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/edges.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Synlige kanter:</strong>
+                                                        Kanterne på masken er synlige, enten som en skarp eller en
+                                                        sløret kant, der omgiver ansigtet.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Billederne, der blev brugt til at træne algoritmen, indeholdt ikke
+                                                    de rigtige ansigtsudtryk til at dække Shias ansigt i videoen, og de
+                                                    indeholdt heller ikke optagelser af hans ansigt i profil. Hvis det
+                                                    neurale netværk ikke er trænet til disse situationer, kan det ikke
+                                                    producere en nøjagtig digital maske. Læg mærke til, hvordan Shia's
+                                                    mund ser ud under masken, hvilket resulterer i to munde.
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- SINGLE ROW GRAPH -->
+                                            <!-- Graph #1 -->
+                                            <!-- Pipi-Shia -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">H64</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-bar-background">
+
+                                                        <div class="graph-bar" style="width: 10%;"></div>
+
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 40%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 50%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 13%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">200</p>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">106000</p>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">64</p>
+                                                            <p class="graph-grey">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">31</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 5 -->
+    <!-- IVANA-ANNE -->
+
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>03. Process</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Hvordan laver man egentlig en deepfake?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            og opretter en maske fra kilde-videoen, der kan lægges over på mål-videoen ved hjælp af et
+                            redigeringssoftware.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="content-col video-col top-dx">
+                        <div class="video-container">
+                            <div class="video-player">
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-original" autoplay loop muted class="scale-2">
+                                        <source src="res/vid/b00_original.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-dataset" style="display: none;" autoplay loop
+                                        muted class="scale-2">
+                                        <source src="res/vid/b01_dataset.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-mask" style="display: none;" autoplay loop muted
+                                        class="scale-2">
+                                        <source src="res/vid/b02_mask.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-alignment" style="display: none;" autoplay loop
+                                        muted class="scale-2">
+                                        <source src="res/vid/b03_alignment.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-deepfake" style="display: none;" autoplay loop
+                                        muted class="scale-2">
+                                        <source src="res/vid/b04_deepfake.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="interactive-video">
+                                    <video class="video-adapt" id="vid-post" style="display: none;" autoplay loop muted
+                                        class="scale-2">
+                                        <source src="res/vid/b05_post.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+
+                <div class="pics">
+                    <!-- SINGLE ROW GRAPH -->
+                    <!-- Graph #2 -->
+                    <!-- Ivana-Anne -->
+                    <div class="graph left-space-5" id="graph-ivana-anne">
+
+                        <!-- 1st column -->
+                        <div class="graph-col" id="graph-col-0">
+                            <div class="graph-col-row graph-align-right">
+                                <p>Algorithm</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Dataset size</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Iteration amount</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Output resolution</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-align-right">
+                                <p>Training time</p>
+                            </div>
+                        </div>
+
+                        <!-- 2nd column -->
+                        <div class="graph-col" id="graph-col-1">
+                            <div class="graph-col-row">
+                                <p class="algorithm">SAEHD</p>
+                            </div>
+                            <div class="graph-line-spacing"></div>
+                            <div class="graph-col-row graph-bar-background">
+
+                                <div class="graph-bar" style="width: 45%;"></div>
+
+                            </div>
+
+                            <div class="graph-line-spacing"></div>
+
+                            <div class="graph-col-row graph-bar-background">
+                                <div class="graph-bar" style="width: 75%;"></div>
+                            </div>
+
+                            <div class="graph-line-spacing"></div>
+
+                            <div class="graph-col-row graph-bar-background">
+                                <div class="graph-bar" style="width: 100%;"></div>
+                            </div>
+
+                            <div class="graph-line-spacing"></div>
+
+                            <div class="graph-col-row graph-bar-background">
+                                <div class="graph-bar" style="width: 29%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd column -->
+                        <div class="graph-col" id="graph-col-2">
+                            <div class="graph-col-row">
+                                <p class="graph-grey">Project reach</p>
+                            </div>
+
+                            <div class="graph-col-data">
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">750</p>
+                                    <p class="graph-grey">/2000 images</p>
+                                </div>
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">200000</p>
+                                    <p class="graph-grey">/268000 times</p>
+                                </div>
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">128</p>
+                                    <p class="graph-grey">/128 pixels</p>
+                                </div>
+                                <div class="graph-line-spacing"></div>
+                                <div class="graph-col-row graph-inline">
+                                    <p class="graph-accent-color">48</p>
+                                    <p class="graph-grey">/63 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="source-text lighter-color left-space-5"><br>Original mål-video: <a>The Devil Wears Prada
+                            | Andy's Interview</a></p>
+                </div>
+                <div class="specs">
+                    <div class="content-col video-col bottom-dx">
+                        <div class="details">
+                            <div class="detail-row border-bottom">
+
+                                <div class="button process button-selected" id="original">
+                                    <p>Original</p>
+                                </div>
+                                <div class="button process" id="dataset">
+                                    <p>Datasæt</p>
+                                </div>
+                                <div class="button process" id="mask">
+                                    <p>Maske</p>
+                                </div>
+                                <div class="button process" id="alignment">
+                                    <p>Justering</p>
+                                </div>
+                                <div class="button process" id="deepfake">
+                                    <p>Deepfake</p>
+                                </div>
+                                <div class="button process" id="post">
+                                    <p>Efter</p>
+                                </div>
+                            </div>
+                            <div class="interactive-detail-col">
+                                <div class="tab" id="original">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Vælg en mål-video, hvor du vil indsætte et ansigt. At vælge en stabil
+                                                video med en ensartet baggrund giver dig det bedste resultat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="dataset" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Optag et datasæt til det ansigt, du vil placere (kilden), der matcher
+                                                belysning og udtryk så meget som muligt.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="mask" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>CDæk ansigterne til på andre mennesker i mål-videoen, ellers bliver de
+                                                også hentet af algoritmen og forvirrer træningsprocessen.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="alignment" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Algoritmen beskærer ansigterne, så den kan bruge dem til træning og
+                                                gemmer deres positioner for at kunne lægge masken nøjagtigt på bagefter.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="deepfake" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Algoritmen genererer en maske af ansigtet fra kilde-videoen, som du
+                                                derefter skal justere på mål-videoen. </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="post" style="display: none;">
+                                    <div class="interactive-detail-col left-space-2_5 top-space-2_5">
+                                        <div class="interactive-detail-text detail-text-p">
+                                            <p>Redigeringssoftware giver dig efterfølgende mulighed for at tilpasse
+                                                masken og forfine det endelige resultat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 6 -->
+    <!--  ARTHUR-SHERLOCK -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a04_arthur_sherlock.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>04. TRÆNINGSDATA</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Hvad sker der, hvis vi giver programmet mere indhold? Bliver det bedre?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            I dette eksperiment fik to programmer et forskelligt antal billeder. Mere kildemateriale
+                            forbedrer klart resultatet. Modellen havde flere oplysninger om ansigtet og kunne udvikle en
+                            bedre maske.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Tekniske detaljer</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Eksperimentet blev udført med samme kilde-video, der blev
+                                                    eksporteret med to forskellige billedhastigheder, men blev trænet
+                                                    med samme studio opsætning. Mængden af træningscyklusser pr. billede
+                                                    er ens, men træningstiden var længere med det største datasæt. Man
+                                                    kan tydeligt se, at algoritmen, der er trænet med flere billeder,
+                                                    kan producere et mere raffineret resultat, der bedre matcher målet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- DOUBLE ROW GRAPH -->
+                                            <!-- Graph #3 -->
+                                            <!-- Arthur-Sherlock -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 10%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 75%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 75%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 49%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">200</p>
+                                                            <p class="text-color-light">/2000 images</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">200000</p>
+                                                            <p class="text-color-light">/20000</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="text-color-light">/128 pixels</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">8</p>
+                                                            <p class="text-color-light">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-05_Sherlock  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Benedict Cumberbatch</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-05_Arthur  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arthur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Original mål-video: <a>Sherlock | The Reichenbach
+                                    Fall | Rooftop Showdown</a></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 7 -->
+    <!-- PIPI-NATALIE -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>05. SNYD VIA SOCIALE MEDIER</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Hvor sårbar er du? Kan vi stjæle indhold fra din profiler på sociale medier og skabe en god
+                            deepfake?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Vi tog alle Facebook-billederne fra et af vores teammedlemmer og skabte en deepfake. På
+                            næsten alt kildematerialet smilede hun, så algoritmen kunne ikke generere en ikke-smilende
+                            maske.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a05_pipi_padme.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-06_Natalie image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Natalie Portman</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-pipi-fb  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Pilar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Original mål-video:</strong> <a>Star Wars: Episode I
+                                    – The Phantom Menace | Padmé meets Anakin</a></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Tekniske detaljer</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Visuelle fejl</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/blur.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Sløret ansigt: </strong>
+                                                        Masken er sløret. Der er forskel i skarphed eller opløsning
+                                                        mellem masken og resten af videoen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/expression.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Uoverensstemmelse i ansigtsudtryk:</strong>
+                                                        Udtrykkene på deepfake-ansigtet stemmer ikke overens med
+                                                        mål-ansigtet. Ansigtstræk opfører sig unaturligt, er usynlige,
+                                                        slørede eller replikerede.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/profile.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Profilgrænser:</strong>
+                                                        Sidevisningen af ansigtet virker forkert. Deepfake-masken er
+                                                        itu, mindre detaljeret eller forkert justeret.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> En video indeholder mange flere ansigtsnuancer end de billeder, vi
+                                                    tog fra Facebook. Fotos af vores teammedlem på sociale medier er
+                                                    selvvalgte og mangler derfor de variationer i udtrykket, der kræves
+                                                    for at skabe realistiske ansigtsudtryk ved tale. Selvom bedre
+                                                    teknologier måske er i stand til at fremstille ansigtsudtryk, er det
+                                                    umuligt at skabe noget overbevisende uden varieret kildemateriale.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- SINGLE ROW GRAPH -->
+                                            <!-- Graph #4 -->
+                                            <!-- Pipi-Padme -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-bar-background">
+
+                                                        <div class="graph-bar" style="width: 8.25%;"></div>
+
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 80%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 70%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">165</p>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">215000</p>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="graph-grey">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">44</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 8 -->
+    <!--  INDIANA-ANDREJ -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a06_andrej_indiana.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>06. MÅLVALG</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Vi har set, hvordan kilden er vigtig i træning af algoritmen. Hvad med målvideoen?
+
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Selv med en god kilde er det svært at skabe en deepfake. Klippet med Indiana Jones er mere
+                            kaotisk. Sammenlignet med de roligere videoer fra før, så har algoritmen nu svært ved at
+                            følge med.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Tekniske detaljer</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Visuelle fejl</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/blur.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Sløret ansigt: </strong>
+                                                        Masken er sløret. Der er forskel i skarphed eller opløsning
+                                                        mellem masken og resten af videoen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/flicker.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Flimmer-effekt:</strong>
+                                                        Det flimrer mellem de originale og deepfake ansigterne.
+                                                        Algoritmen kan ikke genkende ansigtet og stopper med at
+                                                        opretholde masken et øjeblik.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- DX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5 mobile-no-top-space">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/perspective.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Forkert perspektiv:</strong>
+                                                        Masken har et andet perspektiv end videoen. Kilde-videoen og
+                                                        målvideoen er i forskellig brændvidde.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Vores deepfake blev eksporteret med en opløsning på 64 px. Den
+                                                    lavere opløsning betyder, at det tog kortere tid at træne
+                                                    algoritmen, fordi modellen kun skulle lære at skabe et billede med
+                                                    lav opløsning. I nærbilleder af ansigter er den lave opløsning
+                                                    tydelig.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- SINGLE ROW GRAPH -->
+                                            <!-- Graph #5 -->
+                                            <!-- Andrej-Indiana -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-bar-background">
+
+                                                        <div class="graph-bar" style="width: 70%;"></div>
+
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 37%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 50%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 13%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">1400</p>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">100000</p>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">64</p>
+                                                            <p class="graph-grey">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">8</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-07_Indiana  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Harrison Ford</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-07_Andrej  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Andrej</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Original målvideo:</strong> <a>Indiana Jones and
+                                    the Temple of Doom | Rope Bridge Fight</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 9 -->
+    <!-- BILL-ARNOLD-->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>07. IKKE BLINKE</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Nogle gange lykkedes det at smelte de to dele sammen. Særligt når målet efterligner endda
+                            hans kilde-ansigt.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Denne deepfake video kommer fra et talkshow-segment, hvor Bill Hader efterligner Arnold
+                            Schwarzenegger. Ved at bruge passende kildemateriale af Arnold Schwarzenegger blev
+                            resultatet overbevisende.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a07_arnold_bill.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-08_Bill_hader image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Bill Hader</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-08_Arnold  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arnold Schwarzenegger</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Original mål-video: <a>Bill Hader Presents:
+                                    Schwarzenegger Baby</a></p>
+                            <p class="source-text lighter-color">Source deepfaked video: <a>YouTube | Ctrl Shift Face |
+                                    Bill Hader impersonates Arnold Schwarzenegger [DeepFake]</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Tekniske detaljer</p>
+                                    </div>
+                                    <div class="button" id="visual">
+                                        <p>Visuelle fejl</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="visual" style="display: none;">
+
+                                        <!-- SX ICON COL -->
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="icon-group">
+                                                <div class="ico">
+                                                    <img class="ico" src="./res/ico/occlusion.svg">
+                                                </div>
+                                                <div class="detail-text">
+                                                    <p><strong>Ansigtsokklusion:</strong>
+                                                        Når genstande passerer foran ansigtet, fordrejer eller dækker
+                                                        masken genstanden.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Sammensmeltningen af ansigterne, hudtonerne og opløsningen er rigtig
+                                                    god. Det, at videoen er optaget på afstand, gør det svært at se
+                                                    sløringen. Efterproduktionen er dygtigt udført. Det eneste der
+                                                    afslører den er, når Bill Hader bevæger sin finger foran ansigtet,
+                                                    så forsvinder den nemlig bag masken. Forskellen i skarphed og
+                                                    fingerens vinkel antyder, at skaberen har forsøgt at skjule effekten
+                                                    i efterproduktionen.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 10 -->
+    <!--  CONSTANCE-YUELING -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a08_yueling_constance.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>08. TRÆNINGSTID</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Hvad sker der, hvis vi lader algoritmen øve sig mere på kilde-indholdet. Bliver resultaterne
+                            bedre?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Til dette eksperiment blev den ene model trænet i fire timer og den anden i 48. Resultaterne
+                            af 48-timers modellen viste klar forbedring i ansigtsdetaljer og et mere tredimensionelt
+                            ansigt.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Tekniske detaljer</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p>Træningstid er relateret til det antal gange, algoritmen behandler
+                                                    billederne. Processen involverer at algoritmen skaber et ansigt
+                                                    (eller digital maske), sammenligner det med kilde-billedet og
+                                                    derefter justerer for at forbedre maskens lighed med kilden. Den
+                                                    cyklus gennemgås alle kilde-billeder og starter derefter forfra. Den
+                                                    tid, det tager, afhænger af styrken på den anvendte computer.</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <!-- DOUBLE ROW GRAPH -->
+                                            <!-- Graph #6 -->
+                                            <!-- Yueling-Constance -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 20%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 20%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 7%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 6%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 76%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">400</p>
+                                                            <p class="text-color-light">/400</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">20000</p>
+                                                            <p class="text-color-light">/268000 times</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="text-color-light">/128 pixels</p>
+                                                        </div>
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">4</p>
+                                                            <p class="text-color-light">/48</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-09_Constance  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Constance Wu</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-09_Yueling  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Yueling</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sources">
+                            <p class="source-text lighter-color">Original målvideo: <a>YouTube | The Late Show with
+                                    Stephen Colbert | Constance Wu Explains What "Couture" Means</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 11 -->
+    <!-- ARTHUR-ANDREJ-->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container">
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>09. ALGORITMER</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Et sidste eksperiment. Hvordan reagerer forskellige algoritmer på forskellige betingelser?
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Til dette eksperiment skabte vi både kildevideoen og målvideoen selv. Algoritmernes
+                            forskellige metoder bliver tydelige. H128 skaber en firkantet maske, mens SAEHD matcher
+                            ansigtet bedre.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a09_andrej_arthur.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-container mobile-flip">
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="content-col title-col bottom-dx space-between">
+                            <div class="image-container gif-margin">
+                                <div class="image">
+                                    <div class="img-10_Arthur  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Arthur</p>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <div class="image">
+                                    <div class="img-10_Andrej  image-adapt">
+                                    </div>
+                                </div>
+                                <div class="image-desc">
+                                    <p>Andrej</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Tekniske detaljer</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> H128 er den simpleste af de to modeller. Den opnår
+                                                    kvalitetsresultater hurtigere. Den mere præcise maske SAEHD skaber,
+                                                    er bedre til at håndtere hånden og mixe belysningen. H128 ser ud til
+                                                    at være bedre trænet til at lave ansigtet: masken står skarpere,
+                                                    mere stabilt og fungerer bedre ved bevægelses- og
+                                                    perspektivændringer. Eksperter siger dog, at med mere træningstid
+                                                    vil SAEED overgå H128.</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+
+                                            <!-- DOUBLE ROW GRAPH -->
+                                            <!-- Graph #7 -->
+                                            <!-- Andrej-Arthur -->
+                                            <div class="graph">
+
+                                                <!-- 1st column -->
+                                                <div class="graph-col" id="graph-col-0">
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Algorithm</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Dataset size</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Iteration amount</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Output resolution</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+                                                    <div class="graph-col-row graph-align-right">
+                                                        <p>Training time</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 2nd column -->
+                                                <div class="graph-col" id="graph-col-1">
+                                                    <div class="graph-col-row">
+                                                        <p class="algorithm">SAEHD</p>
+                                                        <p class="algorithm-2">H128</p>
+                                                    </div>
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 25%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 25%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 56%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 56%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 100%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 100%;"></div>
+                                                    </div>
+
+                                                    <div class="graph-line-spacing"></div>
+
+                                                    <div class="graph-col-row graph-bar-background">
+                                                        <div class="graph-bar" style="width: 38%;"></div>
+                                                        <div class="break"></div>
+                                                        <div class="graph-bar bar-light" style="width: 63%;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 3rd column -->
+                                                <div class="graph-col" id="graph-col-2">
+                                                    <div class="graph-col-row">
+                                                        <p class="graph-grey">Project reach</p>
+                                                    </div>
+
+                                                    <div class="graph-col-data">
+                                                        <div class="graph-line-spacing"></div>
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">500</p>
+                                                            <p class="text-color-light">/500</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/2000 images</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline translate-up">
+                                                            <p class="graph-accent-color">150000</p>
+                                                            <p class="text-color-light">/150000</p>
+                                                            <div class="break"></div>
+                                                            <p class="graph-grey">/268000 times</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">128</p>
+                                                            <p class="text-color-light">/128 pixels</p>
+                                                        </div>
+
+                                                        <div class="graph-line-spacing"></div>
+
+                                                        <div class="graph-col-row graph-inline">
+                                                            <p class="graph-accent-color">24</p>
+                                                            <p class="text-color-light">/40</p>
+                                                            <p class="graph-grey">/63 hours</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGE 12 -->
+    <!--  MORGAN -->
+    <div class="viewport">
+
+        <div class="rows">
+            <div class="row-container mobile-flip">
+
+                <div class="vid">
+                    <div class="video-container">
+                        <video class="video-adapt" autoplay loop muted controls>
+                            <source src="res/vid/a10_morgan_freeman.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="caption">
+                    <div class="header_2">
+                        <h2>10. HOLD ØJENE ÅBNE</h2>
+                    </div>
+                    <div class="top-space-5 left-space-5">
+                        <h3>Lad os se, hvad der virkelig sker med deepfake-videoer.
+                        </h3>
+                    </div>
+                    <div class=" top-space-2_5 left-space-5">
+                        <p>
+                            Deepfakes idag kan være svære at spotte, så vær opmærksom! Vi har her fokuseret på
+                            udskiftning af ansigter, men deepfakes bruges også til rekonstruktion af ansigter, så det,
+                            der siges, ændres.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="specs">
+                    <div class="content-row h40">
+
+                        <div class="content-col video-col bottom-sx">
+                            <div class="details">
+                                <div class="detail-row border-bottom">
+
+                                    <div class="button button-selected" id="tech">
+                                        <p>Tekniske detaljer</p>
+                                    </div>
+                                </div>
+                                <div class="detail-row">
+                                    <div class="tab" id="tech">
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Ansigtsrekonstruktion kræver mere computerkraft, men er også meget
+                                                    sværere at gennemskue. Mange af udfordringerne ved at anvende
+                                                    kilde-videoer opstår ikke ved rekonstruktion, men algoritmen
+                                                    fungerer på en lignende måde. De rekonstruerede dele af ansigtet
+                                                    bliver lidt slørede og mindre detaljerede.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-col left-space-2_5 top-space-2_5">
+                                            <div class="detail-text">
+                                                <p> Vær også opmærksom på lyden, se efter fejl eller lip sync-problemer.
+                                                    Brug den viden, du har fået her, til at stille kritiske spørgsmål
+                                                    om, hvorvidt en video kan være et mål, og forhold i videoen antyder,
+                                                    at det kunne være en deepfake. Hvis du er i tvivl, husk altid at
+                                                    kontrollere kilden til videoen.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pics">
+                    <div class="left-space-5">
+                        <div class="sources">
+                            <p class="source-text lighter-color">Deepfake målvideo: <a>YouTube | VFXChris Ume | Fake
+                                    Freeman mouth manipulation.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 11 -->
+    <!-- FOOTER -->
+    <div class="viewport">
+        <div class="last-page-row bottom-space-2_5" id="summary">
+            <div class="col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-2">
+                <h3>Her er et praktisk resume af de tips, du har lært om på vores website, så du selv fremadrettet kan
+                    tjekke for deepfakes. </h3>
+            </div>
+        </div>
+        <div class="qr-square">
+            <a> <img class="qr-code" src="./res/img/qr-code.png" style="width: 100%;"></a>
+        </div>
+        <div class="last-page-row software-credits">
+            <p>All the original deepfakes in this project were created with the open source software DeepFaceLab v10.1
+                by Iperov, under the GNU General Public License v3.0</p>
+        </div>
+        <div class="last-page-row" style="align-self: flex-end;">
+            <footer class="container-fluid space-xs-3 space-sm-3">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-1 col-sm-offset-1 footer-img">
+                        <img class="logo" src="res/svg/logo-density.svg" alt="DensityDesign logo">
+                    </div>
+                    <div class="col-xs-8 col-sm-3 space-xs-1 footer-img">
+                        <img class="logo" src="res/svg/logo-polimi.svg" alt="Politecnico di Milano logo">
+                    </div>
+                    <div class="col-xs-4 col-sm-2 space-xs-1">
+                        <p class="paragraph"><strong>Projekt af</strong><br><br>
+                            Andrej Cattaneo<br>
+                            Ivana Riva<br>
+                            Noura Sammoura<br>
+                            Maria del Pilar Suarez Anzorena<br>
+                            Arthur van der Werf<br>
+                            Yueling Wu<br></p>
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <p class="paragraph"><strong>Fakultet</strong><br><br>
+                            Michele Mauri<br>
+                            Angeles Briones<br>
+                            Gabriele Colombo<br>
+                            Simone Vantini<br>
+                            Salvatore Zingale<br></p>
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <p class="paragraph"><strong>Undervisningsassistenter</strong><br><br>
+                            Andrea Benedetti<br>
+                            Lea Mara Fabiano<br>
+                            Alessandra Facchin<br>
+                            Beatrice Gobbo<br>
+                            Tommaso Elli<br>
+                            Jacopo Di Iorio<br>
+                            Anna Riboldi<br></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
