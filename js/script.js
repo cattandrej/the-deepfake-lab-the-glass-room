@@ -59,13 +59,14 @@ localizationLabels = [
     ["fr_FR", "Français"],
     ["de_DE", "Deutsche"],
     ["nl_NL", "Dutch"],
-    ["da_DA", "Danish"],
+    ["da_DA", "Dansk"],
     ["sv_SV", "Svenska"],
-    ["ua_UA", "Ukrainian"],
-    ["ru_RU", "Russian"],
-    ["sl_SL", "Slovenian"],
-    ["lt_LT", "Lithuanian"],
-    ["am_AM", "Armenian"]
+    ["ua_UA", "Українська"],
+    ["ru_RU", "Русский"],
+    ["sl_SL", "Slovenščina"],
+    ["lt_LT", "Lietuvių"],
+    ["pt_BR", "Português brasileiro"],
+    ["am_AM", "Հայերեն"]
 ]
 
 //localizationLabels.sort(compareSecondColumn);
