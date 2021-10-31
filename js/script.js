@@ -67,7 +67,8 @@ localizationLabels = [
     ["lt_LT", "Lietuvių"],
     ["pt_BR", "Português brasileiro"],
     ["am_AM", "Հայերեն"],
-    ["vi_VI", "Tiếng Việt"]
+    ["vi_VI", "Tiếng Việt"],
+    ["zh_ZH", "汉语"]
 ]
 
 //localizationLabels.sort(compareSecondColumn);
