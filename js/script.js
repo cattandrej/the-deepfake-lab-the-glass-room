@@ -62,6 +62,7 @@ localizationLabels = [
     ["da_DA", "Dansk"],
     ["sv_SV", "Svenska"],
     ["ua_UA", "Українська"],
+    ["ro_RO", "Română"],
     ["ru_RU", "Русский"],
     ["sl_SL", "Slovenščina"],
     ["lt_LT", "Lietuvių"],
