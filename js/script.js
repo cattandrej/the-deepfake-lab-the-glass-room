@@ -70,6 +70,7 @@ localizationLabels = [
     ["am_AM", "Հայերեն"],
     ["vi_VI", "Tiếng Việt"],
     ["zh_ZH", "汉语"],
+    ["gr_GR", "Ελληνικά"],
     ["cz_CZ", "Czech"]
 ]
 
