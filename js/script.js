@@ -89,8 +89,9 @@ console.log("pageLanguage = " + localizationLabels[pageLanguage][1]);
 
 
 // language selector
-var languageBar = document.getElementById("language-bar");
-var dropdownMenu = document.getElementById("custom-dropdown-menu");
+
+var Modal = document.getElementById("modal");
+var modal = document.getElementById("modal");
 
 for (currentLocalization = 0; currentLocalization < localizationLabels.length; currentLocalization++) {
 
@@ -109,7 +110,7 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
 
     aNode.appendChild(textNode);
     languageBarNode.appendChild(aNode);
-    languageBar.append(languageBarNode);
+   
 
     // dropdown-menu generation
     if (pageLanguage != currentLocalization) {
@@ -123,6 +124,7 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
         dropdownMenuNode.setAttribute("id", localizationLabels[currentLocalization][0]);
         if (currentLocalization != 0) {
             dropdownMenuNodeLink.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
+            dropdownMenuNodeLink.setAttribute("class", "col-sm-4");
             aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
         } else {
             dropdownMenuNodeLink.setAttribute("href", "index.html");
@@ -133,7 +135,8 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
         aNode.appendChild(textNode);
         dropdownMenuNode.appendChild(aNode);
         dropdownMenuNodeLink.append(dropdownMenuNode);
-        dropdownMenu.appendChild(dropdownMenuNodeLink);
+      
+        modal.appendChild(dropdownMenuNodeLink);
 
     } else {
         textNode = document.createTextNode("Language: " + localizationLabels[pageLanguage][1]);
@@ -141,10 +144,6 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
     }
 }
 
-$(".current-language").click(function () {
-    $(".custom-dropdown-menu").toggleClass("dropdown-menu-open");
-    console.log("click");
-});
 
 for (i = 0; i < localizationLabels.length; i++) {
     if ($("html").attr("lang") === localizationLabels[i][0]) {
