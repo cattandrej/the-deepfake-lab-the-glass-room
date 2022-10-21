@@ -90,7 +90,6 @@ console.log("pageLanguage = " + localizationLabels[pageLanguage][1]);
 
 // language selector
 
-var Modal = document.getElementById("modal");
 var modal = document.getElementById("modal");
 
 for (currentLocalization = 0; currentLocalization < localizationLabels.length; currentLocalization++) {
@@ -125,17 +124,16 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
         if (currentLocalization != 0) {
             dropdownMenuNodeLink.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
             dropdownMenuNodeLink.setAttribute("class", "col-sm-4");
-            aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
+            
         } else {
             dropdownMenuNodeLink.setAttribute("href", "index.html");
-            aNode.setAttribute("href", "index.html");
+            dropdownMenuNodeLink.setAttribute("class", "col-sm-4");
         }
 
 
         aNode.appendChild(textNode);
         dropdownMenuNode.appendChild(aNode);
         dropdownMenuNodeLink.append(dropdownMenuNode);
-      
         modal.appendChild(dropdownMenuNodeLink);
 
     } else {

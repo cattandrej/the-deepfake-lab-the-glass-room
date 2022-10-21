@@ -1381,7 +1381,6 @@ custom-dropdown-menu{
     font-family: verdana;
     color: #ee313c;
     position: sticky;
-    padding-top: 15;
     top: 0.2em;
     right: 0.375em;
     margin: 0;
@@ -1409,6 +1408,7 @@ custom-dropdown-menu{
     z-index: 9999991; 
   }
   .popup:target .popUpContainer{
+      padding-top: 15px;
     top: 50px;
       -webkit-transition: top  0.35s ease;
       -moz-transition: top 0.35s ease;
