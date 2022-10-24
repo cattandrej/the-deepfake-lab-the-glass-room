@@ -53,25 +53,24 @@ $(viewportClass).each(function (i, obj) {
 // language bar generation
 
 localizationLabels = [
+    ["cz_CZ", "Czech"],
+    ["da_DA", "Dansk"],
+    ["de_DE", "Deutsch"],
     ["en_UK", "English"],
-    ["it_IT", "Italiano"],
     ["es_ES", "Español"],
     ["fr_FR", "Français"],
-    ["de_DE", "Deutsch"],
+    ["lt_LT", "Lietuvių"],
     ["nl_NL", "Nederlands"],
-    ["da_DA", "Dansk"],
+    ["pt_BR", "Português brasileiro"],
+    ["ru_RU", "Русский"],
+    ["ro_RO", "Română"],
+    ["sl_SL", "Slovenščina"],
     ["sv_SV", "Svenska"],
     ["ua_UA", "Українська"],
-    ["ro_RO", "Română"],
-    ["ru_RU", "Русский"],
-    ["sl_SL", "Slovenščina"],
-    ["lt_LT", "Lietuvių"],
-    ["pt_BR", "Português brasileiro"],
     ["am_AM", "Հայերեն"],
     ["vi_VI", "Tiếng Việt"],
     ["zh_ZH", "汉语"],
-    ["gr_GR", "Ελληνικά"],
-    ["cz_CZ", "Czech"]
+    ["gr_GR", "Ελληνικά"]
 ]
 
 //localizationLabels.sort(compareSecondColumn);
@@ -89,8 +88,8 @@ console.log("pageLanguage = " + localizationLabels[pageLanguage][1]);
 
 
 // language selector
-var languageBar = document.getElementById("language-bar");
-var dropdownMenu = document.getElementById("custom-dropdown-menu");
+
+var modal = document.getElementById("modal");
 
 for (currentLocalization = 0; currentLocalization < localizationLabels.length; currentLocalization++) {
 
@@ -109,7 +108,7 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
 
     aNode.appendChild(textNode);
     languageBarNode.appendChild(aNode);
-    languageBar.append(languageBarNode);
+   
 
     // dropdown-menu generation
     if (pageLanguage != currentLocalization) {
@@ -123,17 +122,18 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
         dropdownMenuNode.setAttribute("id", localizationLabels[currentLocalization][0]);
         if (currentLocalization != 0) {
             dropdownMenuNodeLink.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
-            aNode.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
+            dropdownMenuNodeLink.setAttribute("class", "col-sm-4");
+            
         } else {
             dropdownMenuNodeLink.setAttribute("href", "index.html");
-            aNode.setAttribute("href", "index.html");
+            dropdownMenuNodeLink.setAttribute("class", "col-sm-4");
         }
 
 
         aNode.appendChild(textNode);
         dropdownMenuNode.appendChild(aNode);
         dropdownMenuNodeLink.append(dropdownMenuNode);
-        dropdownMenu.appendChild(dropdownMenuNodeLink);
+        modal.appendChild(dropdownMenuNodeLink);
 
     } else {
         textNode = document.createTextNode("Language: " + localizationLabels[pageLanguage][1]);
@@ -141,10 +141,6 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
     }
 }
 
-$(".current-language").click(function () {
-    $(".custom-dropdown-menu").toggleClass("dropdown-menu-open");
-    console.log("click");
-});
 
 for (i = 0; i < localizationLabels.length; i++) {
     if ($("html").attr("lang") === localizationLabels[i][0]) {
