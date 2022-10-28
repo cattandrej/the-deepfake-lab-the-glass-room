@@ -53,10 +53,10 @@ $(viewportClass).each(function (i, obj) {
 // language bar generation
 
 localizationLabels = [
-    ["cz_CZ", "Czech"],
-    ["da_DA", "Dansk"],
+    ["cs_CZ", "Czech"],
+    ["da_DK", "Dansk"],
     ["de_DE", "Deutsch"],
-    ["en_UK", "English"],
+    ["en_US", "English"],
     ["es_ES", "Español"],
     ["fr_FR", "Français"],
     ["lt_LT", "Lietuvių"],
@@ -64,13 +64,13 @@ localizationLabels = [
     ["pt_BR", "Português brasileiro"],
     ["ru_RU", "Русский"],
     ["ro_RO", "Română"],
-    ["sl_SL", "Slovenščina"],
-    ["sv_SV", "Svenska"],
+    ["sl_SI", "Slovenščina"],
+    ["sv_SE", "Svenska"],
     ["ua_UA", "Українська"],
-    ["am_AM", "Հայերեն"],
-    ["vi_VI", "Tiếng Việt"],
-    ["zh_ZH", "汉语"],
-    ["gr_GR", "Ελληνικά"]
+    ["hy_AM", "Հայերեն"],
+    ["vi_VN", "Tiếng Việt"],
+    ["zh_CN", "汉语"],
+    ["el_GR", "Ελληνικά"]
 ]
 
 //localizationLabels.sort(compareSecondColumn);
