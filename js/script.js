@@ -53,10 +53,11 @@ $(viewportClass).each(function (i, obj) {
 // language bar generation
 
 localizationLabels = [
+
+    ["en_US", "English"],
     ["cs_CZ", "Czech"],
     ["da_DK", "Dansk"],
     ["de_DE", "Deutsch"],
-    ["en_US", "English"],
     ["es_ES", "Español"],
     ["fr_FR", "Français"],
     ["lt_LT", "Lietuvių"],
