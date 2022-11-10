@@ -60,6 +60,7 @@ localizationLabels = [
     ["de_DE", "Deutsch"],
     ["es_ES", "Español"],
     ["fr_FR", "Français"],
+    ["ka_GE", "ქართული ენა"],
     ["lt_LT", "Lietuvių"],
     ["nl_NL", "Nederlands"],
     ["pt_BR", "Português brasileiro"],
