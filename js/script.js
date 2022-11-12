@@ -55,6 +55,7 @@ $(viewportClass).each(function (i, obj) {
 localizationLabels = [
 
     ["en_US", "English"],
+    ["bs-Latn_BA", "Bosnian"],
     ["cs_CZ", "Czech"],
     ["da_DK", "Dansk"],
     ["de_DE", "Deutsch"],
