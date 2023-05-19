@@ -56,6 +56,7 @@ localizationLabels = [
 
     ["en_US", "English"],
     ["bs-Latn_BA", "Bosnian"],
+    ["hr_HR", "Hrvatski"],
     ["cs_CZ", "Czech"],
     ["da_DK", "Dansk"],
     ["de_DE", "Deutsch"],
