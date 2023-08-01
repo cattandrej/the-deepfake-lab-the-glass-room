@@ -53,7 +53,6 @@ $(viewportClass).each(function (i, obj) {
 // language bar generation
 
 localizationLabels = [
-
     ["en_US", "English"],
     ["bs-Latn_BA", "Bosnian"],
     ["hr_HR", "Hrvatski"],
@@ -62,6 +61,7 @@ localizationLabels = [
     ["de_DE", "Deutsch"],
     ["es_ES", "Español"],
     ["fr_FR", "Français"],
+    ["it_IT", "Italiano"],
     ["ka_GE", "ქართული ენა"],
     ["km_KM", "Khmêr"],
     ["lt_LT", "Lietuvių"],
@@ -114,7 +114,7 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
 
     aNode.appendChild(textNode);
     languageBarNode.appendChild(aNode);
-   
+
 
     // dropdown-menu generation
     if (pageLanguage != currentLocalization) {
@@ -123,13 +123,13 @@ for (currentLocalization = 0; currentLocalization < localizationLabels.length; c
         aNode = document.createElement("a");
         textNode = document.createTextNode(localizationLabels[currentLocalization][1]);
 
-        
+
         dropdownMenuNode.setAttribute("class", "dropdown-menu-node");
         dropdownMenuNode.setAttribute("id", localizationLabels[currentLocalization][0]);
         if (currentLocalization != 0) {
             dropdownMenuNodeLink.setAttribute("href", "index-" + localizationLabels[currentLocalization][0] + ".html");
             dropdownMenuNodeLink.setAttribute("class", "col-sm-4");
-            
+
         } else {
             dropdownMenuNodeLink.setAttribute("href", "index.html");
             dropdownMenuNodeLink.setAttribute("class", "col-sm-4");
@@ -619,7 +619,7 @@ function goToViewport(index) {
 var keys = {};
 window.addEventListener("keydown",
     function (e) {
-        
+
         //var currentViewportIndex = getCurrentViewportPos();
 
         keys[e.keyCode] = true;
@@ -698,8 +698,8 @@ if (div != null) {
 }
 
 // real viewport size change detector
-function updateViewportSize(){
-  
+function updateViewportSize() {
+
     if (div != null)
         div.innerHTML = window.innerWidth + " x " + window.innerHeight;
 
@@ -717,19 +717,19 @@ updateViewportSize();
 var isScrolling;
 
 // Listen for scroll events
-window.addEventListener('scroll', function ( event ) {
+window.addEventListener('scroll', function (event) {
 
-	// Clear our timeout throughout the scroll
-	window.clearTimeout( isScrolling );
+    // Clear our timeout throughout the scroll
+    window.clearTimeout(isScrolling);
 
-	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function() {
+    // Set a timeout to run after scrolling ends
+    isScrolling = setTimeout(function () {
 
-		// Run the callback
-        console.log( 'Scrolling has stopped. :D ' );
+        // Run the callback
+        console.log('Scrolling has stopped. :D ');
         currentViewportIndex = getCurrentViewportPos();
 
-	}, 66);
+    }, 66);
 
 }, false);
 
