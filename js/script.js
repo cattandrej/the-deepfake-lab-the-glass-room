@@ -65,6 +65,7 @@ localizationLabels = [
     ["ka_GE", "ქართული ენა"],
     ["km_KM", "Khmêr"],
     ["lt_LT", "Lietuvių"],
+    ["lv_LV", "Latviešu valoda"],
     ["nl_NL", "Nederlands"],
     ["pt_BR", "Português brasileiro"],
     ["ru_RU", "Русский"],
